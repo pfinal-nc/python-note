@@ -18,3 +18,5 @@ def power(x,n):
 	return s;
 
 print(power(5,2));
+
+
