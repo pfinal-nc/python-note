@@ -21,3 +21,6 @@ L1 = list(range(100))
 
 # print('ABCDEF'[:3])
 
+for key in L1.items():
+    print(key)
+
