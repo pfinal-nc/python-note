@@ -24,3 +24,4 @@ L1 = list(range(100))
 for key in L1.items():
     print(key)
 
+print(L1[1]);
