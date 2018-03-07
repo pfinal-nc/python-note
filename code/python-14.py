@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+import types
 
 class Student(object):
     def __init__(self,score):
@@ -34,3 +35,23 @@ class Cat(Animal):
 
 dog = Dog();
 print(dog.run())
+
+# 判断是一个类总的方法
+
+print(isinstance(dog,Animal))
+
+print('==============')
+
+# 获取对象类型
+
+print(type(123))
+
+# 判断是否是整型
+print(type(123)==types.IntType)
+
+print('-----------------------------')
+# dir() 获取一个对象的属性和方法
+print(dir('ABC'))
+print(dir(dog))
+print('ABC'.__len__())
+print('ABC'.lower())
