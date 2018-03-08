@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 import types
-
+from collections import Iterable
 class Student(object):
     def __init__(self,score):
         self.__score = score
@@ -55,3 +55,27 @@ print(dir('ABC'))
 print(dir(dog))
 print('ABC'.__len__())
 print('ABC'.lower())
+
+print('-------------------------------')
+
+# 切片
+L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
+print(L[0:1])
+
+for i in L:
+    print(i)
+
+d = {'a': 1, 'b': 2, 'c': 3}
+
+for j in d:
+    print(j)
+
+print('-------------------------------------------')
+# 判断是否是可迭代的对象
+
+print(isinstance('abc',Iterable))
+
+print(list(range(1,11)))
+
+# 列表生成
+print([x*x for x in range(1,11)])
