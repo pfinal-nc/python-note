@@ -1,6 +1,9 @@
 # -*- coding: UTF-8 -*-
 import types
+import os
 from collections import Iterable
+
+
 class Student(object):
     def __init__(self,score):
         self.__score = score
@@ -79,3 +82,13 @@ print(list(range(1,11)))
 
 # 列表生成
 print([x*x for x in range(1,11)])
+
+# 使用两层循环 可以生成全排列:
+print([ m + n  for m in 'ABC' for n in 'XYZ']);
+
+# 显示当前目录的文件
+print([d for d in os.listdir('.')])
+
+L = ['Hello', 'World', 18, 'Apple']
+print( [s.lower()  for s in L if isinstance(s, str)==True])
+
