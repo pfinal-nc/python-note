@@ -54,5 +54,25 @@ print(DemoA('ABC'));
 class DemoB(object):
     def __init__(self,age):
         self.age = age
+    def __getattr__(self,attr):
+        if attr == 'score':
+            return 99
+        raise AttributeError('\'DemoB\':没有属性 \' %s\'' % attr)
+
+DB = DemoB(23)
+print(DB.age)
+# print(DB.score1)
+
+# 写一个链式调用
+
+class Chain(object):
+    def __init__(self,path=''):
+        self._path = path
+
+    def __getattr__(self,path):
+        return Chain('%s/%s' % (self._path,path))
     
-    
+    def __str__(self):
+        return self._path
+
+print(Chain().status.user.timeline.list)

@@ -45,3 +45,5 @@ def is_odd(n):
 print(filter(is_odd,[10,70,80,1,35,23]))
 
 
+
+
