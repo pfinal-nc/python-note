@@ -6,5 +6,5 @@ y = 2 * x + 5
 plt.title('这个我不会')
 plt.xlabel('纵轴是个啥')
 plt.ylabel('横轴我不知道')
-plt.plot(x,y)
+plt.plot(x,y,'r')
 plt.show()
