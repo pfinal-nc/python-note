@@ -22,5 +22,10 @@ def signin():
         return '<h3>Hello, admin!</h3>'
     return '<h3>Bad username or password.</h3>'
 
+@app.route('/lists', methods=['GET'])
+def lists():
+    str = '<h1>Home</h1>'
+    return str  
+
 if __name__ == '__main__':
     app.run()

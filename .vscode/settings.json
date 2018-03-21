@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "D:\\Python\\python.exe",
+    "python.pythonPath": "/usr/local/bin/python3",
     "python.linting.enabled": false
 }
