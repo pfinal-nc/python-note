@@ -1,3 +1,3 @@
-import random
-print(random.random())
-print(random.uniform(10,1))
+# python 常用函数
+# print(help(1))  # 在线帮助
+
