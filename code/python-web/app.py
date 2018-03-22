@@ -24,7 +24,14 @@ def signin():
 
 @app.route('/lists', methods=['GET'])
 def lists():
-    str = '<h1>Home</h1>'
+    str = '<h1>这个是表格</h1>'
+    str +='<table border=1 cellspacing=0 cellpadding="5">'
+    for i in range(10):
+        str +='<tr>'
+        for j in range(10):
+            str +='<td>%d * %d = %d </td>' % (j,i,j*i)
+        str +='</tr>'
+    str +='</table>'    
     return str  
 
 if __name__ == '__main__':
