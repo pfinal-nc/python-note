@@ -1,3 +1,4 @@
+import hashlib
 from collections import *
 '''
 from collections import namedtuple
@@ -33,5 +34,15 @@ print(dd['key2'])
 c = Counter()
 for ch in 'programming':
     c[ch]+=1
-    
+
 print(c)
+
+# md5
+
+def calc_md5(password):
+    md5 = hashlib.md5()
+    md5.update(password.encode('utf-8'))
+    return md5.hexdigest()
+
+print(calc_md5('123456'))
+
