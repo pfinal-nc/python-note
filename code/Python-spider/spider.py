@@ -39,7 +39,7 @@ class Spilder(object):
         # print(data);
         data = {'name':file_name,'director':ds,'scr':scr,'acs':acs,'score':score}
         return data
-
+    # 获取豆瓣电影中的列表数据
     def crawl_list(self):
         data = requests.get(self.url).json()
         info = []
@@ -48,3 +48,5 @@ class Spilder(object):
             if item['url']!=None:
                 info.append(self.crawl_details(item['url']))
         return info  
+        
+            
