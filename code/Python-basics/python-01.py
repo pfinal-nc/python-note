@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 s = 'string'
 print (45678 + 0x12fd2 )
 
