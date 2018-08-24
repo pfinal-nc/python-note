@@ -1,0 +1,21 @@
+
+Python教程：Python函数和Python闭包
+Automator + Python
+Python · RNN
+Awesome Python
+Porting Python 2 Code to Python 3 — Python 3.7.0 documentation
+Python 实现 Python 解释器
+Python Knowledge Base - Python 知识库
+Python 兵器谱
+Python 闭包
+python requests 使用
+Python Metaclass 初探
+02 - Python 安装
+03 - Python 基础
+Python 之 asyncio
+Python 之旅
+聊聊Python
+Python书单
+A Bite of Python
+Python imports 指北
+Python进阶 -- matplotlib
