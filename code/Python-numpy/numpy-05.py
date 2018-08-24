@@ -17,4 +17,4 @@ print(b)
 c = np.ones(5,dtype=int) 
 print(c)
 
-# numpy 的 asarray 方法
+# Python-numpy 的 asarray 方法
