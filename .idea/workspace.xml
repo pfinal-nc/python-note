@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42ea6646-eeb4-40a5-a7af-7d3f8198a7d2" name="Default" comment="更新">
-      <change afterPath="$PROJECT_DIR$/code/Python-class/python-builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-class/python-factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-class/python-single.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/requests_01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2_01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2_02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2_03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2_04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python-note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-note.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/requests_02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/requests_03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Python-spider/urllib2/requests_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Python-spider/urllib2/requests_01.py" afterDir="false" />
     </list>
     <ignored path="python-note.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +19,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python_note$python_01.coverage" NAME="python-01 Coverage Results" MODIFIED="1535081146322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-basics" />
-    <SUITE FILE_PATH="coverage/python_note$python_factory.coverage" NAME="python-factory Coverage Results" MODIFIED="1535346929489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-patterns" />
-    <SUITE FILE_PATH="coverage/python_note$urllib2_01.coverage" NAME="urllib2_01 Coverage Results" MODIFIED="1535354142833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
     <SUITE FILE_PATH="coverage/python_note$urllib2_03.coverage" NAME="urllib2_03 Coverage Results" MODIFIED="1535355076651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
-    <SUITE FILE_PATH="coverage/python_note$requests.coverage" NAME="requests Coverage Results" MODIFIED="1535359327895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
     <SUITE FILE_PATH="coverage/python_note$save_txt.coverage" NAME="save_txt Coverage Results" MODIFIED="1535089881756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider" />
-    <SUITE FILE_PATH="coverage/python_note$urllib2.coverage" NAME="urllib2 Coverage Results" MODIFIED="1535353800308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
+    <SUITE FILE_PATH="coverage/python_note$requests_03.coverage" NAME="requests_03 Coverage Results" MODIFIED="1535363340946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
     <SUITE FILE_PATH="coverage/python_note$pandas_01.coverage" NAME="pandas-01 Coverage Results" MODIFIED="1535104464500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-pandas" />
     <SUITE FILE_PATH="coverage/python_note$python_builder.coverage" NAME="python-builder Coverage Results" MODIFIED="1535347783050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-patterns" />
     <SUITE FILE_PATH="coverage/python_note$urllib2_02.coverage" NAME="urllib2_02 Coverage Results" MODIFIED="1535354421281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
+    <SUITE FILE_PATH="coverage/python_note$python_01.coverage" NAME="python-01 Coverage Results" MODIFIED="1535081146322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-basics" />
+    <SUITE FILE_PATH="coverage/python_note$python_factory.coverage" NAME="python-factory Coverage Results" MODIFIED="1535346929489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-patterns" />
+    <SUITE FILE_PATH="coverage/python_note$requests_02.coverage" NAME="requests_02 Coverage Results" MODIFIED="1535361677549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
+    <SUITE FILE_PATH="coverage/python_note$urllib2_01.coverage" NAME="urllib2_01 Coverage Results" MODIFIED="1535354142833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
+    <SUITE FILE_PATH="coverage/python_note$requests.coverage" NAME="requests Coverage Results" MODIFIED="1535360852695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
+    <SUITE FILE_PATH="coverage/python_note$urllib2.coverage" NAME="urllib2 Coverage Results" MODIFIED="1535353800308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
     <SUITE FILE_PATH="coverage/python_note$python_single.coverage" NAME="python-single Coverage Results" MODIFIED="1535339801068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-patterns" />
     <SUITE FILE_PATH="coverage/python_note$urllib2_04.coverage" NAME="urllib2_04 Coverage Results" MODIFIED="1535356869729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2066631329">
@@ -60,28 +68,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="17" />
+          <entry key="ico" value="1" />
+          <entry key="py" value="19" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="17" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="py" value="4183" />
+          <entry key="py" value="5194" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="4183" />
+          <entry key="Python" value="5194" />
         </counts>
       </usages-collector>
     </session>
@@ -142,11 +152,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/Python-spider/urllib2/requests_01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="286">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/Python-spider/urllib2/requests_02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/Python-spider/urllib2/requests_03.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -183,6 +214,8 @@
         <option value="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2_04.py" />
         <option value="$PROJECT_DIR$/code/Python-spider/urllib2/requests.py" />
         <option value="$PROJECT_DIR$/code/Python-spider/urllib2/requests_01.py" />
+        <option value="$PROJECT_DIR$/code/Python-spider/urllib2/requests_02.py" />
+        <option value="$PROJECT_DIR$/code/Python-spider/urllib2/requests_03.py" />
       </list>
     </option>
   </component>
@@ -297,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.requests">
+  <component name="RunManager" selected="Python.requests_03">
     <configuration name="requests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-note" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -320,7 +353,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="urllib2_01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="requests_02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-note" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -333,7 +366,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2_01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/Python-spider/urllib2/requests_02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -342,7 +375,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="urllib2_02" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="requests_03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-note" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,7 +388,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/Python-spider/urllib2/urllib2_02.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/Python-spider/urllib2/requests_03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -409,19 +442,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.urllib2_01" />
-      <item itemvalue="Python.urllib2_02" />
       <item itemvalue="Python.urllib2_03" />
       <item itemvalue="Python.urllib2_04" />
       <item itemvalue="Python.requests" />
+      <item itemvalue="Python.requests_02" />
+      <item itemvalue="Python.requests_03" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.requests_03" />
+        <item itemvalue="Python.requests_02" />
         <item itemvalue="Python.requests" />
         <item itemvalue="Python.urllib2_04" />
         <item itemvalue="Python.urllib2_03" />
-        <item itemvalue="Python.urllib2_02" />
-        <item itemvalue="Python.urllib2_01" />
       </list>
     </recent_temporary>
   </component>
@@ -482,8 +515,8 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,8 +643,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/Python-spider/urllib2/requests_01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="286">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Python-spider/urllib2/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Python-spider/urllib2/requests_02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Python-spider/urllib2/requests_03.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
