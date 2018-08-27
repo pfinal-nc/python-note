@@ -5,6 +5,9 @@
       <BehatSettings />
     </behat_settings>
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings />
