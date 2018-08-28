@@ -6,12 +6,12 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import requests
+import os
 class XiaohuaPipeline(object):
     def process_item(self, item, spider):
         detailURL=item['detailURL']
         path=item['path']
         fileName=item['fileName']
-
         image=requests.get(detailURL)
         f=open(path,'wb')
         f.write(image.content)

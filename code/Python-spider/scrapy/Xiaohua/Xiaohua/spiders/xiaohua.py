@@ -12,7 +12,7 @@ class Myspider(scrapy.Spider):
     base=r'D:/phpStudy/WWW/python-note/code/Python-spider/scrapy/XiaoHua/data/'
     def start_requests(self):
         #一共有6页
-        for i in range(1,7):
+        for i in range(2,7):
             url='https://www.mmonly.cc/tag/xh1/'+str(i)+'.html'
             yield Request(url,callback=self.parse_one)
 
@@ -32,19 +32,24 @@ class Myspider(scrapy.Spider):
 
         for item in items:
             #创建文件夹
-            fileName=item['fileName']
-            if not os.path.exists(fileName):
-                os.makedirs(fileName)
+            # fileName=item['fileName']
+            # if not os.path.exists(fileName):
+            #     os.makedirs(fileName)
             #用meta传入下一层
             yield Request(url=item['siteURL'],meta={'item1':item},callback=self.parse_two)
 
     def parse_two(self,response):
         #传入上面的item1
+        # print(response)
         item2=response.meta['item1']
         source=requests.get(response.url)
+        source.encoding = source.apparent_encoding
         html=source.text
-        pattern=re.compile(r'共(.*?)页',re.S)
+        #print(html)
+        pattern = re.compile('共(.*?)页',re.S)
+        # print(pattern)
         Num=re.search(pattern,html).group(1)
+        # print(Num)
         items=[]
         for i in range(1,int(Num)+1):
             item=XiaohuaItem()
@@ -55,15 +60,19 @@ class Myspider(scrapy.Spider):
             item['pageURL']=response.url[:-5]+'_'+str(i)+'.html'
             items.append(item)
         for item in items:
+            fileName = item['fileName']
+            if not os.path.exists(fileName):
+                os.makedirs(fileName)
             yield Request(url=item['pageURL'],meta={'item2':item},callback=self.parse_three)
 
     def parse_three(self,response):
-        item=XiaohuaItem()
+        item = XiaohuaItem()
         #传入上面的item2
-        item3=response.meta['item2']
+        item3= response.meta['item2']
         pattern=re.compile(r'<li class="pic-down h-pic-down"><a target="_blank" class="down-btn" href=\'(.*?)\'>.*?</a>',re.S)
         URL=re.search(pattern,response.text).group(1)
         item['detailURL']=URL
         item['path']=item3['path']
         item['fileName']=item3['fileName']
+        # print(item)
         yield item
