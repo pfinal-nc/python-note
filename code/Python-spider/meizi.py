@@ -12,7 +12,7 @@ HEADERS = {
 }
 
 # 下载图片保存路径
-DIR_PATH = r"D:\phpStudy\WWW\python-note\code\Python-spider\mzitu"
+DIR_PATH = r"D:\素材\mzitu"
 
 def get_urls():
     page_urls = ['http://www.mzitu.com/page/{cnt}'.format(cnt=cnt) for cnt in range(1, 193)]
