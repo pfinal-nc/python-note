@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42ea6646-eeb4-40a5-a7af-7d3f8198a7d2" name="Default" comment="更新">
-      <change beforePath="$PROJECT_DIR$/code/Python-spider/meizi.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Python-spider/meizi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Python-spider/yantu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="python-note.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,6 +45,7 @@
     <SUITE FILE_PATH="coverage/python_note$urllib2_01.coverage" NAME="urllib2_01 Coverage Results" MODIFIED="1535354142833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
     <SUITE FILE_PATH="coverage/python_note$Xpath_learning.coverage" NAME="Xpath_learning Coverage Results" MODIFIED="1535433916953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider" />
     <SUITE FILE_PATH="coverage/python_note$Spider_maoyan.coverage" NAME="Spider_maoyan Coverage Results" MODIFIED="1535432577562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider" />
+    <SUITE FILE_PATH="coverage/python_note$yantu.coverage" NAME="yantu Coverage Results" MODIFIED="1536112585241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider" />
     <SUITE FILE_PATH="coverage/python_note$urllib2_04.coverage" NAME="urllib2_04 Coverage Results" MODIFIED="1535356869729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
     <SUITE FILE_PATH="coverage/python_note$requests_04.coverage" NAME="requests_04 Coverage Results" MODIFIED="1535424376345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/Python-spider/urllib2" />
   </component>
@@ -68,7 +70,7 @@
     <session id="-2066631329">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
@@ -80,37 +82,39 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ico" value="1" />
+          <entry key="jpg" value="1" />
           <entry key="log" value="1" />
-          <entry key="py" value="60" />
+          <entry key="py" value="61" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="1" />
+          <entry key="Image" value="2" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="60" />
+          <entry key="Python" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="10801" />
+          <entry key="py" value="11077" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="10801" />
+          <entry key="Python" value="11077" />
         </counts>
       </usages-collector>
     </session>
@@ -120,16 +124,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/Python-spider/meizi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            <state relative-caret-position="-75">
+              <caret line="49" column="33" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="33" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
                 <marker date="1535678998604" expanded="true" signature="401:1030" ph="..." />
                 <marker date="1535678998604" expanded="true" signature="2050:2352" ph="..." />
                 <marker date="1535678998604" expanded="true" signature="2378:2646" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/Python-spider/yantu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding>
+                <element signature="e#24#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,6 +221,7 @@
         <option value="$PROJECT_DIR$/code/Python-spider/baidu_sy_img.py" />
         <option value="$PROJECT_DIR$/code/Python-spider/huaban.py" />
         <option value="$PROJECT_DIR$/code/Python-spider/meizi.py" />
+        <option value="$PROJECT_DIR$/code/Python-spider/yantu.py" />
       </list>
     </option>
   </component>
@@ -215,7 +232,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -254,6 +271,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,11 +284,16 @@
               <item name="python-note" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="python-note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-note" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="Python-spider" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.meizi">
+  <component name="RunManager" selected="Python.yantu">
     <configuration name="baidu_sy_img" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-note" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -392,7 +415,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="python-pickle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="yantu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-note" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -400,12 +423,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/Python-class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/Python-spider" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/Python-class/python-pickle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/Python-spider/yantu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -415,19 +438,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.python-pickle" />
       <item itemvalue="Python.hacker_information_collection" />
       <item itemvalue="Python.baidu_sy_img" />
       <item itemvalue="Python.huaban" />
       <item itemvalue="Python.meizi" />
+      <item itemvalue="Python.yantu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.yantu" />
         <item itemvalue="Python.meizi" />
         <item itemvalue="Python.huaban" />
         <item itemvalue="Python.baidu_sy_img" />
         <item itemvalue="Python.hacker_information_collection" />
-        <item itemvalue="Python.python-pickle" />
       </list>
     </recent_temporary>
   </component>
@@ -466,9 +489,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="1" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11821086" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11940298" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -488,7 +511,7 @@
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
       <window_info anchor="right" id="Terminal" order="4" weight="0.36034116" />
       <window_info anchor="right" id="SciView" order="5" weight="0.32995737" />
-      <window_info active="true" anchor="right" id="Run" order="6" visible="true" weight="0.34185302" />
+      <window_info anchor="right" id="Run" order="6" weight="0.40788072" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,20 +525,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/Python-spider/save_txt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/Python-basics/python-01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/Python-basics/python-stdlib-03.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -803,15 +812,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/Python-spider/ghostdriver.log" />
+    <entry file="file://$PROJECT_DIR$/code/Python-spider/pic_cnt_0.24358278771486375.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/Python-spider/meizi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        <state relative-caret-position="-75">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="33" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
             <marker date="1535678998604" expanded="true" signature="401:1030" ph="..." />
             <marker date="1535678998604" expanded="true" signature="2050:2352" ph="..." />
             <marker date="1535678998604" expanded="true" signature="2378:2646" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Python-spider/yantu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
