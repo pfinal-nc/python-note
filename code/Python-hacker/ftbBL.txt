@@ -1,0 +1,9 @@
+admin:admin
+admin:123456
+root:root
+root:toor
+root:123456
+admin:admin123
+admin:password
+root:root123
+root:password
