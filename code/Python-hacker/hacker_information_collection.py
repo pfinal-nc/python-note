@@ -20,12 +20,8 @@ def chax():
     try:
         ip = socket.gethostbyname(lid)
         print('[+]IP解析记录')
-        print('IP地址:%s' % ip)
-        # start = '/**/op_aladdin_callback('.__len__()
-        # jsonstr = json.loads(response[start:-2],encoding='gbk')
-        # location = jsonpath.jsonpath(jsonstr,'$..location')[0]
-        # print(location)
-    except:
+        print('    IP地址:%s' % ip)
+    except Exception as e:
         print("this URL 2 IP ERROR ")
 
     url = 'https://sp0.baidu.com/8aQDcjqpAAV3otqbppnN2DJv/api.php?query={}&co=&resource_id=6006&ie=utf8&oe=gbk&cb=op_aladdin_callback&format=json'
@@ -33,9 +29,12 @@ def chax():
     response = urllib.request.urlopen(req).read() 
     start = '/**/op_aladdin_callback('.__len__()
     ip_info = json.loads(response[start:-2].decode('gbk'));
-    print(ip_info['data'])
-    
-    # print('[+]IP解析记录')
+    print('    IPhost地址:' + ip_info['data'][0]['location'])
+    print('[+]子域名查询')
+    scan_domain(lid)
+
+
+        # print('[+]IP解析记录')
     # gf = rb.content.decode()
     # dict_json = json.loads(gf)
     # print(dict_json)
@@ -56,7 +55,6 @@ def chax():
     # for k in gf3.find_all('p'):
     #     link4 = k.get_text()
     #     print(link4)
-
 
 if __name__ == "__main__":
     chax()
