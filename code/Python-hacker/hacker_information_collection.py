@@ -46,6 +46,7 @@ def chax():
         print(link4)
 
 
-chax()
-end=time.time()
-print('查询耗时:',end - start)
+if __name__ == "__main__":
+    chax()
+    end=time.time()
+    print('查询耗时:',end - start)
