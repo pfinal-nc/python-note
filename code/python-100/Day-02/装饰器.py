@@ -14,7 +14,7 @@ def makeItalic(func):
 
 @makeBold
 @makeItalic
-def test(a,b):  
+def test():  
 	print('正在执行test')
 	return "Facing the sea"
 
