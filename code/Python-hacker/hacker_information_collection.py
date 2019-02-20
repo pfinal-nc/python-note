@@ -31,7 +31,7 @@ def chax():
     ip_info = json.loads(response[start:-2].decode('gbk'));
     print('    IPhost地址:' + ip_info['data'][0]['location'])
     print('[+]子域名查询')
-    scan_domain(lid)
+
 
 
         # print('[+]IP解析记录')
