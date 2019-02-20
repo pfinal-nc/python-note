@@ -1,10 +1,32 @@
-<h1>{{ question.question_text }}</h1>
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-<form action="{% url 'vote' question.id %}" method="post">
-    {% csrf_token %}
-    {% for choice in question.choice_set.all %}
-    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
-    <input type="submit" value="Vote">
-    {% endfor %}
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JS -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
