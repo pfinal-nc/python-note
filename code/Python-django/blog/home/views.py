@@ -8,6 +8,4 @@ def index(request):  # request是必须带的实例。类似class下方法必须
     return render(request, 'index.html')
 
 
-def article_list(request):
-    # return '123456'
-    return render(request, 'index.html')
+

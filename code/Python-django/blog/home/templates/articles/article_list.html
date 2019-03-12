@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PFinal</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <a class="navbar-brand" href="/">PFinal</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="/">首页</a>
+            </li>
+            <li>
+                <a href="">文章列表</a>
+            </li>
+            <li>
+                <a href="#">知乎</a>
+            </li>
+            <li>
+                <a href="#">github</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" style="margin-top:60px;">
+        <aside class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading" style="background-color:#000;color:#fff">
+                    <h3 class="panel-title"> <i class="fa fa-list-alt"></i> 文章列表</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        {% for articles in articles_list %}
+                        <a href="{% url 'detail' articles.id %}" class="list-group-item">
+                            <i class="fa fa-file-text-o"></i> {{ articles.title }}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="col-sm-8">
+        </section>
+    </div>
+</body>
+
+</html>
