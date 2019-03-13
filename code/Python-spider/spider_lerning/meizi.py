@@ -21,12 +21,26 @@ class Meizi:
     def get_img(self):
         for imgUrl in self.url_lists:
             page_two = 1
-            while page_two < 10:
-                f = open(os.path.dirname(
-                    sys.argv[0]) + "/meizi/" + random.random() + '.jpg', "wb")
-                f.write((urllib.request.urlopen(imgUrl + '/' + page_two)).read())
+            response = urllib.request.urlopen(imgUrl).read().decode('utf-8')
+            content = BeautifulSoup(response, 'lxml')
+            title = content.find_all('h2', class_='main-title')[0].get_text()
+            if os.path.exists(os.path.dirname(sys.argv[0]) + "/meizi/" + title) != True:
+                os.mkdir(os.path.dirname(sys.argv[0]) + "/meizi/" + title)
+            total = content.find(class_='pagenavi').find_all('a')[-2].find('span').string
+            print(title + '开始下载===========>\n')
+            while page_two <= int(total):
+                response = urllib.request.urlopen(imgUrl + '/' + str(page_two)).read().decode('utf-8')
+                soup = BeautifulSoup(response, 'lxml')
+                img_url = soup.find('img').get('src')
+                # print(img_url)
+                f = open(os.path.dirname(sys.argv[0]) + "/meizi/" + title + '/' + title + '_' + str(page_two) + '.jpg',
+                         "wb")
+                f.write((urllib.request.urlopen(img_url).read()))
+                print('  =======【下载 第 ' + str(page_two) + '条】=========')
                 page_two += 1
                 f.close()
+
+
 
 if __name__ == "__main__":
     meizi = Meizi(1)
