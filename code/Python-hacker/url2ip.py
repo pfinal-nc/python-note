@@ -10,11 +10,14 @@ ip_info = []
 
 
 def get_ip(urls):
+    # print(urls)
     for openurl in urls:
-        url = openurl.replace('http://', '')
+        url = openurl.replace('http://','').replace('https://','')
+        # print(url)
         try:
             result = socket.gethostbyname(socket.getfqdn(url))
-            save_ip(os.path.dirname(sys.argv[0]) + '/school_ip.txt',result)
+            # print(result)
+            save_ip(os.path.dirname(sys.argv[0]) + '/school_ip.txt', result)
             # print(result)
             # ip_info.append(result)
         except:
@@ -25,15 +28,19 @@ def get_ip(urls):
 def url2ip(urllist):
     threads = []
     num = round(len(urllist) / 100)
-    # print(num*500)
-    for i in range(1, num):
-        t = threading.Thread(target=get_ip, args=(urllist[0 * i * 100:100],))
-        threads.append(t)
-    # print(threads)
-    for t in threads:
-        # t.setDaemon(True)
-        t.start()
+    if num > 1:
+        # print(num*500)
+        for i in range(1, num):
+            t = threading.Thread(
+                target=get_ip, args=(urllist[0 * i * 100:100],))
+            threads.append(t)
+        # print(threads)
+        for t in threads:
+            # t.setDaemon(True)
+            t.start()
     # print(ip_info)
+    else:
+        get_ip(urllist)
 
 
 def get_url(file_url):
@@ -56,7 +63,5 @@ def save_ip(filename, content):
 
 if __name__ == "__main__":
     file_url = os.path.dirname(sys.argv[0]) + '/school.txt'
-    # print(file_url)
-    get_url(file_url)
-    # print(ip_info)
-    # save_ip(os.path.dirname(sys.argv[0]) + '/school_ip.txt')
+    url2ip(['https://www.baidu.com'])
+    
