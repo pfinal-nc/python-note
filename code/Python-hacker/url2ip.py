@@ -63,5 +63,5 @@ def save_ip(filename, content):
 
 if __name__ == "__main__":
     file_url = os.path.dirname(sys.argv[0]) + '/school.txt'
-    url2ip(['https://www.baidu.com'])
+    url2ip(['http://www.ewininfo.cn'])
     
