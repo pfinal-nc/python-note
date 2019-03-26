@@ -13,11 +13,18 @@
         "logintype": 0
     }
 }, {
-    "api":"http://www.ptmgy.com/ajax/TipsAction.php",
+    "api": "http://www.ptmgy.com/ajax/TipsAction.php",
     "method": "get",
     "params": {
         "regmob": "",
         "type": "regmobyzm"
     }
-    
+
+}, {
+    "api": "https://login-user.kugou.com/v1/send_sms_for_reg",
+    "method": "get",
+    "params": {
+        "mobile": "",
+        "appid": "1014"
+    }
 }]
