@@ -70,10 +70,10 @@ class Sms_bomb:
 if __name__ == "__main__":
     sms = Sms_bomb(os.path.dirname(
         sys.argv[0]) + '/sms_api.json', os.path.dirname(sys.argv[0]) + '/phone.txt')
-    sms.send_sms()
-    # for i in range(1, 20):
-    #     #     #sms.set_sms('18016387275')
-    #     sms.send_sms()
-    #     time.sleep(30)
+    # sms.send_sms()
+    for i in range(1, 20):
+        #     #sms.set_sms('18016387275')
+        sms.send_sms()
+        time.sleep(50)
 
 # sms.set_sms('17721213677')
