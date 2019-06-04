@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -16,6 +16,7 @@ import os
 import sys
 import tempfile
 
+from lib.core.compat import xrange
 from lib.core.enums import MKSTEMP_PREFIX
 from lib.core.exception import SqlmapSystemException
 from lib.core.settings import BIGARRAY_CHUNK_SIZE
@@ -33,7 +34,7 @@ def _size_of(object_):
     if isinstance(object_, dict):
         retval += sum(_size_of(_) for _ in itertools.chain.from_iterable(object_.items()))
     elif hasattr(object_, "__iter__"):
-        retval += sum(_size_of(_) for _ in object_)
+        retval += sum(_size_of(_) for _ in object_ if _ != object_)
 
     return retval
 
@@ -54,7 +55,7 @@ class BigArray(list):
 
     def __init__(self, items=[]):
         self.chunks = [[]]
-        self.chunk_length = sys.maxint
+        self.chunk_length = sys.maxsize
         self.cache = None
         self.filenames = set()
         self._os_remove = os.remove
@@ -66,7 +67,7 @@ class BigArray(list):
     def append(self, value):
         self.chunks[-1].append(value)
 
-        if self.chunk_length == sys.maxint:
+        if self.chunk_length == sys.maxsize:
             self._size_counter += _size_of(value)
             if self._size_counter >= BIGARRAY_CHUNK_SIZE:
                 self.chunk_length = len(self.chunks[-1])
@@ -89,7 +90,7 @@ class BigArray(list):
                     self.chunks[-1] = pickle.loads(bz2.decompress(f.read()))
             except IOError as ex:
                 errMsg = "exception occurred while retrieving data "
-                errMsg += "from a temporary file ('%s')" % ex.message
+                errMsg += "from a temporary file ('%s')" % ex
                 raise SqlmapSystemException(errMsg)
 
         return self.chunks[-1].pop()
@@ -111,7 +112,7 @@ class BigArray(list):
             return filename
         except (OSError, IOError) as ex:
             errMsg = "exception occurred while storing data "
-            errMsg += "to a temporary file ('%s'). Please " % ex.message
+            errMsg += "to a temporary file ('%s'). Please " % ex
             errMsg += "make sure that there is enough disk space left. If problem persists, "
             errMsg += "try to set environment variable 'TEMP' to a location "
             errMsg += "writeable by the current user"
@@ -128,7 +129,7 @@ class BigArray(list):
                     self.cache = Cache(index, pickle.loads(bz2.decompress(f.read())), False)
             except Exception as ex:
                 errMsg = "exception occurred while retrieving data "
-                errMsg += "from a temporary file ('%s')" % ex.message
+                errMsg += "from a temporary file ('%s')" % ex
                 raise SqlmapSystemException(errMsg)
 
     def __getstate__(self):

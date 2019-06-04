@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -24,6 +24,7 @@ from lib.core.common import singleTimeLogMessage
 from lib.core.common import singleTimeWarnMessage
 from lib.core.common import stdev
 from lib.core.common import wasLastResponseDBMSError
+from lib.core.compat import xrange
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -90,13 +91,15 @@ def _findUnionCharCount(comment, place, parameter, value, prefix, suffix, where=
         kb.errorIsNone = False
         lowerCount, upperCount = conf.uColsStart, conf.uColsStop
 
-        if kb.orderByColumns is None and (lowerCount == 1 or conf.uCols):  # ORDER BY is not bullet-proof
+        if kb.orderByColumns is None and (lowerCount == 1 or conf.uCols):  # Note: ORDER BY is not bullet-proof
             found = _orderByTechnique(lowerCount, upperCount) if conf.uCols else _orderByTechnique()
             if found:
                 kb.orderByColumns = found
                 infoMsg = "target URL appears to have %d column%s in query" % (found, 's' if found > 1 else "")
                 singleTimeLogMessage(infoMsg)
                 return found
+            elif kb.futileUnion:
+                return None
 
         if abs(upperCount - lowerCount) < MIN_UNION_RESPONSES:
             upperCount = lowerCount + MIN_UNION_RESPONSES
@@ -167,7 +170,7 @@ def _unionPosition(comment, place, parameter, prefix, suffix, count, where=PAYLO
     validPayload = None
     vector = None
 
-    positions = range(0, count)
+    positions = [_ for _ in xrange(0, count)]
 
     # Unbiased approach for searching appropriate usable column
     random.shuffle(positions)

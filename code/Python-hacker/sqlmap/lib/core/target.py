@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -12,11 +12,9 @@ import subprocess
 import sys
 import tempfile
 import time
-import urlparse
 
 from lib.core.common import Backend
 from lib.core.common import getSafeExString
-from lib.core.common import getUnicode
 from lib.core.common import hashDBRetrieve
 from lib.core.common import intersect
 from lib.core.common import isNumPosStrValue
@@ -25,8 +23,11 @@ from lib.core.common import openFile
 from lib.core.common import paramToDict
 from lib.core.common import randomStr
 from lib.core.common import readInput
+from lib.core.common import removePostHintPrefix
 from lib.core.common import resetCookieJar
 from lib.core.common import urldecode
+from lib.core.compat import xrange
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -73,7 +74,9 @@ from lib.core.settings import URI_INJECTABLE_REGEX
 from lib.core.settings import USER_AGENT_ALIASES
 from lib.core.settings import XML_RECOGNITION_REGEX
 from lib.utils.hashdb import HashDB
+from thirdparty import six
 from thirdparty.odict import OrderedDict
+from thirdparty.six.moves import urllib as _urllib
 
 def _setRequestParams():
     """
@@ -108,7 +111,7 @@ def _setRequestParams():
         def process(match, repl):
             retVal = match.group(0)
 
-            if not (conf.testParameter and match.group("name") not in conf.testParameter):
+            if not (conf.testParameter and match.group("name") not in [removePostHintPrefix(_) for _ in conf.testParameter]):
                 retVal = repl
                 while True:
                     _ = re.search(r"\\g<([^>]+)>", retVal)
@@ -276,7 +279,7 @@ def _setRequestParams():
 
             if not kb.processUserMarks:
                 if place == PLACE.URI:
-                    query = urlparse.urlsplit(value).query
+                    query = _urllib.parse.urlsplit(value).query
                     if query:
                         parameters = conf.parameters[PLACE.GET] = query
                         paramDict = paramToDict(PLACE.GET, parameters)
@@ -404,11 +407,11 @@ def _setRequestParams():
 
             for parameter in conf.paramDict.get(place, {}):
                 if any(parameter.lower().count(_) for _ in CSRF_TOKEN_PARAMETER_INFIXES):
-                    message = "%s parameter '%s' appears to hold anti-CSRF token. " % (place, parameter)
+                    message = "%sparameter '%s' appears to hold anti-CSRF token. " % ("%s " % place if place != parameter else "", parameter)
                     message += "Do you want sqlmap to automatically update it in further requests? [y/N] "
 
                     if readInput(message, default='N', boolean=True):
-                        class _(unicode):
+                        class _(six.text_type):
                             pass
                         conf.csrfToken = _(re.escape(getUnicode(parameter)))
                         conf.csrfToken._original = getUnicode(parameter)
@@ -636,15 +639,7 @@ def _createTargetDirs():
         if not os.path.isdir(conf.outputPath):
             os.makedirs(conf.outputPath)
     except (OSError, IOError, TypeError) as ex:
-        try:
-            tempDir = tempfile.mkdtemp(prefix="sqlmapoutput")
-        except Exception as _:
-            errMsg = "unable to write to the temporary directory ('%s'). " % _
-            errMsg += "Please make sure that your disk is not full and "
-            errMsg += "that you have sufficient write permissions to "
-            errMsg += "create temporary files and/or directories"
-            raise SqlmapSystemException(errMsg)
-
+        tempDir = tempfile.mkdtemp(prefix="sqlmapoutput")
         warnMsg = "unable to create output directory "
         warnMsg += "'%s' (%s). " % (conf.outputPath, getUnicode(ex))
         warnMsg += "Using temporary directory '%s' instead" % getUnicode(tempDir)
@@ -711,7 +706,7 @@ def initTargetEnv():
         _setDBMS()
 
     if conf.data:
-        class _(unicode):
+        class _(six.text_type):
             pass
 
         kb.postUrlEncode = True
@@ -727,7 +722,7 @@ def initTargetEnv():
             setattr(conf.data, UNENCODED_ORIGINAL_VALUE, original)
             kb.postSpaceToPlus = '+' in original
 
-    match = re.search(INJECT_HERE_REGEX, conf.data or "") or re.search(INJECT_HERE_REGEX, conf.url or "")
+    match = re.search(INJECT_HERE_REGEX, "%s %s %s" % (conf.url, conf.data, conf.httpHeaders))
     kb.customInjectionMark = match.group(0) if match else CUSTOM_INJECTION_MARK_CHAR
 
 def setupTargetEnv():

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -23,9 +23,6 @@ from lib.request import inject
 from plugins.generic.takeover import Takeover as GenericTakeover
 
 class Takeover(GenericTakeover):
-    def __init__(self):
-        GenericTakeover.__init__(self)
-
     def udfSetRemotePath(self):
         # On Windows
         if Backend.isOs(OS.WINDOWS):

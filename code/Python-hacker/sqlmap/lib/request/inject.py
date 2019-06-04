@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -17,6 +17,7 @@ from lib.core.common import calculateDeltaSeconds
 from lib.core.common import cleanQuery
 from lib.core.common import expandAsteriskForColumns
 from lib.core.common import extractExpectedValue
+from lib.core.common import filterNone
 from lib.core.common import getPublicTypeMembers
 from lib.core.common import getTechniqueData
 from lib.core.common import hashDBRetrieve
@@ -31,6 +32,7 @@ from lib.core.common import pushValue
 from lib.core.common import randomStr
 from lib.core.common import readInput
 from lib.core.common import singleTimeWarnMessage
+from lib.core.compat import xrange
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -59,6 +61,7 @@ from lib.techniques.dns.test import dnsTest
 from lib.techniques.dns.use import dnsUse
 from lib.techniques.error.use import errorUse
 from lib.techniques.union.use import unionUse
+from thirdparty import six
 
 def _goDns(payload, expression):
     value = None
@@ -334,7 +337,7 @@ def _goUnion(expression, unpack=True, dump=False):
 
     output = unionUse(expression, unpack=unpack, dump=dump)
 
-    if isinstance(output, basestring):
+    if isinstance(output, six.string_types):
         output = parseUnionPage(output)
 
     return output
@@ -429,7 +432,7 @@ def getValue(expression, blind=True, union=True, error=True, time=True, fromUser
                     found = (value is not None) or (value is None and expectingNone) or count >= MAX_TECHNIQUES_PER_VALUE
 
                 if found and conf.dnsDomain:
-                    _ = "".join(filter(None, (key if isTechniqueAvailable(value) else None for key, value in {'E': PAYLOAD.TECHNIQUE.ERROR, 'Q': PAYLOAD.TECHNIQUE.QUERY, 'U': PAYLOAD.TECHNIQUE.UNION}.items())))
+                    _ = "".join(filterNone(key if isTechniqueAvailable(value) else None for key, value in {'E': PAYLOAD.TECHNIQUE.ERROR, 'Q': PAYLOAD.TECHNIQUE.QUERY, 'U': PAYLOAD.TECHNIQUE.UNION}.items()))
                     warnMsg = "option '--dns-domain' will be ignored "
                     warnMsg += "as faster techniques are usable "
                     warnMsg += "(%s) " % _
@@ -483,7 +486,7 @@ def getValue(expression, blind=True, union=True, error=True, time=True, fromUser
         singleTimeWarnMessage(warnMsg)
 
     # Dirty patch (safe-encoded unicode characters)
-    if isinstance(value, unicode) and "\\x" in value:
+    if isinstance(value, six.text_type) and "\\x" in value:
         try:
             candidate = eval(repr(value).replace("\\\\x", "\\x").replace("u'", "'", 1)).decode(conf.encoding or UNICODE_ENCODING)
             if "\\x" not in candidate:

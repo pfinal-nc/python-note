@@ -1,16 +1,17 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+import base64
 import re
 
 from lib.core.common import Backend
 from lib.core.common import extractRegexResult
+from lib.core.common import filterNone
 from lib.core.common import getSQLSnippet
-from lib.core.common import getUnicode
 from lib.core.common import isDBMSVersionAtLeast
 from lib.core.common import isNumber
 from lib.core.common import isTechniqueAvailable
@@ -23,6 +24,8 @@ from lib.core.common import splitFields
 from lib.core.common import unArrayizeValue
 from lib.core.common import urlencode
 from lib.core.common import zeroDepthSearch
+from lib.core.compat import xrange
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import queries
@@ -105,7 +108,7 @@ class Agent(object):
             if place == PLACE.URI:
                 origValue = origValue.split(kb.customInjectionMark)[0]
             else:
-                origValue = filter(None, (re.search(_, origValue.split(BOUNDED_INJECTION_MARKER)[0]) for _ in (r"\w+\Z", r"[^\"'><]+\Z", r"[^ ]+\Z")))[0].group(0)
+                origValue = filterNone(re.search(_, origValue.split(BOUNDED_INJECTION_MARKER)[0]) for _ in (r"\w+\Z", r"[^\"'><]+\Z", r"[^ ]+\Z"))[0].group(0)
             origValue = origValue[origValue.rfind('/') + 1:]
             for char in ('?', '=', ':', ',', '&'):
                 if char in origValue:
@@ -161,6 +164,11 @@ class Agent(object):
             newValue = "%s%s" % (value, newValue)
 
         newValue = self.cleanupPayload(newValue, origValue)
+
+        if re.sub(r" \(.+", "", parameter) in conf.base64Parameter:
+            # TODO: support for POST_HINT
+            newValue = base64.b64encode(newValue)
+            origValue = base64.b64encode(origValue)
 
         if place in (PLACE.URI, PLACE.CUSTOM_POST, PLACE.CUSTOM_HEADER):
             _ = "%s%s" % (origValue, kb.customInjectionMark)
@@ -290,6 +298,9 @@ class Agent(object):
             pass
 
         elif suffix and not comment:
+            if re.search(r"\w\Z", expression) and re.search(r"\A\w", suffix):
+                expression += " "
+
             expression += suffix.replace('\\', BOUNDARY_BACKSLASH_MARKER)
 
         return re.sub(r";\W*;", ";", expression)
@@ -298,16 +309,19 @@ class Agent(object):
         if payload is None:
             return
 
-        replacements = (
-            ("[DELIMITER_START]", kb.chars.start),
-            ("[DELIMITER_STOP]", kb.chars.stop),
-            ("[AT_REPLACE]", kb.chars.at),
-            ("[SPACE_REPLACE]", kb.chars.space),
-            ("[DOLLAR_REPLACE]", kb.chars.dollar),
-            ("[HASH_REPLACE]", kb.chars.hash_),
-            ("[GENERIC_SQL_COMMENT]", GENERIC_SQL_COMMENT)
-        )
-        payload = reduce(lambda x, y: x.replace(y[0], y[1]), replacements, payload)
+        replacements = {
+            "[DELIMITER_START]": kb.chars.start,
+            "[DELIMITER_STOP]": kb.chars.stop,
+            "[AT_REPLACE]": kb.chars.at,
+            "[SPACE_REPLACE]": kb.chars.space,
+            "[DOLLAR_REPLACE]": kb.chars.dollar,
+            "[HASH_REPLACE]": kb.chars.hash_,
+            "[GENERIC_SQL_COMMENT]": GENERIC_SQL_COMMENT
+        }
+
+        for value in re.findall(r"\[[A-Z_]+\]", payload):
+            if value in replacements:
+                payload = payload.replace(value, replacements[value])
 
         for _ in set(re.findall(r"(?i)\[RANDNUM(?:\d+)?\]", payload)):
             payload = payload.replace(_, str(randomInt()))
@@ -978,14 +992,13 @@ class Agent(object):
                     limitedQuery = limitedQuery.replace(" (SELECT TOP %s" % startTopNums, " (SELECT TOP %d" % num)
                     forgeNotIn = False
                 else:
-                    topNum = re.search(r"TOP\s+([\d]+)\s+", limitedQuery, re.I).group(1)
-                    limitedQuery = limitedQuery.replace("TOP %s " % topNum, "")
+                    limitedQuery = re.sub(r"\bTOP\s+\d+\s*", "", limitedQuery, flags=re.I)
 
             if forgeNotIn:
                 limitedQuery = limitedQuery.replace("SELECT ", (limitStr % 1), 1)
 
                 if " ORDER BY " not in fromFrom:
-                    # Reference: http://vorg.ca/626-the-MS-SQL-equivalent-to-MySQLs-limit-command
+                    # Reference: https://web.archive.org/web/20150218053955/http://vorg.ca/626-the-MS-SQL-equivalent-to-MySQLs-limit-command
                     if " WHERE " in limitedQuery:
                         limitedQuery = "%s AND %s " % (limitedQuery, self.nullAndCastField(uniqueField or field))
                     else:

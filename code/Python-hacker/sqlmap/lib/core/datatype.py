@@ -1,10 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+import collections
 import copy
 import types
 
@@ -12,8 +13,7 @@ from thirdparty.odict import OrderedDict
 
 class AttribDict(dict):
     """
-    This class defines the sqlmap object, inheriting from Python data
-    type dictionary.
+    This class defines the dictionary with added capability to access members as attributes
 
     >>> foo = AttribDict()
     >>> foo.bar = 1
@@ -109,6 +109,19 @@ class InjectionDict(AttribDict):
 
 # Reference: https://www.kunxi.org/2014/05/lru-cache-in-python
 class LRUDict(object):
+    """
+    This class defines the LRU dictionary
+
+    >>> foo = LRUDict(capacity=2)
+    >>> foo["first"] = 1
+    >>> foo["second"] = 2
+    >>> foo["third"] = 3
+    >>> "first" in foo
+    False
+    >>> "third" in foo
+    True
+    """
+
     def __init__(self, capacity):
         self.capacity = capacity
         self.cache = OrderedDict()
@@ -140,3 +153,76 @@ class LRUDict(object):
 
     def keys(self):
         return self.cache.keys()
+
+# Reference: https://code.activestate.com/recipes/576694/
+class OrderedSet(collections.MutableSet):
+    """
+    This class defines the set with ordered (as added) items
+
+    >>> foo = OrderedSet()
+    >>> foo.add(1)
+    >>> foo.add(2)
+    >>> foo.add(3)
+    >>> foo.pop()
+    3
+    >>> foo.pop()
+    2
+    >>> foo.pop()
+    1
+    """
+
+    def __init__(self, iterable=None):
+        self.end = end = []
+        end += [None, end, end]         # sentinel node for doubly linked list
+        self.map = {}                   # key --> [key, prev, next]
+        if iterable is not None:
+            self |= iterable
+
+    def __len__(self):
+        return len(self.map)
+
+    def __contains__(self, key):
+        return key in self.map
+
+    def add(self, key):
+        if key not in self.map:
+            end = self.end
+            curr = end[1]
+            curr[2] = end[1] = self.map[key] = [key, curr, end]
+
+    def discard(self, key):
+        if key in self.map:
+            key, prev, next = self.map.pop(key)
+            prev[2] = next
+            next[1] = prev
+
+    def __iter__(self):
+        end = self.end
+        curr = end[2]
+        while curr is not end:
+            yield curr[0]
+            curr = curr[2]
+
+    def __reversed__(self):
+        end = self.end
+        curr = end[1]
+        while curr is not end:
+            yield curr[0]
+            curr = curr[1]
+
+    def pop(self, last=True):
+        if not self:
+            raise KeyError('set is empty')
+        key = self.end[1][0] if last else self.end[2][0]
+        self.discard(key)
+        return key
+
+    def __repr__(self):
+        if not self:
+            return '%s()' % (self.__class__.__name__,)
+        return '%s(%r)' % (self.__class__.__name__, list(self))
+
+    def __eq__(self, other):
+        if isinstance(other, OrderedSet):
+            return len(self) == len(other) and list(self) == list(other)
+        return set(self) == set(other)

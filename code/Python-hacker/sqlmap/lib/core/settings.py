@@ -1,25 +1,24 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+import codecs
 import os
 import random
 import re
-import subprocess
 import string
 import sys
-import types
 
-from lib.core.datatype import AttribDict
 from lib.core.enums import DBMS
 from lib.core.enums import DBMS_DIRECTORY_NAME
 from lib.core.enums import OS
+from thirdparty.six import unichr as _unichr
 
 # sqlmap version (<major>.<minor>.<month>.<monthly commit>)
-VERSION = "1.3.3.44"
+VERSION = "1.3.5.151"
 TYPE = "dev" if VERSION.count('.') > 2 and VERSION.split('.')[-1] != '0' else "stable"
 TYPE_COLORS = {"dev": 33, "stable": 90, "pip": 34}
 VERSION_STRING = "sqlmap/%s#%s" % ('.'.join(VERSION.split('.')[:-1]) if VERSION.count('.') > 2 and VERSION.split('.')[-1] == '0' else VERSION, TYPE)
@@ -67,6 +66,7 @@ ASTERISK_MARKER = "__ASTERISK_MARK__"
 REPLACEMENT_MARKER = "__REPLACEMENT_MARK__"
 BOUNDED_INJECTION_MARKER = "__BOUNDED_INJECTION_MARK__"
 SAFE_VARIABLE_MARKER = "__SAFE__"
+SAFE_HEX_MARKER = "__SAFE_HEX__"
 
 RANDOM_INTEGER_MARKER = "[RANDINT]"
 RANDOM_STRING_MARKER = "[RANDSTR]"
@@ -100,7 +100,10 @@ MAX_CONSECUTIVE_CONNECTION_ERRORS = 15
 PRECONNECT_CANDIDATE_TIMEOUT = 10
 
 # Servers known to cause issue with pre-connection mechanism (because of lack of multi-threaded support)
-PRECONNECT_INCOMPATIBLE_SERVERS = ("SimpleHTTP",)
+PRECONNECT_INCOMPATIBLE_SERVERS = ("SimpleHTTP", "BaseHTTP")
+
+# Identify WAF/IPS inside limited number of responses (Note: for optimization purposes)
+IDENTYWAF_PARSE_LIMIT = 10
 
 # Maximum sleep time in "Murphy" (testing) mode
 MAX_MURPHY_SLEEP_TIME = 3
@@ -218,7 +221,7 @@ DUMMY_USER_PREFIX = "__dummy__"
 DEFAULT_PAGE_ENCODING = "iso-8859-1"
 
 try:
-    unicode(DEFAULT_PAGE_ENCODING, DEFAULT_PAGE_ENCODING)
+    codecs.lookup(DEFAULT_PAGE_ENCODING)
 except LookupError:
     DEFAULT_PAGE_ENCODING = "utf8"
 
@@ -228,12 +231,13 @@ STDIN_PIPE_DASH = '-'
 # URL used in dummy runs
 DUMMY_URL = "http://foo/bar?id=1"
 
-# System variables
-IS_WIN = subprocess.mswindows
-
 # The name of the operating system dependent module imported. The following names have currently been registered: 'posix', 'nt', 'mac', 'os2', 'ce', 'java', 'riscos'
 PLATFORM = os.name
 PYVERSION = sys.version.split()[0]
+IS_WIN = PLATFORM == "nt"
+
+# Check if running in terminal
+IS_TTY = os.isatty(sys.stdout.fileno())
 
 # DBMS system databases
 MSSQL_SYSTEM_DBS = ("Northwind", "master", "model", "msdb", "pubs", "tempdb")
@@ -340,6 +344,7 @@ ERROR_PARSING_REGEXES = (
     r"\[Microsoft\]\[ODBC SQL Server Driver\]\[SQL Server\](?P<result>[^<]+)",
     r"<b>[^<]*(fatal|error|warning|exception)[^<]*</b>:?\s*(?P<result>[^<]+)",
     r"(?m)^\s*(fatal|error|warning|exception):?\s*(?P<result>[^\n]+?)$",
+    r"(sql|dbc)[^>'\"]{0,32}(fatal|error|warning|exception)(</b>)?:\s*(?P<result>[^<>]+)",
     r"(?P<result>[^\n>]*SQL Syntax[^\n<]+)",
     r"(?s)<li>Error Type:<br>(?P<result>.+?)</li>",
     r"CDbCommand (?P<result>[^<>\n]*SQL[^<>\n]+)",
@@ -385,7 +390,7 @@ URI_INJECTABLE_REGEX = r"//[^/]*/([^\.*?]+)\Z"
 SENSITIVE_DATA_REGEX = r"(\s|=)(?P<result>[^\s=]*\b%s\b[^\s]*)\s"
 
 # Options to explicitly mask in anonymous (unhandled exception) reports (along with anything carrying the <hostname> inside)
-SENSITIVE_OPTIONS = ("hostname", "answers", "data", "dnsDomain", "googleDork", "authCred", "proxyCred", "tbl", "db", "col", "user", "cookie", "proxy", "fileRead", "fileWrite", "fileDest", "testParameter", "authCred")
+SENSITIVE_OPTIONS = ("hostname", "answers", "data", "dnsDomain", "googleDork", "authCred", "proxyCred", "tbl", "db", "col", "user", "cookie", "proxy", "fileRead", "fileWrite", "fileDest", "testParameter", "authCred", "sqlQuery", "requestFile")
 
 # Maximum number of threads (avoiding connection issues and/or DoS)
 MAX_NUMBER_OF_THREADS = 10
@@ -448,7 +453,7 @@ HASH_MOD_ITEM_DISPLAY = 11
 HASH_EMPTY_PASSWORD_MARKER = "<empty>"
 
 # Maximum integer value
-MAX_INT = sys.maxint
+MAX_INT = sys.maxsize
 
 # Replacement for unsafe characters in dump table filenames
 UNSAFE_DUMP_FILEPATH_REPLACEMENT = '_'
@@ -513,8 +518,6 @@ HTML_TITLE_REGEX = r"<title>(?P<result>[^<]+)</title>"
 # Table used for Base64 conversion in WordPress hash cracking routine
 ITOA64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-PICKLE_REDUCE_WHITELIST = (types.BooleanType, types.DictType, types.FloatType, types.IntType, types.ListType, types.LongType, types.NoneType, types.StringType, types.TupleType, types.UnicodeType, types.XRangeType, type(AttribDict()), type(set()))
-
 # Chars used to quickly distinguish if the user provided tainted parameter values
 DUMMY_SQL_INJECTION_CHARS = ";()'"
 
@@ -535,6 +538,9 @@ BRUTE_COLUMN_EXISTS_TEMPLATE = "EXISTS(SELECT %s FROM %s)"
 
 # Data inside shellcodeexec to be filled with random string
 SHELLCODEEXEC_RANDOM_STRING_MARKER = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+# Period after last-update to start nagging about the old revision
+LAST_UPDATE_NAGGING_DAYS = 60
 
 # Generic address for checking the Internet connection while using switch --check-internet
 CHECK_INTERNET_ADDRESS = "https://ipinfo.io/"
@@ -619,7 +625,10 @@ HASHDB_RETRIEVE_RETRIES = 3
 HASHDB_END_TRANSACTION_RETRIES = 3
 
 # Unique milestone value used for forced deprecation of old HashDB values (e.g. when changing hash/pickle mechanism)
-HASHDB_MILESTONE_VALUE = "BZzRotigLX"  # python -c 'import random, string; print "".join(random.sample(string.ascii_letters, 10))'
+HASHDB_MILESTONE_VALUE = "OdqjeUpBLc"  # python -c 'import random, string; print "".join(random.sample(string.ascii_letters, 10))'
+
+# Pickle protocl used for storage of serialized data inside HashDB (https://docs.python.org/3/library/pickle.html#data-stream-format)
+PICKLE_PROTOCOL = 2
 
 # Warn user of possible delay due to large page dump in full UNION query injections
 LARGE_OUTPUT_THRESHOLD = 1024 ** 2
@@ -682,7 +691,7 @@ VALID_TIME_CHARS_RUN_THRESHOLD = 100
 CHECK_ZERO_COLUMNS_THRESHOLD = 10
 
 # Boldify all logger messages containing these "patterns"
-BOLD_PATTERNS = ("' injectable", "provided empty", "leftover chars", "might be injectable", "' is vulnerable", "is not injectable", "does not seem to be", "test failed", "test passed", "live test final result", "test shows that", "the back-end DBMS is", "created Github", "blocked by the target server", "protection is involved", "CAPTCHA", "specific response", "NULL connection is supported", "PASSED", "FAILED")
+BOLD_PATTERNS = ("' injectable", "provided empty", "leftover chars", "might be injectable", "' is vulnerable", "is not injectable", "does not seem to be", "test failed", "test passed", "live test final result", "test shows that", "the back-end DBMS is", "created Github", "blocked by the target server", "protection is involved", "CAPTCHA", "specific response", "NULL connection is supported", "PASSED", "FAILED", "for more than")
 
 # TLDs used in randomization of email-alike parameter values
 RANDOMIZATION_TLDS = ("com", "net", "ru", "org", "de", "jp", "cn", "fr", "it", "pl", "tv", "edu", "in", "ir", "es", "me", "info", "gr", "gov", "ca", "co", "se", "cz", "to", "vn", "nl", "cc", "az", "hu", "ua", "be", "no", "biz", "io", "ch", "ro", "sk", "eu", "us", "tw", "pt", "fi", "at", "lt", "kz", "cl", "hr", "pk", "lv", "la", "pe")
@@ -716,6 +725,9 @@ RESTAPI_DEFAULT_ADDRESS = "127.0.0.1"
 
 # Default REST-JSON API server listen port
 RESTAPI_DEFAULT_PORT = 8775
+
+# Use "Supplementary Private Use Area-A"
+INVALID_UNICODE_PRIVATE_AREA = False
 
 # Format used for representing invalid unicode characters
 INVALID_UNICODE_CHAR_FORMAT = r"\x%02x"
@@ -767,6 +779,9 @@ LOBLKSIZE = 2048
 
 # Prefix used to mark special variables (e.g. keywords, having special chars, etc.)
 EVALCODE_ENCODED_PREFIX = "EVAL_"
+
+# Reference: https://en.wikipedia.org/wiki/Zip_(file_format)
+ZIP_HEADER = b"\x50\x4b\x03\x04"
 
 # Reference: http://www.cookiecentral.com/faq/#3.5
 NETSCAPE_FORMAT_HEADER_COOKIES = "# Netscape HTTP Cookie File."
@@ -824,9 +839,18 @@ th{
 </style>"""
 
 # Leaving (dirty) possibility to change values from here (e.g. `export SQLMAP__MAX_NUMBER_OF_THREADS=20`)
-
 for key, value in os.environ.items():
     if key.upper().startswith("%s_" % SQLMAP_ENVIRONMENT_PREFIX):
         _ = key[len(SQLMAP_ENVIRONMENT_PREFIX) + 1:].upper()
         if _ in globals():
             globals()[_] = value
+
+# Installing "reversible" unicode (decoding) error handler
+def _reversible(ex):
+    if isinstance(ex, UnicodeDecodeError):
+        if INVALID_UNICODE_PRIVATE_AREA:
+            return (u"".join(_unichr(int('000f00%2x' % (_ if isinstance(_, int) else ord(_)), 16)) for _ in ex.object[ex.start:ex.end]), ex.end)
+        else:
+            return (u"".join(INVALID_UNICODE_CHAR_FORMAT % (_ if isinstance(_, int) else ord(_)) for _ in ex.object[ex.start:ex.end]), ex.end)
+
+codecs.register_error("reversible", _reversible)

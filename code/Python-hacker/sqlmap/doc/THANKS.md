@@ -202,7 +202,7 @@ Tate Hansen, <tate(at)clearnetsec.com>
 Mario Heiderich, <mario.heiderich(at)gmail.com>
 Christian Matthies, <ch0012(at)gmail.com>
 Lars H. Strojny, <lars(at)strojny.net>
-* for their great tool PHPIDS included in sqlmap tree as a set of rules for testing payloads against IDS detection, http://php-ids.org
+* for their great tool PHPIDS included in sqlmap tree as a set of rules for testing payloads against IDS detection, https://github.com/PHPIDS/PHPIDS
 
 Kristian Erik Hermansen, <kristian.hermansen(at)gmail.com>
 * for reporting a bug
@@ -763,6 +763,9 @@ ultramegaman, <seclists(at)ultramegaman.com>
 
 Vinicius, <viniciusmaxdaloop(at)gmail.com>
 * for reporting a minor bug
+
+virusdefender
+* for contributing WAF scripts safeline.py
 
 w8ay
 * for contributing an implementation for chunked transfer-encoding (switch --chunked)

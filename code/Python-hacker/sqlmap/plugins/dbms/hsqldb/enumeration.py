@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -16,9 +16,6 @@ from lib.core.settings import HSQLDB_DEFAULT_SCHEMA
 from lib.request import inject
 
 class Enumeration(GenericEnumeration):
-    def __init__(self):
-        GenericEnumeration.__init__(self)
-
     def getBanner(self):
         if not conf.getBanner:
             return

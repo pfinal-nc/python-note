@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -7,6 +7,7 @@ See the file 'LICENSE' for copying permission
 
 from __future__ import print_function
 
+import errno
 import os
 import re
 import select
@@ -28,6 +29,8 @@ from lib.core.common import pollProcess
 from lib.core.common import randomRange
 from lib.core.common import randomStr
 from lib.core.common import readInput
+from lib.core.convert import getBytes
+from lib.core.convert import getText
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -45,6 +48,7 @@ from lib.core.subprocessng import blockingWriteToFD
 from lib.core.subprocessng import Popen as execute
 from lib.core.subprocessng import send_all
 from lib.core.subprocessng import recv_some
+from thirdparty import six
 
 if IS_WIN:
     import msvcrt
@@ -186,7 +190,7 @@ class Metasploit:
         # choose which encoder to use. When called from --os-pwn the encoder
         # is always x86/alpha_mixed - used for sys_bineval() and
         # shellcodeexec
-        if isinstance(encode, basestring):
+        if isinstance(encode, six.string_types):
             return encode
 
         elif encode:
@@ -554,14 +558,14 @@ class Metasploit:
                             pass
 
                 out = recv_some(proc, t=.1, e=0)
-                blockingWriteToFD(sys.stdout.fileno(), out)
+                blockingWriteToFD(sys.stdout.fileno(), getBytes(out))
 
                 # For --os-pwn and --os-bof
                 pwnBofCond = self.connectionStr.startswith("reverse")
-                pwnBofCond &= any(_ in out for _ in ("Starting the payload handler", "Started reverse"))
+                pwnBofCond &= any(_ in out for _ in (b"Starting the payload handler", b"Started reverse"))
 
                 # For --os-smbrelay
-                smbRelayCond = "Server started" in out
+                smbRelayCond = b"Server started" in out
 
                 if pwnBofCond or smbRelayCond:
                     func()
@@ -569,7 +573,7 @@ class Metasploit:
                 timeout = time.time() - start_time > METASPLOIT_SESSION_TIMEOUT
 
                 if not initialized:
-                    match = re.search(r"Meterpreter session ([\d]+) opened", out)
+                    match = re.search(b"Meterpreter session ([\\d]+) opened", out)
 
                     if match:
                         self._loadMetExtensions(proc, match.group(1))
@@ -592,7 +596,13 @@ class Metasploit:
                     else:
                         proc.kill()
 
-            except (EOFError, IOError, select.error):
+            except select.error as ex:
+                # Reference: https://github.com/andymccurdy/redis-py/pull/743/commits/2b59b25bb08ea09e98aede1b1f23a270fc085a9f
+                if (ex[0] if six.PY2 else ex.errno) == errno.EINTR:
+                    continue
+                else:
+                    return proc.returncode
+            except (EOFError, IOError):
                 return proc.returncode
             except KeyboardInterrupt:
                 pass
@@ -615,7 +625,7 @@ class Metasploit:
         pollProcess(process)
         payloadStderr = process.communicate()[1]
 
-        match = re.search(r"(Total size:|Length:|succeeded with size|Final size of exe file:) ([\d]+)", payloadStderr)
+        match = re.search(b"(Total size:|Length:|succeeded with size|Final size of exe file:) ([\\d]+)", payloadStderr)
 
         if match:
             payloadSize = int(match.group(2))
@@ -626,11 +636,11 @@ class Metasploit:
             debugMsg = "the shellcode size is %d bytes" % payloadSize
             logger.debug(debugMsg)
         else:
-            errMsg = "failed to create the shellcode (%s)" % payloadStderr.replace("\n", " ").replace("\r", "")
+            errMsg = "failed to create the shellcode ('%s')" % getText(payloadStderr).replace("\n", " ").replace("\r", "")
             raise SqlmapFilePathException(errMsg)
 
         self._shellcodeFP = open(self._shellcodeFilePath, "rb")
-        self.shellcodeString = self._shellcodeFP.read()
+        self.shellcodeString = getText(self._shellcodeFP.read())
         self._shellcodeFP.close()
 
         os.unlink(self._shellcodeFilePath)

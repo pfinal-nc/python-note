@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -13,6 +13,8 @@ from lib.core.common import dataToStdout
 from lib.core.common import Backend
 from lib.core.common import isStackingAvailable
 from lib.core.common import readInput
+from lib.core.common import unArrayizeValue
+from lib.core.compat import xrange
 from lib.core.data import conf
 from lib.core.data import logger
 from lib.core.data import queries
@@ -20,7 +22,6 @@ from lib.core.enums import DBMS
 from lib.core.enums import CHARSET_TYPE
 from lib.core.enums import EXPECTED
 from lib.core.enums import OS
-from lib.core.common import unArrayizeValue
 from lib.core.exception import SqlmapFilePathException
 from lib.core.exception import SqlmapMissingMandatoryOptionException
 from lib.core.exception import SqlmapUnsupportedFeatureException
@@ -300,7 +301,7 @@ class UDF:
             while True:
                 retType = readInput(msg, default=defaultType)
 
-                if isinstance(retType, basestring) and retType.isdigit():
+                if hasattr(retType, "isdigit") and retType.isdigit():
                     logger.warn("you need to specify the data-type of the return value")
                 else:
                     self.udfs[udfName]["return"] = retType
@@ -338,7 +339,7 @@ class UDF:
 
                 if choice == 'Q':
                     break
-                elif isinstance(choice, basestring) and choice.isdigit() and int(choice) > 0 and int(choice) <= len(udfList):
+                elif hasattr(choice, "isdigit") and choice.isdigit() and int(choice) > 0 and int(choice) <= len(udfList):
                     choice = int(choice)
                     break
                 elif isinstance(choice, int) and choice > 0 and choice <= len(udfList):

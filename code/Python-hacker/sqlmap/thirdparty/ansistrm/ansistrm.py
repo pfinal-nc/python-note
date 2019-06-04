@@ -6,12 +6,11 @@
 import logging
 import os
 import re
-import subprocess
 import sys
 
-from lib.core.convert import stdoutencode
+from lib.core.settings import IS_WIN
 
-if subprocess.mswindows:
+if IS_WIN:
     import ctypes
     import ctypes.wintypes
 
@@ -21,6 +20,8 @@ if subprocess.mswindows:
     ctypes.windll.kernel32.SetConsoleTextAttribute.argtypes = [ctypes.wintypes.HANDLE, ctypes.wintypes.WORD]
     ctypes.windll.kernel32.SetConsoleTextAttribute.restype = ctypes.wintypes.BOOL
 
+def stdoutEncode(data):  # Cross-referenced function
+    raise NotImplementedError
 
 class ColorizingStreamHandler(logging.StreamHandler):
     # color names to indices
@@ -55,7 +56,7 @@ class ColorizingStreamHandler(logging.StreamHandler):
 
     def emit(self, record):
         try:
-            message = stdoutencode(self.format(record))
+            message = stdoutEncode(self.format(record))
             stream = self.stream
 
             if not self.is_tty:
@@ -74,7 +75,7 @@ class ColorizingStreamHandler(logging.StreamHandler):
         except:
             self.handleError(record)
 
-    if not subprocess.mswindows:
+    if not IS_WIN:
         def output_colorized(self, message):
             self.stream.write(message)
     else:
@@ -93,7 +94,6 @@ class ColorizingStreamHandler(logging.StreamHandler):
 
         def output_colorized(self, message):
             parts = self.ansi_esc.split(message)
-            write = self.stream.write
             h = None
             fd = getattr(self.stream, 'fileno', None)
 
@@ -107,7 +107,8 @@ class ColorizingStreamHandler(logging.StreamHandler):
                 text = parts.pop(0)
 
                 if text:
-                    write(text)
+                    self.stream.write(text)
+                    self.stream.flush()
 
                 if parts:
                     params = parts.pop(0)
@@ -186,9 +187,14 @@ class ColorizingStreamHandler(logging.StreamHandler):
                                 string = match.group(1)
                                 message = message.replace("'%s'" % string, "'%s'" % ''.join((self.csi, str(self.color_map["white"] + 30), 'm', string, self._reset(message))), 1)
                         else:
-                            for match in re.finditer(r"[^\w]'([^']+)'", message):  # single-quoted
+                            match = re.search(r" \('(.+)'\)\Z", message)
+                            if match:
                                 string = match.group(1)
                                 message = message.replace("'%s'" % string, "'%s'" % ''.join((self.csi, str(self.color_map["white"] + 30), 'm', string, self._reset(message))), 1)
+                            else:
+                                for match in re.finditer(r"[^\w]'([^']+)'", message):  # single-quoted
+                                    string = match.group(1)
+                                    message = message.replace("'%s'" % string, "'%s'" % ''.join((self.csi, str(self.color_map["white"] + 30), 'm', string, self._reset(message))), 1)
                 else:
                     message = ''.join((self.csi, ';'.join(params), 'm', message, self.reset))
 

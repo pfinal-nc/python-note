@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -14,7 +14,7 @@ except:
 import logging
 
 from lib.core.common import getSafeExString
-from lib.core.convert import utf8encode
+from lib.core.convert import getBytes
 from lib.core.data import conf
 from lib.core.data import logger
 from lib.core.exception import SqlmapConnectionException
@@ -33,9 +33,6 @@ class Connector(GenericConnector):
     Important note: pymssql library on your system MUST be version 1.0.2
     to work, get it from http://sourceforge.net/projects/pymssql/files/pymssql/1.0.2/
     """
-
-    def __init__(self):
-        GenericConnector.__init__(self)
 
     def connect(self):
         self.initConnection()
@@ -61,7 +58,7 @@ class Connector(GenericConnector):
         retVal = False
 
         try:
-            self.cursor.execute(utf8encode(query))
+            self.cursor.execute(getBytes(query))
             retVal = True
         except (pymssql.OperationalError, pymssql.ProgrammingError) as ex:
             logger.log(logging.WARN if conf.dbmsHandler else logging.DEBUG, "(remote) '%s'" % getSafeExString(ex).replace("\n", " "))

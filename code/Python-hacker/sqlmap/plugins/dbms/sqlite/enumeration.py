@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -10,9 +10,6 @@ from lib.core.exception import SqlmapUnsupportedFeatureException
 from plugins.generic.enumeration import Enumeration as GenericEnumeration
 
 class Enumeration(GenericEnumeration):
-    def __init__(self):
-        GenericEnumeration.__init__(self)
-
     def getCurrentUser(self):
         warnMsg = "on SQLite it is not possible to enumerate the current user"
         logger.warn(warnMsg)
@@ -24,6 +21,8 @@ class Enumeration(GenericEnumeration):
     def isDba(self):
         warnMsg = "on SQLite the current user has all privileges"
         logger.warn(warnMsg)
+
+        return True
 
     def getUsers(self):
         warnMsg = "on SQLite it is not possible to enumerate the users"

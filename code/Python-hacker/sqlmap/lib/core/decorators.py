@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -10,6 +10,7 @@ import hashlib
 import threading
 
 from lib.core.settings import MAX_CACHE_ITEMS
+from lib.core.settings import UNICODE_ENCODING
 from lib.core.datatype import LRUDict
 from lib.core.threads import getCurrentThreadData
 
@@ -19,12 +20,22 @@ def cachedmethod(f, cache=LRUDict(capacity=MAX_CACHE_ITEMS)):
     """
     Method with a cached content
 
+    >>> __ = cachedmethod(lambda _: _)
+    >>> __(1)
+    1
+    >>> __ = cachedmethod(lambda *args, **kwargs: args[0])
+    >>> __(2)
+    2
+    >>> __ = cachedmethod(lambda *args, **kwargs: list(kwargs.values())[0])
+    >>> __(foobar=3)
+    3
+
     Reference: http://code.activestate.com/recipes/325205-cache-decorator-in-python-24/
     """
 
     @functools.wraps(f)
     def _(*args, **kwargs):
-        key = int(hashlib.md5("|".join(str(_) for _ in (f, args, kwargs))).hexdigest(), 16) & 0x7fffffffffffffff
+        key = int(hashlib.md5("|".join(str(_) for _ in (f, args, kwargs)).encode(UNICODE_ENCODING)).hexdigest(), 16) & 0x7fffffffffffffff
 
         try:
             with _lock:
@@ -42,6 +53,13 @@ def cachedmethod(f, cache=LRUDict(capacity=MAX_CACHE_ITEMS)):
 def stackedmethod(f):
     """
     Method using pushValue/popValue functions (fallback function for stack realignment)
+
+    >>> threadData = getCurrentThreadData()
+    >>> original = len(threadData.valueStack)
+    >>> __ = stackedmethod(lambda _: threadData.valueStack.append(_))
+    >>> __(1)
+    >>> len(threadData.valueStack) == original
+    True
     """
 
     @functools.wraps(f)

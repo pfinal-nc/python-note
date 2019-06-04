@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -79,6 +79,7 @@ optDict = {
         "skip": "string",
         "skipStatic": "boolean",
         "paramExclude": "string",
+        "paramFilter": "string",
         "dbms": "string",
         "dbmsCred": "string",
         "os": "string",
@@ -150,7 +151,7 @@ optDict = {
         "limitStop": "integer",
         "firstChar": "integer",
         "lastChar": "integer",
-        "query": "string",
+        "sqlQuery": "string",
         "sqlShell": "boolean",
         "sqlFile": "string",
     },
@@ -228,7 +229,6 @@ optDict = {
         "dependencies": "boolean",
         "disableColoring": "boolean",
         "googlePage": "integer",
-        "identifyWaf": "boolean",
         "listTampers": "boolean",
         "mobile": "boolean",
         "offline": "boolean",

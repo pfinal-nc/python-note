@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -9,9 +9,15 @@ import os
 import re
 import subprocess
 
+from lib.core.common import openFile
+from lib.core.convert import getText
+
 def getRevisionNumber():
     """
     Returns abbreviated commit hash number as retrieved with "git rev-parse --short HEAD"
+
+    >>> len(getRevisionNumber() or (' ' * 7)) == 7
+    True
     """
 
     retVal = None
@@ -31,7 +37,7 @@ def getRevisionNumber():
 
     while True:
         if filePath and os.path.isfile(filePath):
-            with open(filePath, "r") as f:
+            with openFile(filePath, "r") as f:
                 content = f.read()
                 filePath = None
                 if content.startswith("ref: "):
@@ -44,9 +50,12 @@ def getRevisionNumber():
             break
 
     if not retVal:
-        process = subprocess.Popen("git rev-parse --verify HEAD", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        stdout, _ = process.communicate()
-        match = re.search(r"(?i)[0-9a-f]{32}", stdout or "")
-        retVal = match.group(0) if match else None
+        try:
+            process = subprocess.Popen("git rev-parse --verify HEAD", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            stdout, _ = process.communicate()
+            match = re.search(r"(?i)[0-9a-f]{32}", getText(stdout or ""))
+            retVal = match.group(0) if match else None
+        except:
+            pass
 
     return retVal[:7] if retVal else None

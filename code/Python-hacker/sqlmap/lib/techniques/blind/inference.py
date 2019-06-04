@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -14,7 +14,7 @@ from lib.core.agent import agent
 from lib.core.common import Backend
 from lib.core.common import calculateDeltaSeconds
 from lib.core.common import dataToStdout
-from lib.core.common import decodeHexValue
+from lib.core.common import decodeDbmsHexValue
 from lib.core.common import decodeIntToUnicode
 from lib.core.common import filterControlChars
 from lib.core.common import getCharset
@@ -117,20 +117,20 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
             firstChar = len(partialValue)
         elif re.search(r"(?i)\b(LENGTH|LEN)\(", expression):
             firstChar = 0
-        elif (kb.fileReadMode or dump) and conf.firstChar is not None and (isinstance(conf.firstChar, int) or (isinstance(conf.firstChar, basestring) and conf.firstChar.isdigit())):
+        elif (kb.fileReadMode or dump) and conf.firstChar is not None and (isinstance(conf.firstChar, int) or (hasattr(conf.firstChar, "isdigit") and conf.firstChar.isdigit())):
             firstChar = int(conf.firstChar) - 1
             if kb.fileReadMode:
                 firstChar <<= 1
-        elif isinstance(firstChar, basestring) and firstChar.isdigit() or isinstance(firstChar, int):
+        elif hasattr(firstChar, "isdigit") and firstChar.isdigit() or isinstance(firstChar, int):
             firstChar = int(firstChar) - 1
         else:
             firstChar = 0
 
         if re.search(r"(?i)\b(LENGTH|LEN)\(", expression):
             lastChar = 0
-        elif dump and conf.lastChar is not None and (isinstance(conf.lastChar, int) or (isinstance(conf.lastChar, basestring) and conf.lastChar.isdigit())):
+        elif dump and conf.lastChar is not None and (isinstance(conf.lastChar, int) or (hasattr(conf.lastChar, "isdigit") and conf.lastChar.isdigit())):
             lastChar = int(conf.lastChar)
-        elif isinstance(lastChar, basestring) and lastChar.isdigit() or isinstance(lastChar, int):
+        elif hasattr(lastChar, "isdigit") and lastChar.isdigit() or isinstance(lastChar, int):
             lastChar = int(lastChar)
         else:
             lastChar = 0
@@ -143,7 +143,7 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
         else:
             expressionUnescaped = unescaper.escape(expression)
 
-        if isinstance(length, basestring) and length.isdigit() or isinstance(length, int):
+        if hasattr(length, "isdigit") and length.isdigit() or isinstance(length, int):
             length = int(length)
         else:
             length = None
@@ -158,7 +158,7 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
             length = None
 
         showEta = conf.eta and isinstance(length, int)
-        numThreads = min(conf.threads, length) or 1
+        numThreads = min(conf.threads or 0, length or 0) or 1
 
         if showEta:
             progress = ProgressBar(maxValue=length)
@@ -198,8 +198,10 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
                 else:
                     posValue = ord(hintValue[idx - 1])
 
+                markingValue = "'%s'" % CHAR_INFERENCE_MARK
+                unescapedCharValue = unescaper.escape("'%s'" % decodeIntToUnicode(posValue))
                 forgedPayload = agent.extractPayload(payload)
-                forgedPayload = safeStringFormat(forgedPayload.replace(INFERENCE_GREATER_CHAR, INFERENCE_EQUALS_CHAR), (expressionUnescaped, idx, posValue))
+                forgedPayload = safeStringFormat(forgedPayload.replace(INFERENCE_GREATER_CHAR, INFERENCE_EQUALS_CHAR), (expressionUnescaped, idx, posValue)).replace(markingValue, unescapedCharValue)
                 result = Request.queryPage(agent.replacePayload(payload, forgedPayload), timeBasedCompare=timeBasedCompare, raise404=False)
                 incrementCounter(kb.technique)
 
@@ -293,12 +295,13 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
                                     lastChar = [_ for _ in threadData.shared.value if _ is not None][-1]
                                 except IndexError:
                                     lastChar = None
-                                if 'a' <= lastChar <= 'z':
-                                    position = charTbl.index(ord('a') - 1)  # 96
-                                elif 'A' <= lastChar <= 'Z':
-                                    position = charTbl.index(ord('A') - 1)  # 64
-                                elif '0' <= lastChar <= '9':
-                                    position = charTbl.index(ord('0') - 1)  # 47
+                                else:
+                                    if 'a' <= lastChar <= 'z':
+                                        position = charTbl.index(ord('a') - 1)  # 96
+                                    elif 'A' <= lastChar <= 'Z':
+                                        position = charTbl.index(ord('A') - 1)  # 64
+                                    elif '0' <= lastChar <= '9':
+                                        position = charTbl.index(ord('0') - 1)  # 47
                             except ValueError:
                                 pass
                             finally:
@@ -376,7 +379,7 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
                                 charTbl = xrange(maxChar + 1, (maxChar + 1) << shiftTable.pop())
                                 originalTbl = xrange(charTbl)
                                 maxChar = maxValue = charTbl[-1]
-                                minChar = minValue = charTbl[0]
+                                minValue = charTbl[0]
                             else:
                                 return None
                         else:
@@ -388,7 +391,7 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
                                         kb.originalTimeDelay = conf.timeSec
 
                                     threadData.validationRun = 0
-                                    if retried < MAX_REVALIDATION_STEPS:
+                                    if (retried or 0) < MAX_REVALIDATION_STEPS:
                                         errMsg = "invalid character detected. retrying.."
                                         logger.error(errMsg)
 
@@ -633,7 +636,7 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
                     dataToStdout(filterControlChars(val))
 
                 # some DBMSes (e.g. Firebird, DB2, etc.) have issues with trailing spaces
-                if len(partialValue) > INFERENCE_BLANK_BREAK and partialValue[-INFERENCE_BLANK_BREAK:].isspace():
+                if Backend.getIdentifiedDbms() in (DBMS.FIREBIRD, DBMS.DB2, DBMS.MAXDB) and len(partialValue) > INFERENCE_BLANK_BREAK and partialValue[-INFERENCE_BLANK_BREAK:].isspace():
                     finalValue = partialValue[:-INFERENCE_BLANK_BREAK]
                     break
                 elif charsetType and partialValue[-1:].isspace():
@@ -653,7 +656,7 @@ def bisection(payload, expression, length=None, charsetType=None, firstChar=None
         retrievedLength = len(finalValue or "")
 
         if finalValue is not None:
-            finalValue = decodeHexValue(finalValue) if conf.hexConvert else finalValue
+            finalValue = decodeDbmsHexValue(finalValue) if conf.hexConvert else finalValue
             hashDBWrite(expression, finalValue)
         elif partialValue:
             hashDBWrite(expression, "%s%s" % (PARTIAL_VALUE_MARKER if not conf.hexConvert else PARTIAL_HEX_VALUE_MARKER, partialValue))

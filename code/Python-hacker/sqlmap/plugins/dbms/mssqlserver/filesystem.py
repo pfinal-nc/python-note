@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -14,8 +14,9 @@ from lib.core.common import isTechniqueAvailable
 from lib.core.common import posixToNtSlashes
 from lib.core.common import randomStr
 from lib.core.common import readInput
-from lib.core.convert import base64encode
-from lib.core.convert import hexencode
+from lib.core.compat import xrange
+from lib.core.convert import encodeBase64
+from lib.core.convert import encodeHex
 from lib.core.data import conf
 from lib.core.data import logger
 from lib.core.enums import CHARSET_TYPE
@@ -28,9 +29,6 @@ from lib.request import inject
 from plugins.generic.filesystem import Filesystem as GenericFilesystem
 
 class Filesystem(GenericFilesystem):
-    def __init__(self):
-        GenericFilesystem.__init__(self)
-
     def _dataToScr(self, fileContent, chunkName):
         fileLines = []
         fileSize = len(fileContent)
@@ -46,7 +44,7 @@ class Filesystem(GenericFilesystem):
             scrString = ""
 
             for lineChar in fileContent[fileLine:fileLine + lineLen]:
-                strLineChar = hexencode(lineChar, conf.encoding)
+                strLineChar = encodeHex(lineChar, binary=False)
 
                 if not scrString:
                     scrString = "e %x %s" % (lineAddr, strLineChar)
@@ -98,7 +96,7 @@ class Filesystem(GenericFilesystem):
         logger.debug("loading the content of file '%s' into support table" % rFile)
         inject.goStacked("BULK INSERT %s FROM '%s' WITH (CODEPAGE='RAW', FIELDTERMINATOR='%s', ROWTERMINATOR='%s')" % (txtTbl, rFile, randomStr(10), randomStr(10)), silent=True)
 
-        # Reference: http://support.microsoft.com/kb/104829
+        # Reference: https://web.archive.org/web/20120211184457/http://support.microsoft.com/kb/104829
         binToHexQuery = """DECLARE @charset VARCHAR(16)
         DECLARE @counter INT
         DECLARE @hexstr VARCHAR(4096)
@@ -172,7 +170,7 @@ class Filesystem(GenericFilesystem):
         infoMsg += "to file '%s'" % dFile
         logger.info(infoMsg)
 
-        encodedFileContent = base64encode(wFileContent)
+        encodedFileContent = encodeBase64(wFileContent, binary=False)
         encodedBase64File = "tmpf%s.txt" % randomStr(lowercase=True)
         encodedBase64FilePath = "%s\\%s" % (tmpPath, encodedBase64File)
 
@@ -332,7 +330,7 @@ class Filesystem(GenericFilesystem):
         End Function""" % (randFilePath, dFile)
 
         vbs = vbs.replace("    ", "")
-        encodedFileContent = base64encode(wFileContent)
+        encodedFileContent = encodeBase64(wFileContent, binary=False)
 
         logger.debug("uploading the file base64-encoded content to %s, please wait.." % randFilePath)
 
@@ -361,7 +359,7 @@ class Filesystem(GenericFilesystem):
         randFile = "tmpf%s.txt" % randomStr(lowercase=True)
         randFilePath = "%s\\%s" % (tmpPath, randFile)
 
-        encodedFileContent = base64encode(wFileContent)
+        encodedFileContent = encodeBase64(wFileContent, binary=False)
 
         splittedEncodedFileContent = '\n'.join([encodedFileContent[i:i + chunkMaxSize] for i in xrange(0, len(encodedFileContent), chunkMaxSize)])
 

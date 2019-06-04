@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -13,9 +13,9 @@ from extra.safe2bin.safe2bin import safechardecode
 from lib.core.common import dataToStdout
 from lib.core.common import Backend
 from lib.core.common import getSQLSnippet
-from lib.core.common import getUnicode
 from lib.core.common import isStackingAvailable
 from lib.core.common import readInput
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import logger
 from lib.core.enums import AUTOCOMPLETE_TYPE
@@ -28,6 +28,7 @@ from lib.request import inject
 from lib.takeover.udf import UDF
 from lib.takeover.web import Web
 from lib.takeover.xp_cmdshell import XP_cmdshell
+from thirdparty.six.moves import input as _input
 
 class Abstraction(Web, UDF, XP_cmdshell):
     """
@@ -139,7 +140,7 @@ class Abstraction(Web, UDF, XP_cmdshell):
             command = None
 
             try:
-                command = raw_input("os-shell> ")
+                command = _input("os-shell> ")
                 command = getUnicode(command, encoding=sys.stdin.encoding)
             except KeyboardInterrupt:
                 print()
