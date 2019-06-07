@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -9,6 +9,7 @@ from lib.core.agent import agent
 from lib.core.common import arrayizeValue
 from lib.core.common import Backend
 from lib.core.common import extractRegexResult
+from lib.core.common import filterNone
 from lib.core.common import filterPairValues
 from lib.core.common import flattenValue
 from lib.core.common import getLimitRange
@@ -47,6 +48,7 @@ from lib.request import inject
 from lib.techniques.union.use import unionUse
 from lib.utils.brute import columnExists
 from lib.utils.brute import tableExists
+from thirdparty import six
 
 class Databases:
     """
@@ -291,31 +293,34 @@ class Databases:
                     values = [(dbs[0], _) for _ in values]
 
                 for db, table in filterPairValues(values):
-                    db = safeSQLIdentificatorNaming(db)
-                    table = safeSQLIdentificatorNaming(unArrayizeValue(table), True)
+                    table = unArrayizeValue(table)
 
-                    if conf.getComments:
-                        _ = queries[Backend.getIdentifiedDbms()].table_comment
-                        if hasattr(_, "query"):
-                            if Backend.getIdentifiedDbms() in (DBMS.ORACLE, DBMS.DB2):
-                                query = _.query % (unsafeSQLIdentificatorNaming(db.upper()), unsafeSQLIdentificatorNaming(table.upper()))
+                    if not isNoneValue(table):
+                        db = safeSQLIdentificatorNaming(db)
+                        table = safeSQLIdentificatorNaming(table, True)
+
+                        if conf.getComments:
+                            _ = queries[Backend.getIdentifiedDbms()].table_comment
+                            if hasattr(_, "query"):
+                                if Backend.getIdentifiedDbms() in (DBMS.ORACLE, DBMS.DB2):
+                                    query = _.query % (unsafeSQLIdentificatorNaming(db.upper()), unsafeSQLIdentificatorNaming(table.upper()))
+                                else:
+                                    query = _.query % (unsafeSQLIdentificatorNaming(db), unsafeSQLIdentificatorNaming(table))
+
+                                comment = unArrayizeValue(inject.getValue(query, blind=False, time=False))
+                                if not isNoneValue(comment):
+                                    infoMsg = "retrieved comment '%s' for table '%s' " % (comment, unsafeSQLIdentificatorNaming(table))
+                                    infoMsg += "in database '%s'" % unsafeSQLIdentificatorNaming(db)
+                                    logger.info(infoMsg)
                             else:
-                                query = _.query % (unsafeSQLIdentificatorNaming(db), unsafeSQLIdentificatorNaming(table))
+                                warnMsg = "on %s it is not " % Backend.getIdentifiedDbms()
+                                warnMsg += "possible to get column comments"
+                                singleTimeWarnMessage(warnMsg)
 
-                            comment = unArrayizeValue(inject.getValue(query, blind=False, time=False))
-                            if not isNoneValue(comment):
-                                infoMsg = "retrieved comment '%s' for table '%s' " % (comment, unsafeSQLIdentificatorNaming(table))
-                                infoMsg += "in database '%s'" % unsafeSQLIdentificatorNaming(db)
-                                logger.info(infoMsg)
+                        if db not in kb.data.cachedTables:
+                            kb.data.cachedTables[db] = [table]
                         else:
-                            warnMsg = "on %s it is not " % Backend.getIdentifiedDbms()
-                            warnMsg += "possible to get column comments"
-                            singleTimeWarnMessage(warnMsg)
-
-                    if db not in kb.data.cachedTables:
-                        kb.data.cachedTables[db] = [table]
-                    else:
-                        kb.data.cachedTables[db].append(table)
+                            kb.data.cachedTables[db].append(table)
 
         if not kb.data.cachedTables and isInferenceAvailable() and not conf.direct:
             for db in dbs:
@@ -476,9 +481,9 @@ class Databases:
                 if conf.db in kb.data.cachedTables:
                     tblList = kb.data.cachedTables[conf.db]
                 else:
-                    tblList = kb.data.cachedTables.values()
+                    tblList = list(six.itervalues(kb.data.cachedTables))
 
-                if isinstance(tblList[0], (set, tuple, list)):
+                if tblList and isListLike(tblList[0]):
                     tblList = tblList[0]
 
                 tblList = list(tblList)
@@ -489,7 +494,7 @@ class Databases:
             else:
                 return kb.data.cachedColumns
 
-        tblList = filter(None, (safeSQLIdentificatorNaming(_, True) for _ in tblList))
+        tblList = filterNone(safeSQLIdentificatorNaming(_, True) for _ in tblList)
 
         if bruteForce is None:
             if Backend.isDbms(DBMS.MYSQL) and not kb.data.has_information_schema:
@@ -595,7 +600,7 @@ class Databases:
                         kb.dumpColumns = []
                         kb.rowXmlMode = True
 
-                        for column in extractRegexResult(r"SELECT (?P<result>.+?) FROM", query).split(','):
+                        for column in (extractRegexResult(r"SELECT (?P<result>.+?) FROM", query) or "").split(','):
                             kb.dumpColumns.append(randomStr().lower())
                             expression = expression.replace(column, "%s AS %s" % (column, kb.dumpColumns[-1]), 1)
 
@@ -605,7 +610,7 @@ class Databases:
 
                     if values is None:
                         values = inject.getValue(query, blind=False, time=False)
-                        if values and isinstance(values[0], basestring):
+                        if values and isinstance(values[0], six.string_types):
                             values = [values]
 
                 if Backend.isDbms(DBMS.MSSQL) and isNoneValue(values):
@@ -635,6 +640,7 @@ class Databases:
 
                     for columnData in values:
                         if not isNoneValue(columnData):
+                            columnData = [unArrayizeValue(_) for _ in columnData]
                             name = safeSQLIdentificatorNaming(columnData[0])
 
                             if name:
@@ -658,7 +664,7 @@ class Databases:
                                 if len(columnData) == 1:
                                     columns[name] = None
                                 else:
-                                    key = int(columnData[1]) if isinstance(columnData[1], basestring) and columnData[1].isdigit() else columnData[1]
+                                    key = int(columnData[1]) if isinstance(columnData[1], six.string_types) and columnData[1].isdigit() else columnData[1]
                                     if Backend.isDbms(DBMS.FIREBIRD):
                                         columnData[1] = FIREBIRD_TYPES.get(key, columnData[1])
                                     elif Backend.isDbms(DBMS.INFORMIX):
@@ -829,7 +835,7 @@ class Databases:
 
                             colType = unArrayizeValue(inject.getValue(query, union=False, error=False))
 
-                            key = int(colType) if isinstance(colType, basestring) and colType.isdigit() else colType
+                            key = int(colType) if hasattr(colType, "isdigit") and colType.isdigit() else colType
                             if Backend.isDbms(DBMS.FIREBIRD):
                                 colType = FIREBIRD_TYPES.get(key, colType)
                             elif Backend.isDbms(DBMS.INFORMIX):

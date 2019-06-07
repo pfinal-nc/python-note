@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -27,7 +27,7 @@ try:
     import re
     import shutil
     import sys
-    import thread
+    import tempfile
     import threading
     import time
     import traceback
@@ -43,12 +43,14 @@ try:
     from lib.core.common import checkPipedInput
     from lib.core.common import createGithubIssue
     from lib.core.common import dataToStdout
+    from lib.core.common import filterNone
+    from lib.core.common import getDaysFromLastUpdate
     from lib.core.common import getSafeExString
-    from lib.core.common import getUnicode
     from lib.core.common import maskSensitiveData
     from lib.core.common import openFile
     from lib.core.common import setPaths
     from lib.core.common import weAreFrozen
+    from lib.core.convert import getUnicode
     from lib.core.data import cmdLineOptions
     from lib.core.data import conf
     from lib.core.data import kb
@@ -62,13 +64,16 @@ try:
     from lib.core.option import initOptions
     from lib.core.option import init
     from lib.core.patch import dirtyPatches
+    from lib.core.patch import resolveCrossReferences
     from lib.core.settings import GIT_PAGE
     from lib.core.settings import IS_WIN
+    from lib.core.settings import LAST_UPDATE_NAGGING_DAYS
     from lib.core.settings import LEGAL_DISCLAIMER
     from lib.core.settings import THREAD_FINALIZATION_TIMEOUT
     from lib.core.settings import UNICODE_ENCODING
     from lib.core.settings import VERSION
     from lib.parse.cmdline import cmdLineParser
+    from thirdparty import six
 except KeyboardInterrupt:
     errMsg = "user aborted"
 
@@ -124,6 +129,7 @@ def main():
 
     try:
         dirtyPatches()
+        resolveCrossReferences()
         checkEnvironment()
         setPaths(modulePath())
         banner()
@@ -156,20 +162,25 @@ def main():
             # Postponed imports (faster start)
             if conf.smokeTest:
                 from lib.core.testing import smokeTest
-                smokeTest()
+                os._exitcode = 1 - (smokeTest() or 0)
+            elif conf.vulnTest:
+                from lib.core.testing import vulnTest
+                os._exitcode = 1 - (vulnTest() or 0)
             elif conf.liveTest:
                 from lib.core.testing import liveTest
-                liveTest()
+                os._exitcode = 1 - (liveTest() or 0)
             else:
                 from lib.controller.controller import start
-                if conf.profile:
+                if conf.profile and six.PY2:
                     from lib.core.profiling import profile
                     globals()["start"] = start
                     profile()
                 else:
                     try:
                         start()
-                    except thread.error as ex:
+                    except Exception as ex:
+                        os._exitcode = 1
+
                         if "can't start new thread" in getSafeExString(ex):
                             errMsg = "unable to start new threads. Please check OS (u)limits"
                             logger.critical(errMsg)
@@ -232,6 +243,11 @@ def main():
             logger.critical(errMsg)
             raise SystemExit
 
+        elif all(_ in excMsg for _ in ("SyntaxError: Non-ASCII character", "on line 1, but no encoding declared")):
+            errMsg = "invalid runtime environment ('%s')" % excMsg.split("Error: ")[-1].strip()
+            logger.critical(errMsg)
+            raise SystemExit
+
         elif any(_ in excMsg for _ in ("MemoryError", "Cannot allocate memory")):
             errMsg = "memory exhaustion detected"
             logger.critical(errMsg)
@@ -247,7 +263,7 @@ def main():
             logger.critical(errMsg)
             raise SystemExit
 
-        elif all(_ in excMsg for _ in ("No such file", "_'", "self.get_prog_name()")):
+        elif all(_ in excMsg for _ in ("No such file", "_'")):
             errMsg = "corrupted installation detected ('%s'). " % excMsg.strip().split('\n')[-1]
             errMsg += "You should retrieve the latest development version from official GitHub "
             errMsg += "repository at '%s'" % GIT_PAGE
@@ -269,8 +285,21 @@ def main():
             logger.critical(errMsg)
             raise SystemExit
 
+        elif "Invalid IPv6 URL" in excMsg:
+            errMsg = "invalid URL ('%s')" % excMsg.strip().split('\n')[-1]
+            logger.critical(errMsg)
+            raise SystemExit
+
         elif "_mkstemp_inner" in excMsg:
             errMsg = "there has been a problem while accessing temporary files"
+            logger.critical(errMsg)
+            raise SystemExit
+
+        elif any(_ in excMsg for _ in ("tempfile.mkdtemp", "tempfile.mkstemp")):
+            errMsg = "unable to write to the temporary directory '%s'. " % tempfile.gettempdir()
+            errMsg += "Please make sure that your disk is not full and "
+            errMsg += "that you have sufficient write permissions to "
+            errMsg += "create temporary files and/or directories"
             logger.critical(errMsg)
             raise SystemExit
 
@@ -288,7 +317,7 @@ def main():
 
         elif "must be pinned buffer, not bytearray" in excMsg:
             errMsg = "error occurred at Python interpreter which "
-            errMsg += "is fixed in 2.7.x. Please update accordingly "
+            errMsg += "is fixed in 2.7. Please update accordingly "
             errMsg += "(Reference: https://bugs.python.org/issue8104)"
             logger.critical(errMsg)
             raise SystemExit
@@ -328,7 +357,10 @@ def main():
 
         for match in re.finditer(r'File "(.+?)", line', excMsg):
             file_ = match.group(1)
-            file_ = os.path.relpath(file_, os.path.dirname(__file__))
+            try:
+                file_ = os.path.relpath(file_, os.path.dirname(__file__))
+            except ValueError:
+                pass
             file_ = file_.replace("\\", '/')
             if "../" in file_:
                 file_ = re.sub(r"(\.\./)+", '/', file_)
@@ -350,6 +382,11 @@ def main():
     finally:
         kb.threadContinue = False
 
+        _ = getDaysFromLastUpdate()
+        if _ > LAST_UPDATE_NAGGING_DAYS:
+            warnMsg = "you haven't updated sqlmap for more than %d days!!!" % _
+            logger.warn(warnMsg)
+
         if conf.get("showTime"):
             dataToStdout("\n[*] ending @ %s\n\n" % time.strftime("%X /%Y-%m-%d/"), forceOutput=True)
 
@@ -362,15 +399,23 @@ def main():
                         os.remove(filepath)
                     except OSError:
                         pass
-            if not filter(None, (filepath for filepath in glob.glob(os.path.join(kb.tempDir, '*')) if not any(filepath.endswith(_) for _ in ('.lock', '.exe', '_')))):
-                shutil.rmtree(kb.tempDir, ignore_errors=True)
+
+            if not filterNone(filepath for filepath in glob.glob(os.path.join(kb.tempDir, '*')) if not any(filepath.endswith(_) for _ in (".lock", ".exe", ".so", '_'))):  # ignore junk files
+                try:
+                    shutil.rmtree(kb.tempDir, ignore_errors=True)
+                except OSError:
+                    pass
 
         if conf.get("hashDB"):
             conf.hashDB.flush(True)
 
         if conf.get("harFile"):
-            with openFile(conf.harFile, "w+b") as f:
-                json.dump(conf.httpCollector.obtain(), fp=f, indent=4, separators=(',', ': '))
+            try:
+                with openFile(conf.harFile, "w+b") as f:
+                    json.dump(conf.httpCollector.obtain(), fp=f, indent=4, separators=(',', ': '))
+            except SqlmapBaseException as ex:
+                errMsg = getSafeExString(ex)
+                logger.critical(errMsg)
 
         if conf.get("api"):
             conf.databaseCursor.disconnect()
@@ -395,10 +440,16 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         pass
+    except SystemExit:
+        raise
+    except:
+        traceback.print_exc()
     finally:
         # Reference: http://stackoverflow.com/questions/1635080/terminate-a-multi-thread-python-program
         if threading.activeCount() > 1:
-            os._exit(0)
+            os._exit(getattr(os, "_exitcode", 0))
+        else:
+            sys.exit(getattr(os, "_exitcode", 0))
 else:
     # cancelling postponed imports (because of Travis CI checks)
     from lib.controller.controller import start

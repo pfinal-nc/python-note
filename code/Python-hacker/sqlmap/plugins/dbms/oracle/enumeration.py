@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -11,6 +11,7 @@ from lib.core.common import isInferenceAvailable
 from lib.core.common import isNoneValue
 from lib.core.common import isNumPosStrValue
 from lib.core.common import isTechniqueAvailable
+from lib.core.compat import xrange
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -24,9 +25,6 @@ from lib.request import inject
 from plugins.generic.enumeration import Enumeration as GenericEnumeration
 
 class Enumeration(GenericEnumeration):
-    def __init__(self):
-        GenericEnumeration.__init__(self)
-
     def getRoles(self, query2=False):
         infoMsg = "fetching database users roles"
 

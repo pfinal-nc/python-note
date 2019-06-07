@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -26,9 +26,6 @@ class Connector(GenericConnector):
     Debian package: python-kinterbasdb
     License: BSD
     """
-
-    def __init__(self):
-        GenericConnector.__init__(self)
 
     # sample usage:
     # ./sqlmap.py -d "firebird://sysdba:testpass@/opt/firebird/testdb.fdb"

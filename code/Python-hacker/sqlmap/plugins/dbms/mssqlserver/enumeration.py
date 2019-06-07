@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -17,6 +17,7 @@ from lib.core.common import safeStringFormat
 from lib.core.common import singleTimeLogMessage
 from lib.core.common import unArrayizeValue
 from lib.core.common import unsafeSQLIdentificatorNaming
+from lib.core.compat import xrange
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -28,13 +29,10 @@ from lib.core.enums import PAYLOAD
 from lib.core.exception import SqlmapNoneDataException
 from lib.core.settings import CURRENT_DB
 from lib.request import inject
-
 from plugins.generic.enumeration import Enumeration as GenericEnumeration
+from thirdparty import six
 
 class Enumeration(GenericEnumeration):
-    def __init__(self):
-        GenericEnumeration.__init__(self)
-
     def getPrivileges(self, *args):
         warnMsg = "on Microsoft SQL Server it is not possible to fetch "
         warnMsg += "database users privileges, sqlmap will check whether "
@@ -86,7 +84,7 @@ class Enumeration(GenericEnumeration):
         dbs = [_ for _ in dbs if _]
 
         infoMsg = "fetching tables for database"
-        infoMsg += "%s: %s" % ("s" if len(dbs) > 1 else "", ", ".join(db if isinstance(db, basestring) else db[0] for db in sorted(dbs)))
+        infoMsg += "%s: %s" % ("s" if len(dbs) > 1 else "", ", ".join(db if isinstance(db, six.string_types) else db[0] for db in sorted(dbs)))
         logger.info(infoMsg)
 
         rootQuery = queries[DBMS.MSSQL].tables
@@ -222,7 +220,7 @@ class Enumeration(GenericEnumeration):
                     values = inject.getValue(query, blind=False, time=False)
 
                     if not isNoneValue(values):
-                        if isinstance(values, basestring):
+                        if isinstance(values, six.string_types):
                             values = [values]
 
                         for foundTbl in values:
@@ -263,7 +261,7 @@ class Enumeration(GenericEnumeration):
                         kb.hintValue = tbl
                         foundTbls[db].append(tbl)
 
-        for db, tbls in foundTbls.items():
+        for db, tbls in list(foundTbls.items()):
             if len(tbls) == 0:
                 foundTbls.pop(db)
 
@@ -356,7 +354,7 @@ class Enumeration(GenericEnumeration):
                     values = inject.getValue(query, blind=False, time=False)
 
                     if not isNoneValue(values):
-                        if isinstance(values, basestring):
+                        if isinstance(values, six.string_types):
                             values = [values]
 
                         for foundTbl in values:

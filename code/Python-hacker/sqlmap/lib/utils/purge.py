@@ -1,10 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+import functools
 import os
 import random
 import shutil
@@ -12,7 +13,10 @@ import stat
 import string
 
 from lib.core.common import getSafeExString
+from lib.core.common import openFile
+from lib.core.compat import xrange
 from lib.core.data import logger
+from thirdparty.six import unichr as _unichr
 
 def purge(directory):
     """
@@ -45,8 +49,8 @@ def purge(directory):
     for filepath in filepaths:
         try:
             filesize = os.path.getsize(filepath)
-            with open(filepath, "w+b") as f:
-                f.write("".join(chr(random.randint(0, 255)) for _ in xrange(filesize)))
+            with openFile(filepath, "w+b") as f:
+                f.write("".join(_unichr(random.randint(0, 255)) for _ in xrange(filesize)))
         except:
             pass
 
@@ -65,7 +69,7 @@ def purge(directory):
         except:
             pass
 
-    dirpaths.sort(cmp=lambda x, y: y.count(os.path.sep) - x.count(os.path.sep))
+    dirpaths.sort(key=functools.cmp_to_key(lambda x, y: y.count(os.path.sep) - x.count(os.path.sep)))
 
     logger.debug("renaming directory names to random values")
     for dirpath in dirpaths:

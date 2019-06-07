@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -7,18 +7,18 @@ See the file 'LICENSE' for copying permission
 
 import codecs
 import gzip
+import io
 import logging
 import re
-import StringIO
 import struct
 import zlib
 
 from lib.core.common import Backend
 from lib.core.common import extractErrorMessage
 from lib.core.common import extractRegexResult
+from lib.core.common import filterNone
 from lib.core.common import getPublicTypeMembers
 from lib.core.common import getSafeExString
-from lib.core.common import getUnicode
 from lib.core.common import isListLike
 from lib.core.common import randomStr
 from lib.core.common import readInput
@@ -26,6 +26,10 @@ from lib.core.common import resetCookieJar
 from lib.core.common import singleTimeLogMessage
 from lib.core.common import singleTimeWarnMessage
 from lib.core.common import unArrayizeValue
+from lib.core.convert import decodeHex
+from lib.core.convert import getBytes
+from lib.core.convert import getText
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -37,17 +41,21 @@ from lib.core.exception import SqlmapCompressionException
 from lib.core.settings import BLOCKED_IP_REGEX
 from lib.core.settings import DEFAULT_COOKIE_DELIMITER
 from lib.core.settings import EVENTVALIDATION_REGEX
+from lib.core.settings import IDENTYWAF_PARSE_LIMIT
 from lib.core.settings import MAX_CONNECTION_TOTAL_SIZE
 from lib.core.settings import META_CHARSET_REGEX
 from lib.core.settings import PARSE_HEADERS_LIMIT
 from lib.core.settings import SELECT_FROM_TABLE_REGEX
-from lib.core.settings import UNICODE_ENCODING
 from lib.core.settings import VIEWSTATE_REGEX
 from lib.parse.headers import headersParser
 from lib.parse.html import htmlParser
 from lib.utils.htmlentities import htmlEntities
+from thirdparty import six
 from thirdparty.chardet import detect
+from thirdparty.identywaf import identYwaf
 from thirdparty.odict import OrderedDict
+from thirdparty.six import unichr as _unichr
+from thirdparty.six.moves import http_client as _http_client
 
 def forgeHeaders(items=None, base=None):
     """
@@ -100,7 +108,7 @@ def forgeHeaders(items=None, base=None):
 
                 if ("%s=" % getUnicode(cookie.name)) in getUnicode(headers[HTTP_HEADER.COOKIE]):
                     if conf.loadCookies:
-                        conf.httpHeaders = filter(None, ((item if item[0] != HTTP_HEADER.COOKIE else None) for item in conf.httpHeaders))
+                        conf.httpHeaders = filterNone((item if item[0] != HTTP_HEADER.COOKIE else None) for item in conf.httpHeaders)
                     elif kb.mergeCookies is None:
                         message = "you provided a HTTP %s header value. " % HTTP_HEADER.COOKIE
                         message += "The target URL provided its own cookies within "
@@ -153,6 +161,9 @@ def checkCharEncoding(encoding, warn=True):
     >>> checkCharEncoding('en_us', False)
     'utf8'
     """
+
+    if isinstance(encoding, six.binary_type):
+        encoding = getUnicode(encoding)
 
     if isListLike(encoding):
         encoding = unArrayizeValue(encoding)
@@ -218,13 +229,13 @@ def checkCharEncoding(encoding, warn=True):
     # Reference: http://www.iana.org/assignments/character-sets
     # Reference: http://docs.python.org/library/codecs.html
     try:
-        codecs.lookup(encoding.encode(UNICODE_ENCODING) if isinstance(encoding, unicode) else encoding)
-    except (LookupError, ValueError):
+        codecs.lookup(encoding)
+    except:
         encoding = None
 
     if encoding:
         try:
-            unicode(randomStr(), encoding)
+            six.text_type(getBytes(randomStr()), encoding)
         except:
             if warn:
                 warnMsg = "invalid web page charset '%s'" % encoding
@@ -236,7 +247,11 @@ def checkCharEncoding(encoding, warn=True):
 def getHeuristicCharEncoding(page):
     """
     Returns page encoding charset detected by usage of heuristics
-    Reference: http://chardet.feedparser.org/docs/
+
+    Reference: https://chardet.readthedocs.io/en/latest/usage.html
+
+    >>> getHeuristicCharEncoding(b"<html></html>")
+    'ascii'
     """
 
     key = hash(page)
@@ -252,17 +267,20 @@ def getHeuristicCharEncoding(page):
 def decodePage(page, contentEncoding, contentType):
     """
     Decode compressed/charset HTTP response
+
+    >>> getText(decodePage(b"<html>foo&amp;bar</html>", None, "text/html; charset=utf-8"))
+    '<html>foo&bar</html>'
     """
 
     if not page or (conf.nullConnection and len(page) < 2):
         return getUnicode(page)
 
-    if isinstance(contentEncoding, basestring) and contentEncoding:
+    if hasattr(contentEncoding, "lower"):
         contentEncoding = contentEncoding.lower()
     else:
         contentEncoding = ""
 
-    if isinstance(contentType, basestring) and contentType:
+    if hasattr(contentType, "lower"):
         contentType = contentType.lower()
     else:
         contentType = ""
@@ -273,9 +291,9 @@ def decodePage(page, contentEncoding, contentType):
 
         try:
             if contentEncoding == "deflate":
-                data = StringIO.StringIO(zlib.decompress(page, -15))  # Reference: http://stackoverflow.com/questions/1089662/python-inflate-and-deflate-implementations
+                data = io.BytesIO(zlib.decompress(page, -15))  # Reference: http://stackoverflow.com/questions/1089662/python-inflate-and-deflate-implementations
             else:
-                data = gzip.GzipFile("", "rb", 9, StringIO.StringIO(page))
+                data = gzip.GzipFile("", "rb", 9, io.BytesIO(page))
                 size = struct.unpack("<l", page[-4:])[0]  # Reference: http://pydoc.org/get.cgi/usr/local/lib/python2.5/gzip.py
                 if size > MAX_CONNECTION_TOTAL_SIZE:
                     raise Exception("size too large")
@@ -312,18 +330,18 @@ def decodePage(page, contentEncoding, contentType):
         kb.pageEncoding = conf.encoding
 
     # can't do for all responses because we need to support binary files too
-    if not isinstance(page, unicode) and "text/" in contentType:
+    if isinstance(page, six.binary_type) and "text/" in contentType:
         # e.g. &#x9;&#195;&#235;&#224;&#226;&#224;
-        if "&#" in page:
-            page = re.sub(r"&#x([0-9a-f]{1,2});", lambda _: (_.group(1) if len(_.group(1)) == 2 else "0%s" % _.group(1)).decode("hex"), page)
-            page = re.sub(r"&#(\d{1,3});", lambda _: chr(int(_.group(1))) if int(_.group(1)) < 256 else _.group(0), page)
+        if b"&#" in page:
+            page = re.sub(b"&#x([0-9a-f]{1,2});", lambda _: decodeHex(_.group(1) if len(_.group(1)) == 2 else "0%s" % _.group(1)), page)
+            page = re.sub(b"&#(\\d{1,3});", lambda _: six.int2byte(int(_.group(1))) if int(_.group(1)) < 256 else _.group(0), page)
 
         # e.g. %20%28%29
-        if "%" in page:
-            page = re.sub(r"%([0-9a-fA-F]{2})", lambda _: _.group(1).decode("hex"), page)
+        if b"%" in page:
+            page = re.sub(b"%([0-9a-fA-F]{2})", lambda _: decodeHex(_.group(1)), page)
 
         # e.g. &amp;
-        page = re.sub(r"&([^;]+);", lambda _: chr(htmlEntities[_.group(1)]) if htmlEntities.get(_.group(1), 256) < 256 else _.group(0), page)
+        page = re.sub(b"&([^;]+);", lambda _: six.int2byte(htmlEntities[getText(_.group(1))]) if htmlEntities.get(getText(_.group(1)), 256) < 256 else _.group(0), page)
 
         kb.pageEncoding = kb.pageEncoding or checkCharEncoding(getHeuristicCharEncoding(page))
 
@@ -339,18 +357,18 @@ def decodePage(page, contentEncoding, contentType):
             def _(match):
                 retVal = match.group(0)
                 try:
-                    retVal = unichr(int(match.group(1)))
+                    retVal = _unichr(int(match.group(1)))
                 except (ValueError, OverflowError):
                     pass
                 return retVal
             page = re.sub(r"&#(\d+);", _, page)
 
         # e.g. &zeta;
-        page = re.sub(r"&([^;]+);", lambda _: unichr(htmlEntities[_.group(1)]) if htmlEntities.get(_.group(1), 0) > 255 else _.group(0), page)
+        page = re.sub(r"&([^;]+);", lambda _: _unichr(htmlEntities[_.group(1)]) if htmlEntities.get(_.group(1), 0) > 255 else _.group(0), page)
 
     return page
 
-def processResponse(page, responseHeaders, status=None):
+def processResponse(page, responseHeaders, code=None, status=None):
     kb.processResponseCounter += 1
 
     page = page or ""
@@ -367,6 +385,17 @@ def processResponse(page, responseHeaders, status=None):
 
         if msg:
             logger.warning("parsed DBMS error message: '%s'" % msg.rstrip('.'))
+
+    if kb.processResponseCounter < IDENTYWAF_PARSE_LIMIT:
+        rawResponse = "%s %s %s\n%s\n%s" % (_http_client.HTTPConnection._http_vsn_str, code or "", status or "", getUnicode("".join(responseHeaders.headers if responseHeaders else [])), page)
+
+        identYwaf.non_blind.clear()
+        if identYwaf.non_blind_check(rawResponse, silent=True):
+            for waf in identYwaf.non_blind:
+                if waf not in kb.identifiedWafs:
+                    kb.identifiedWafs.add(waf)
+                    errMsg = "WAF/IPS identified as '%s'" % identYwaf.format_name(waf)
+                    singleTimeLogMessage(errMsg, logging.CRITICAL)
 
     if kb.originalPage is None:
         for regex in (EVENTVALIDATION_REGEX, VIEWSTATE_REGEX):

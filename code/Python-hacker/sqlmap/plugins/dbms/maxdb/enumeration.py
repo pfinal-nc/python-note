@@ -1,10 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+from lib.core.common import isListLike
 from lib.core.common import readInput
 from lib.core.common import safeSQLIdentificatorNaming
 from lib.core.common import unsafeSQLIdentificatorNaming
@@ -21,6 +22,8 @@ from lib.core.settings import CURRENT_DB
 from lib.utils.brute import columnExists
 from lib.utils.pivotdumptable import pivotDumpTable
 from plugins.generic.enumeration import Enumeration as GenericEnumeration
+from thirdparty import six
+from thirdparty.six.moves import zip as _zip
 
 class Enumeration(GenericEnumeration):
     def __init__(self):
@@ -46,7 +49,7 @@ class Enumeration(GenericEnumeration):
         retVal = pivotDumpTable("(%s) AS %s" % (query, kb.aliasName), ['%s.schemaname' % kb.aliasName], blind=True)
 
         if retVal:
-            kb.data.cachedDbs = retVal[0].values()[0]
+            kb.data.cachedDbs = next(six.itervalues(retVal[0]))
 
         if kb.data.cachedDbs:
             kb.data.cachedDbs.sort()
@@ -71,7 +74,7 @@ class Enumeration(GenericEnumeration):
             dbs[dbs.index(db)] = safeSQLIdentificatorNaming(db)
 
         infoMsg = "fetching tables for database"
-        infoMsg += "%s: %s" % ("s" if len(dbs) > 1 else "", ", ".join(db if isinstance(db, basestring) else db[0] for db in sorted(dbs)))
+        infoMsg += "%s: %s" % ("s" if len(dbs) > 1 else "", ", ".join(db if isinstance(db, six.string_types) else db[0] for db in sorted(dbs)))
         logger.info(infoMsg)
 
         rootQuery = queries[DBMS.MAXDB].tables
@@ -81,7 +84,7 @@ class Enumeration(GenericEnumeration):
             retVal = pivotDumpTable("(%s) AS %s" % (query, kb.aliasName), ['%s.tablename' % kb.aliasName], blind=True)
 
             if retVal:
-                for table in retVal[0].values()[0]:
+                for table in list(retVal[0].values())[0]:
                     if db not in kb.data.cachedTables:
                         kb.data.cachedTables[db] = [table]
                     else:
@@ -129,9 +132,9 @@ class Enumeration(GenericEnumeration):
             self.getTables()
 
             if len(kb.data.cachedTables) > 0:
-                tblList = kb.data.cachedTables.values()
+                tblList = list(kb.data.cachedTables.values())
 
-                if isinstance(tblList[0], (set, tuple, list)):
+                if tblList and isListLike(tblList[0]):
                     tblList = tblList[0]
             else:
                 errMsg = "unable to retrieve the tables "
@@ -206,7 +209,7 @@ class Enumeration(GenericEnumeration):
                 table = {}
                 columns = {}
 
-                for columnname, datatype, length in zip(retVal[0]["%s.columnname" % kb.aliasName], retVal[0]["%s.datatype" % kb.aliasName], retVal[0]["%s.len" % kb.aliasName]):
+                for columnname, datatype, length in _zip(retVal[0]["%s.columnname" % kb.aliasName], retVal[0]["%s.datatype" % kb.aliasName], retVal[0]["%s.len" % kb.aliasName]):
                     columns[safeSQLIdentificatorNaming(columnname)] = "%s(%s)" % (datatype, length)
 
                 table[tbl] = columns

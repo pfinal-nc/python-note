@@ -1,10 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+import codecs
 import os
 import sys
 
@@ -13,13 +14,15 @@ from lib.core.common import dataToOutFile
 from lib.core.common import Backend
 from lib.core.common import checkFile
 from lib.core.common import decloakToTemp
-from lib.core.common import decodeHexValue
-from lib.core.common import getUnicode
+from lib.core.common import decodeDbmsHexValue
 from lib.core.common import isNumPosStrValue
 from lib.core.common import isListLike
 from lib.core.common import isStackingAvailable
 from lib.core.common import isTechniqueAvailable
 from lib.core.common import readInput
+from lib.core.compat import xrange
+from lib.core.convert import getText
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -70,7 +73,7 @@ class Filesystem:
             sameFile = None
 
             if isNumPosStrValue(remoteFileSize):
-                remoteFileSize = long(remoteFileSize)
+                remoteFileSize = int(remoteFileSize)
                 localFile = getUnicode(localFile, encoding=sys.getfilesystemencoding() or UNICODE_ENCODING)
                 sameFile = False
 
@@ -132,7 +135,7 @@ class Filesystem:
         retVal = []
 
         if encoding:
-            content = content.encode(encoding).replace("\n", "")
+            content = getText(codecs.encode(content, encoding)).replace("\n", "")
 
         if not single:
             if len(content) > chunkSize:
@@ -250,7 +253,7 @@ class Filesystem:
                 fileContent = newFileContent
 
             if fileContent is not None:
-                fileContent = decodeHexValue(fileContent, True)
+                fileContent = decodeDbmsHexValue(fileContent, True)
 
                 if fileContent:
                     localFilePath = dataToOutFile(remoteFile, fileContent)

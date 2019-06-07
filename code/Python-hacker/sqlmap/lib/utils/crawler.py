@@ -1,14 +1,12 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
-import httplib
 import os
 import re
-import urlparse
 import tempfile
 import time
 
@@ -21,9 +19,12 @@ from lib.core.common import openFile
 from lib.core.common import readInput
 from lib.core.common import safeCSValue
 from lib.core.common import urldecode
+from lib.core.compat import xrange
+from lib.core.convert import htmlUnescape
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
+from lib.core.datatype import OrderedSet
 from lib.core.enums import MKSTEMP_PREFIX
 from lib.core.exception import SqlmapConnectionException
 from lib.core.exception import SqlmapSyntaxException
@@ -32,14 +33,16 @@ from lib.core.threads import getCurrentThreadData
 from lib.core.threads import runThreads
 from lib.parse.sitemap import parseSitemap
 from lib.request.connect import Connect as Request
+from thirdparty import six
 from thirdparty.beautifulsoup.beautifulsoup import BeautifulSoup
-from thirdparty.oset.pyoset import oset
+from thirdparty.six.moves import http_client as _http_client
+from thirdparty.six.moves import urllib as _urllib
 
 def crawl(target):
     try:
         visited = set()
         threadData = getCurrentThreadData()
-        threadData.shared.value = oset()
+        threadData.shared.value = OrderedSet()
 
         def crawlThread():
             threadData = getCurrentThreadData()
@@ -70,7 +73,7 @@ def crawl(target):
                 except SqlmapSyntaxException:
                     errMsg = "invalid URL detected. skipping '%s'" % current
                     logger.critical(errMsg)
-                except httplib.InvalidURL as ex:
+                except _http_client.InvalidURL as ex:
                     errMsg = "invalid URL detected ('%s'). skipping " % getSafeExString(ex)
                     errMsg += "URL '%s'" % current
                     logger.critical(errMsg)
@@ -78,7 +81,7 @@ def crawl(target):
                 if not kb.threadContinue:
                     break
 
-                if isinstance(content, unicode):
+                if isinstance(content, six.text_type):
                     try:
                         match = re.search(r"(?si)<html[^>]*>(.+)</html>", content)
                         if match:
@@ -88,7 +91,7 @@ def crawl(target):
                         tags = soup('a')
 
                         if not tags:
-                            tags = re.finditer(r'(?i)<a[^>]+href="(?P<href>[^>"]+)"', content)
+                            tags = re.finditer(r'(?i)<a[^>]+href=["\'](?P<href>[^>"\']+)', content)
 
                         for tag in tags:
                             href = tag.get("href") if hasattr(tag, "get") else tag.group("href")
@@ -96,7 +99,7 @@ def crawl(target):
                             if href:
                                 if threadData.lastRedirectURL and threadData.lastRedirectURL[0] == threadData.lastRequestUID:
                                     current = threadData.lastRedirectURL[1]
-                                url = urlparse.urljoin(current, href)
+                                url = _urllib.parse.urljoin(current, htmlUnescape(href))
 
                                 # flag to know if we are dealing with the same target host
                                 _ = checkSameHost(url, target)
@@ -135,7 +138,7 @@ def crawl(target):
             if readInput(message, default='N', boolean=True):
                 found = True
                 items = None
-                url = urlparse.urljoin(target, "/sitemap.xml")
+                url = _urllib.parse.urljoin(target, "/sitemap.xml")
                 try:
                     items = parseSitemap(url)
                 except SqlmapConnectionException as ex:

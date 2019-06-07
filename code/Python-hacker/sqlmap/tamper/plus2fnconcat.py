@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -10,6 +10,7 @@ import re
 
 from lib.core.common import singleTimeWarnMessage
 from lib.core.common import zeroDepthSearch
+from lib.core.compat import xrange
 from lib.core.enums import DBMS
 from lib.core.enums import PRIORITY
 

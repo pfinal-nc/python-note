@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -16,12 +16,11 @@ from lib.core.bigarray import BigArray
 from lib.core.common import Backend
 from lib.core.common import calculateDeltaSeconds
 from lib.core.common import dataToStdout
-from lib.core.common import decodeHexValue
+from lib.core.common import decodeDbmsHexValue
 from lib.core.common import extractRegexResult
 from lib.core.common import firstNotNone
 from lib.core.common import getConsoleWidth
 from lib.core.common import getPartRun
-from lib.core.common import getUnicode
 from lib.core.common import hashDBRetrieve
 from lib.core.common import hashDBWrite
 from lib.core.common import incrementCounter
@@ -32,8 +31,10 @@ from lib.core.common import listToStrValue
 from lib.core.common import readInput
 from lib.core.common import unArrayizeValue
 from lib.core.common import wasLastResponseHTTPError
-from lib.core.convert import hexdecode
-from lib.core.convert import htmlunescape
+from lib.core.compat import xrange
+from lib.core.convert import decodeHex
+from lib.core.convert import getUnicode
+from lib.core.convert import htmlUnescape
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -57,6 +58,7 @@ from lib.core.threads import runThreads
 from lib.core.unescaper import unescaper
 from lib.request.connect import Connect as Request
 from lib.utils.progress import ProgressBar
+from thirdparty import six
 
 def _oneShotErrorUse(expression, field=None, chunkTest=False):
     offset = 1
@@ -199,10 +201,10 @@ def _oneShotErrorUse(expression, field=None, chunkTest=False):
                 hashDBWrite(expression, "%s%s" % (retVal, PARTIAL_VALUE_MARKER))
             raise
 
-        retVal = decodeHexValue(retVal) if conf.hexConvert else retVal
+        retVal = decodeDbmsHexValue(retVal) if conf.hexConvert else retVal
 
-        if isinstance(retVal, basestring):
-            retVal = htmlunescape(retVal).replace("<br>", "\n")
+        if isinstance(retVal, six.string_types):
+            retVal = htmlUnescape(retVal).replace("<br>", "\n")
 
         retVal = _errorReplaceChars(retVal)
 
@@ -277,9 +279,9 @@ def _formatPartialContent(value):
     Prepares (possibly hex-encoded) partial content for safe console output
     """
 
-    if value and isinstance(value, basestring):
+    if value and isinstance(value, six.string_types):
         try:
-            value = hexdecode(value)
+            value = decodeHex(value, binary=False)
         except:
             pass
         finally:
@@ -447,7 +449,7 @@ def errorUse(expression, dump=False):
         value = _errorFields(expression, expressionFields, expressionFieldsList)
 
     if value and isListLike(value):
-        if len(value) == 1 and isinstance(value[0], basestring):
+        if len(value) == 1 and isinstance(value[0], six.string_types):
             value = unArrayizeValue(value)
         elif len(value) > 1 and stopLimit == 1:
             value = [value]

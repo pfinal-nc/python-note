@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """
@@ -9,7 +9,6 @@ See the file 'LICENSE' for copying permission
 from __future__ import print_function
 
 import contextlib
-import httplib
 import logging
 import os
 import re
@@ -19,14 +18,16 @@ import sqlite3
 import sys
 import tempfile
 import time
-import urllib2
 
 from lib.core.common import dataToStdout
 from lib.core.common import getSafeExString
+from lib.core.common import openFile
 from lib.core.common import saveConfig
 from lib.core.common import unArrayizeValue
-from lib.core.convert import base64encode
-from lib.core.convert import hexencode
+from lib.core.compat import xrange
+from lib.core.convert import encodeBase64
+from lib.core.convert import encodeHex
+from lib.core.convert import decodeBase64
 from lib.core.convert import dejsonize
 from lib.core.convert import jsonize
 from lib.core.data import conf
@@ -57,6 +58,9 @@ from thirdparty.bottle.bottle import request
 from thirdparty.bottle.bottle import response
 from thirdparty.bottle.bottle import run
 from thirdparty.bottle.bottle import server_names
+from thirdparty.six.moves import http_client as _http_client
+from thirdparty.six.moves import input as _input
+from thirdparty.six.moves import urllib as _urllib
 
 # Global data storage
 class DataStore(object):
@@ -292,7 +296,7 @@ def check_authentication():
         request.environ["PATH_INFO"] = "/error/401"
 
     try:
-        creds = match.group(1).decode("base64")
+        creds = decodeBase64(match.group(1), binary=False)
     except:
         request.environ["PATH_INFO"] = "/error/401"
     else:
@@ -362,7 +366,7 @@ def task_new():
     """
     Create a new task
     """
-    taskid = hexencode(os.urandom(8))
+    taskid = encodeHex(os.urandom(8), binary=False)
     remote_addr = request.remote_addr
 
     DataStore.tasks[taskid] = Task(taskid, remote_addr)
@@ -645,9 +649,8 @@ def download(taskid, target, filename):
 
     if os.path.isfile(path):
         logger.debug("(%s) Retrieved content of file %s" % (taskid, target))
-        with open(path, 'rb') as inf:
-            file_content = inf.read()
-        return jsonize({"success": True, "file": base64encode(file_content)})
+        content = openFile(path, "rb").read()
+        return jsonize({"success": True, "file": encodeBase64(content, binary=False)})
     else:
         logger.warning("[%s] File does not exist %s" % (taskid, target))
         return jsonize({"success": False, "message": "File does not exist"})
@@ -657,7 +660,7 @@ def server(host=RESTAPI_DEFAULT_ADDRESS, port=RESTAPI_DEFAULT_PORT, adapter=REST
     REST-JSON API server
     """
 
-    DataStore.admin_token = hexencode(os.urandom(16))
+    DataStore.admin_token = encodeHex(os.urandom(16), binary=False)
     DataStore.username = username
     DataStore.password = password
 
@@ -714,10 +717,10 @@ def _client(url, options=None):
         headers = {"Content-Type": "application/json"}
 
         if DataStore.username or DataStore.password:
-            headers["Authorization"] = "Basic %s" % base64encode("%s:%s" % (DataStore.username or "", DataStore.password or ""))
+            headers["Authorization"] = "Basic %s" % encodeBase64("%s:%s" % (DataStore.username or "", DataStore.password or ""), binary=False)
 
-        req = urllib2.Request(url, data, headers)
-        response = urllib2.urlopen(req)
+        req = _urllib.request.Request(url, data, headers)
+        response = _urllib.request.urlopen(req)
         text = response.read()
     except:
         if options:
@@ -734,7 +737,7 @@ def client(host=RESTAPI_DEFAULT_ADDRESS, port=RESTAPI_DEFAULT_PORT, username=Non
     DataStore.password = password
 
     dbgMsg = "Example client access from command line:"
-    dbgMsg += "\n\t$ taskid=$(curl http://%s:%d/task/new 2>1 | grep -o -I '[a-f0-9]\{16\}') && echo $taskid" % (host, port)
+    dbgMsg += "\n\t$ taskid=$(curl http://%s:%d/task/new 2>1 | grep -o -I '[a-f0-9]\\{16\\}') && echo $taskid" % (host, port)
     dbgMsg += "\n\t$ curl -H \"Content-Type: application/json\" -X POST -d '{\"url\": \"http://testphp.vulnweb.com/artists.php?artist=1\"}' http://%s:%d/scan/$taskid/start" % (host, port)
     dbgMsg += "\n\t$ curl http://%s:%d/scan/$taskid/data" % (host, port)
     dbgMsg += "\n\t$ curl http://%s:%d/scan/$taskid/log" % (host, port)
@@ -746,7 +749,7 @@ def client(host=RESTAPI_DEFAULT_ADDRESS, port=RESTAPI_DEFAULT_PORT, username=Non
     try:
         _client(addr)
     except Exception as ex:
-        if not isinstance(ex, urllib2.HTTPError) or ex.code == httplib.UNAUTHORIZED:
+        if not isinstance(ex, _urllib.error.HTTPError) or ex.code == _http_client.UNAUTHORIZED:
             errMsg = "There has been a problem while connecting to the "
             errMsg += "REST-JSON API server at '%s' " % addr
             errMsg += "(%s)" % ex
@@ -761,7 +764,7 @@ def client(host=RESTAPI_DEFAULT_ADDRESS, port=RESTAPI_DEFAULT_PORT, username=Non
 
     while True:
         try:
-            command = raw_input("api%s> " % (" (%s)" % taskid if taskid else "")).strip()
+            command = _input("api%s> " % (" (%s)" % taskid if taskid else "")).strip()
             command = re.sub(r"\A(\w+)", lambda match: match.group(1).lower(), command)
         except (EOFError, KeyboardInterrupt):
             print()

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -10,7 +10,9 @@ import os
 import subprocess
 import time
 
+from lib.core.compat import buffer
 from lib.core.settings import IS_WIN
+from thirdparty import six
 
 if IS_WIN:
     try:
@@ -26,7 +28,7 @@ else:
 def blockingReadFromFD(fd):
     # Quick twist around original Twisted function
     # Blocking read from a non-blocking file descriptor
-    output = ""
+    output = b""
 
     while True:
         try:
@@ -85,7 +87,7 @@ class Popen(subprocess.Popen):
         getattr(self, which).close()
         setattr(self, which, None)
 
-    if subprocess.mswindows:
+    if IS_WIN:
         def send(self, input):
             if not self.stdin:
                 return None
@@ -96,7 +98,7 @@ class Popen(subprocess.Popen):
             except ValueError:
                 return self._close('stdin')
             except (subprocess.pywintypes.error, Exception) as ex:
-                if ex[0] in (109, errno.ESHUTDOWN):
+                if (ex[0] if six.PY2 else ex.errno) in (109, errno.ESHUTDOWN):
                     return self._close('stdin')
                 raise
 
@@ -117,7 +119,7 @@ class Popen(subprocess.Popen):
             except (ValueError, NameError):
                 return self._close(which)
             except (subprocess.pywintypes.error, Exception) as ex:
-                if ex[0] in (109, errno.ESHUTDOWN):
+                if (ex[0] if six.PY2 else ex.errno) in (109, errno.ESHUTDOWN):
                     return self._close(which)
                 raise
 
@@ -135,7 +137,7 @@ class Popen(subprocess.Popen):
             try:
                 written = os.write(self.stdin.fileno(), input)
             except OSError as ex:
-                if ex[0] == errno.EPIPE:  # broken pipe
+                if (ex[0] if six.PY2 else ex.errno) == errno.EPIPE:  # broken pipe
                     return self._close('stdin')
                 raise
 
@@ -183,7 +185,7 @@ def recv_some(p, t=.1, e=1, tr=5, stderr=0):
             y.append(r)
         else:
             time.sleep(max((x - time.time()) / tr, 0))
-    return ''.join(y)
+    return b''.join(y)
 
 def send_all(p, data):
     if not data:
@@ -193,4 +195,4 @@ def send_all(p, data):
         sent = p.send(data)
         if not isinstance(sent, int):
             break
-        data = buffer(data, sent)
+        data = buffer(data[sent:])

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -9,6 +9,7 @@ import os
 import random
 
 from lib.core.common import singleTimeWarnMessage
+from lib.core.compat import xrange
 from lib.core.enums import DBMS
 from lib.core.enums import PRIORITY
 
@@ -33,7 +34,7 @@ def tamper(payload, **kwargs):
 
     >>> random.seed(0)
     >>> tamper('SELECT id FROM users')
-    'SELECT%0Eid%0DFROM%07users'
+    'SELECT%0Did%0DFROM%04users'
     """
 
     # ASCII table:

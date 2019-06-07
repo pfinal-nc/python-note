@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -7,6 +7,7 @@ See the file 'LICENSE' for copying permission
 
 import random
 
+from lib.core.compat import xrange
 from lib.core.enums import PRIORITY
 
 __priority__ = PRIORITY.LOW
@@ -29,7 +30,7 @@ def tamper(payload, **kwargs):
 
     >>> random.seed(0)
     >>> tamper('SELECT id FROM users')
-    'SELECT%0Did%0DFROM%0Ausers'
+    'SELECT%0Did%0CFROM%0Ausers'
     """
 
     # ASCII table:

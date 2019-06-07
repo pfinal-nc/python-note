@@ -1,15 +1,33 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
+import numbers
+
+from lib.core.compat import cmp
+
 class xrange(object):
     """
     Advanced (re)implementation of xrange (supports slice/copy/etc.)
     Reference: http://code.activestate.com/recipes/521885-a-pythonic-implementation-of-xrange/
 
+    >>> list(xrange(1, 9)) == list(range(1, 9))
+    True
+    >>> list(xrange(8, 0, -16)) == list(range(8, 0, -16))
+    True
+    >>> list(xrange(0, 8, 16)) == list(range(0, 8, 16))
+    True
+    >>> list(xrange(0, 4, 5)) == list(range(0, 4, 5))
+    True
+    >>> list(xrange(4, 0, 3)) == list(range(4, 0, 3))
+    True
+    >>> list(xrange(0, -3)) == list(range(0, -3))
+    True
+    >>> list(xrange(0, 7, 2)) == list(range(0, 7, 2))
+    True
     >>> foobar = xrange(1, 10)
     >>> 7 in foobar
     True
@@ -58,7 +76,7 @@ class xrange(object):
         return self._len()
 
     def _len(self):
-        return max(0, int((self.stop - self.start) // self.step))
+        return max(0, 1 + int((self.stop - 1 - self.start) // self.step))
 
     def __contains__(self, value):
         return (self.start <= value < self.stop) and (value - self.start) % self.step == 0
@@ -68,7 +86,7 @@ class xrange(object):
             start, stop, step = index.indices(self._len())
             return xrange(self._index(start),
                           self._index(stop), step * self.step)
-        elif isinstance(index, (int, long)):
+        elif isinstance(index, numbers.Integral):
             if index < 0:
                 fixed_index = index + self._len()
             else:

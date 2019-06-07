@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -13,8 +13,8 @@ import sys
 from lib.core.common import Backend
 from lib.core.common import dataToStdout
 from lib.core.common import getSQLSnippet
-from lib.core.common import getUnicode
 from lib.core.common import isStackingAvailable
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import logger
 from lib.core.dicts import SQL_STATEMENTS
@@ -24,6 +24,7 @@ from lib.core.settings import NULL
 from lib.core.settings import PARAMETER_SPLITTING_REGEX
 from lib.core.shell import autoCompletion
 from lib.request import inject
+from thirdparty.six.moves import input as _input
 
 class Custom:
     """
@@ -88,7 +89,7 @@ class Custom:
             query = None
 
             try:
-                query = raw_input("sql-shell> ")
+                query = _input("sql-shell> ")
                 query = getUnicode(query, encoding=sys.stdin.encoding)
                 query = query.strip("; ")
             except KeyboardInterrupt:
@@ -110,7 +111,7 @@ class Custom:
             output = self.sqlQuery(query)
 
             if output and output != "Quit":
-                conf.dumper.query(query, output)
+                conf.dumper.sqlQuery(query, output)
 
             elif not output:
                 pass
@@ -134,6 +135,6 @@ class Custom:
                 for query in (_ for _ in snippet.split(';' if ';' in snippet else '\n') if _):
                     query = query.strip()
                     if query:
-                        conf.dumper.query(query, self.sqlQuery(query))
+                        conf.dumper.sqlQuery(query, self.sqlQuery(query))
             else:
-                conf.dumper.query(snippet, self.sqlQuery(snippet))
+                conf.dumper.sqlQuery(snippet, self.sqlQuery(snippet))

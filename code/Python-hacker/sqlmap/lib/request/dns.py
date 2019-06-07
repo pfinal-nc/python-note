@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -7,6 +7,7 @@ See the file 'LICENSE' for copying permission
 
 from __future__ import print_function
 
+import binascii
 import os
 import re
 import socket
@@ -78,7 +79,7 @@ class DNSServer(object):
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             s.connect(("", 53))
-            s.send("6509012000010000000000010377777706676f6f676c6503636f6d00000100010000291000000000000000".decode("hex"))  # A www.google.com
+            s.send(binascii.unhexlify("6509012000010000000000010377777706676f6f676c6503636f6d00000100010000291000000000000000"))  # A www.google.com
             response = s.recv(512)
         except:
             pass

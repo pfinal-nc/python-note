@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -11,6 +11,7 @@ import random
 import string
 
 from lib.core.common import singleTimeWarnMessage
+from lib.core.compat import xrange
 from lib.core.data import kb
 from lib.core.enums import DBMS
 from lib.core.enums import PRIORITY
@@ -38,7 +39,7 @@ def tamper(payload, **kwargs):
 
     >>> random.seed(0)
     >>> tamper('1 AND 9227=9227')
-    '1%23ngNvzqu%0AAND%23nVNaVoPYeva%0A%23lujYFWfv%0A9227=9227'
+    '1%23RcDKhIr%0AAND%23upgPydUzKpMX%0A%23lgbaxYjWJ%0A9227=9227'
     """
 
     def process(match):

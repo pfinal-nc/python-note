@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -9,9 +9,6 @@ from lib.core.exception import SqlmapUnsupportedFeatureException
 from plugins.generic.takeover import Takeover as GenericTakeover
 
 class Takeover(GenericTakeover):
-    def __init__(self):
-        GenericTakeover.__init__(self)
-
     def osCmd(self):
         errMsg = "on Microsoft Access it is not possible to execute commands"
         raise SqlmapUnsupportedFeatureException(errMsg)

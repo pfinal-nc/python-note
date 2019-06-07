@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 dbgtool.py - Portable executable to ASCII debug script converter
@@ -11,7 +11,6 @@ from __future__ import print_function
 
 import os
 import sys
-import struct
 
 from optparse import OptionError
 from optparse import OptionParser
@@ -34,7 +33,7 @@ def convert(inputFile):
     fileContent = fp.read()
 
     for fileChar in fileContent:
-        unsignedFileChar = struct.unpack("B", fileChar)[0]
+        unsignedFileChar = fileChar if sys.version_info >= (3, 0) else ord(fileChar)
 
         if unsignedFileChar != 0:
             counter2 += 1

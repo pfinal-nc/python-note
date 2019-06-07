@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -11,13 +11,15 @@ from extra.safe2bin.safe2bin import safechardecode
 from lib.core.agent import agent
 from lib.core.bigarray import BigArray
 from lib.core.common import Backend
+from lib.core.common import filterNone
 from lib.core.common import getSafeExString
-from lib.core.common import getUnicode
 from lib.core.common import isNoneValue
 from lib.core.common import isNumPosStrValue
 from lib.core.common import singleTimeWarnMessage
 from lib.core.common import unArrayizeValue
 from lib.core.common import unsafeSQLIdentificatorNaming
+from lib.core.compat import xrange
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -31,6 +33,7 @@ from lib.core.settings import MAX_INT
 from lib.core.settings import NULL
 from lib.core.unescaper import unescaper
 from lib.request import inject
+from thirdparty.six import unichr as _unichr
 
 def pivotDumpTable(table, colList, count=None, blind=True, alias=None):
     lengths = {}
@@ -46,7 +49,7 @@ def pivotDumpTable(table, colList, count=None, blind=True, alias=None):
         query = agent.whereQuery(query)
         count = inject.getValue(query, union=False, error=False, expected=EXPECTED.INT, charsetType=CHARSET_TYPE.DIGITS) if blind else inject.getValue(query, blind=False, time=False, expected=EXPECTED.INT)
 
-    if isinstance(count, basestring) and count.isdigit():
+    if hasattr(count, "isdigit") and count.isdigit():
         count = int(count)
 
     if count == 0:
@@ -66,7 +69,7 @@ def pivotDumpTable(table, colList, count=None, blind=True, alias=None):
         lengths[column] = 0
         entries[column] = BigArray()
 
-    colList = filter(None, sorted(colList, key=lambda x: len(x) if x else MAX_INT))
+    colList = filterNone(sorted(colList, key=lambda x: len(x) if x else MAX_INT))
 
     if conf.pivotColumn:
         for _ in colList:
@@ -140,7 +143,7 @@ def pivotDumpTable(table, colList, count=None, blind=True, alias=None):
                 if column == colList[0]:
                     if isNoneValue(value):
                         try:
-                            for pivotValue in filter(None, ("  " if pivotValue == " " else None, "%s%s" % (pivotValue[0], unichr(ord(pivotValue[1]) + 1)) if len(pivotValue) > 1 else None, unichr(ord(pivotValue[0]) + 1))):
+                            for pivotValue in filterNone(("  " if pivotValue == " " else None, "%s%s" % (pivotValue[0], _unichr(ord(pivotValue[1]) + 1)) if len(pivotValue) > 1 else None, _unichr(ord(pivotValue[0]) + 1))):
                                 value = _(column, pivotValue)
                                 if not isNoneValue(value):
                                     break

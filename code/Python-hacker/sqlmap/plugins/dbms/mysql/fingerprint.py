@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -9,9 +9,10 @@ import re
 
 from lib.core.common import Backend
 from lib.core.common import Format
-from lib.core.common import getUnicode
 from lib.core.common import hashDBRetrieve
 from lib.core.common import hashDBWrite
+from lib.core.compat import xrange
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -126,11 +127,12 @@ class Fingerprint(GenericFingerprint):
         if kb.bannerFp:
             banVer = kb.bannerFp.get("dbmsVersion")
 
-            if banVer and re.search(r"-log$", kb.data.banner):
-                banVer += ", logging enabled"
+            if banVer:
+                if banVer and re.search(r"-log$", kb.data.banner or ""):
+                    banVer += ", logging enabled"
 
-            banVer = Format.getDbms([banVer] if banVer else None)
-            value += "\n%sbanner parsing fingerprint: %s" % (blank, banVer)
+                banVer = Format.getDbms([banVer])
+                value += "\n%sbanner parsing fingerprint: %s" % (blank, banVer)
 
         htmlErrorFp = Format.getErrorParsedDBMSes()
 

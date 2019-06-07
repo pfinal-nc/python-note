@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 safe2bin.py - Simple safe(hex) to binary format converter
@@ -18,6 +18,15 @@ import sys
 from optparse import OptionError
 from optparse import OptionParser
 
+if sys.version_info >= (3, 0):
+    xrange = range
+    text_type = str
+    string_types = (str,)
+    unichr = chr
+else:
+    text_type = unicode
+    string_types = (basestring,)
+
 # Regex used for recognition of hex encoded characters
 HEX_ENCODED_CHAR_REGEX = r"(?P<result>\\x[0-9A-Fa-f]{2})"
 
@@ -25,7 +34,7 @@ HEX_ENCODED_CHAR_REGEX = r"(?P<result>\\x[0-9A-Fa-f]{2})"
 SAFE_ENCODE_SLASH_REPLACEMENTS = "\t\n\r\x0b\x0c"
 
 # Characters that don't need to be safe encoded
-SAFE_CHARS = "".join(filter(lambda _: _ not in SAFE_ENCODE_SLASH_REPLACEMENTS, string.printable.replace('\\', '')))
+SAFE_CHARS = "".join([_ for _ in string.printable.replace('\\', '') if _ not in SAFE_ENCODE_SLASH_REPLACEMENTS])
 
 # Prefix used for hex encoded values
 HEX_ENCODED_PREFIX = r"\x"
@@ -48,15 +57,17 @@ def safecharencode(value):
 
     retVal = value
 
-    if isinstance(value, basestring):
-        if any([_ not in SAFE_CHARS for _ in value]):
+    if isinstance(value, string_types):
+        if any(_ not in SAFE_CHARS for _ in value):
             retVal = retVal.replace(HEX_ENCODED_PREFIX, HEX_ENCODED_PREFIX_MARKER)
             retVal = retVal.replace('\\', SLASH_MARKER)
 
             for char in SAFE_ENCODE_SLASH_REPLACEMENTS:
                 retVal = retVal.replace(char, repr(char).strip('\''))
 
-            retVal = reduce(lambda x, y: x + (y if (y in string.printable or isinstance(value, unicode) and ord(y) >= 160) else '\\x%02x' % ord(y)), retVal, (unicode if isinstance(value, unicode) else str)())
+            for char in set(retVal):
+                if not (char in string.printable or isinstance(value, text_type) and ord(char) >= 160):
+                    retVal = retVal.replace(char, '\\x%02x' % ord(char))
 
             retVal = retVal.replace(SLASH_MARKER, "\\\\")
             retVal = retVal.replace(HEX_ENCODED_PREFIX_MARKER, HEX_ENCODED_PREFIX)
@@ -72,13 +83,13 @@ def safechardecode(value, binary=False):
     """
 
     retVal = value
-    if isinstance(value, basestring):
+    if isinstance(value, string_types):
         retVal = retVal.replace('\\\\', SLASH_MARKER)
 
         while True:
             match = re.search(HEX_ENCODED_CHAR_REGEX, retVal)
             if match:
-                retVal = retVal.replace(match.group("result"), (unichr if isinstance(value, unicode) else chr)(ord(binascii.unhexlify(match.group("result").lstrip("\\x")))))
+                retVal = retVal.replace(match.group("result"), unichr(ord(binascii.unhexlify(match.group("result").lstrip("\\x")))))
             else:
                 break
 
@@ -88,7 +99,7 @@ def safechardecode(value, binary=False):
         retVal = retVal.replace(SLASH_MARKER, '\\')
 
         if binary:
-            if isinstance(retVal, unicode):
+            if isinstance(retVal, text_type):
                 retVal = retVal.encode("utf8")
 
     elif isinstance(value, (list, tuple)):

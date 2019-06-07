@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -21,9 +21,9 @@ from lib.core.common import dataToStdout
 from lib.core.common import extractRegexResult
 from lib.core.common import firstNotNone
 from lib.core.common import flattenValue
+from lib.core.common import safeStringFormat
 from lib.core.common import getConsoleWidth
 from lib.core.common import getPartRun
-from lib.core.common import getUnicode
 from lib.core.common import hashDBRetrieve
 from lib.core.common import hashDBWrite
 from lib.core.common import incrementCounter
@@ -38,7 +38,11 @@ from lib.core.common import singleTimeDebugMessage
 from lib.core.common import singleTimeWarnMessage
 from lib.core.common import unArrayizeValue
 from lib.core.common import wasLastResponseDBMSError
-from lib.core.convert import htmlunescape
+from lib.core.compat import xrange
+from lib.core.convert import decodeBase64
+from lib.core.convert import getBytes
+from lib.core.convert import getUnicode
+from lib.core.convert import htmlUnescape
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -53,12 +57,12 @@ from lib.core.settings import MAX_BUFFERED_PARTIAL_UNION_LENGTH
 from lib.core.settings import NULL
 from lib.core.settings import SQL_SCALAR_REGEX
 from lib.core.settings import TURN_OFF_RESUME_INFO_LIMIT
-from lib.core.settings import UNICODE_ENCODING
 from lib.core.threads import getCurrentThreadData
 from lib.core.threads import runThreads
 from lib.core.unescaper import unescaper
 from lib.request.connect import Connect as Request
 from lib.utils.progress import ProgressBar
+from thirdparty import six
 from thirdparty.odict import OrderedDict
 
 def _oneShotUnionUse(expression, unpack=True, limited=False):
@@ -107,7 +111,7 @@ def _oneShotUnionUse(expression, unpack=True, limited=False):
             output = extractRegexResult(r"(?P<result>(<row.+?/>)+)", page)
             if output:
                 try:
-                    root = xml.etree.ElementTree.fromstring("<root>%s</root>" % output.encode(UNICODE_ENCODING))
+                    root = xml.etree.ElementTree.fromstring(safeStringFormat("<root>%s</root>", getBytes(output)))
                     retVal = ""
                     for column in kb.dumpColumns:
                         base64 = True
@@ -118,14 +122,14 @@ def _oneShotUnionUse(expression, unpack=True, limited=False):
                                 break
 
                             try:
-                                value.decode("base64")
+                                decodeBase64(value)
                             except binascii.Error:
                                 base64 = False
                                 break
 
                         if base64:
                             for child in root:
-                                child.attrib[column] = child.attrib.get(column, "").decode("base64") or NULL
+                                child.attrib[column] = decodeBase64(child.attrib.get(column, ""), binary=False) or NULL
 
                     for child in root:
                         row = []
@@ -143,7 +147,7 @@ def _oneShotUnionUse(expression, unpack=True, limited=False):
 
             # Special case when DBMS is Microsoft SQL Server and error message is used as a result of UNION injection
             if Backend.isDbms(DBMS.MSSQL) and wasLastResponseDBMSError():
-                retVal = htmlunescape(retVal).replace("<br>", "\n")
+                retVal = htmlUnescape(retVal).replace("<br>", "\n")
 
             hashDBWrite("%s%s" % (conf.hexConvert or False, expression), retVal)
 
@@ -163,7 +167,7 @@ def _oneShotUnionUse(expression, unpack=True, limited=False):
 
 def configUnion(char=None, columns=None):
     def _configUnionChar(char):
-        if not isinstance(char, basestring):
+        if not isinstance(char, six.string_types):
             return
 
         kb.uChar = char
@@ -172,7 +176,7 @@ def configUnion(char=None, columns=None):
             kb.uChar = char.replace("[CHAR]", conf.uChar if conf.uChar.isdigit() else "'%s'" % conf.uChar.strip("'"))
 
     def _configUnionCols(columns):
-        if not isinstance(columns, basestring):
+        if not isinstance(columns, six.string_types):
             return
 
         columns = columns.replace(" ", "")
@@ -261,7 +265,7 @@ def unionUse(expression, unpack=True, dump=False):
                     infoMsg += "%d %s" % (stopLimit, "entries" if stopLimit > 1 else "entry")
                     logger.info(infoMsg)
 
-            elif count and (not isinstance(count, basestring) or not count.isdigit()):
+            elif count and (not isinstance(count, six.string_types) or not count.isdigit()):
                 warnMsg = "it was not possible to count the number "
                 warnMsg += "of entries for the SQL query provided. "
                 warnMsg += "sqlmap will assume that it returns only "
@@ -348,7 +352,7 @@ def unionUse(expression, unpack=True, dump=False):
                                                     key = re.sub(r"[^A-Za-z0-9]", "", item).lower()
                                                     if key not in filtered or re.search(r"[^A-Za-z0-9]", item):
                                                         filtered[key] = item
-                                                items = filtered.values()
+                                                items = list(six.itervalues(filtered))
                                             items = [items]
                                         index = None
                                         for index in xrange(1 + len(threadData.shared.buffered)):
@@ -373,7 +377,7 @@ def unionUse(expression, unpack=True, dump=False):
                                         del threadData.shared.buffered[0]
 
                                 if conf.verbose == 1 and not (threadData.resumed and kb.suppressResumeInfo) and not threadData.shared.showEta:
-                                    _ = ','.join("'%s'" % _ for _ in (flattenValue(arrayizeValue(items)) if not isinstance(items, basestring) else [items]))
+                                    _ = ','.join("'%s'" % _ for _ in (flattenValue(arrayizeValue(items)) if not isinstance(items, six.string_types) else [items]))
                                     status = "[%s] [INFO] %s: %s" % (time.strftime("%X"), "resumed" if threadData.resumed else "retrieved", _ if kb.safeCharEncode else safecharencode(_))
 
                                     if len(status) > width:

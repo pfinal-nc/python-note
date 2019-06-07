@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -280,7 +280,7 @@ POST_HINT_CONTENT_TYPES = {
     POST_HINT.ARRAY_LIKE: "application/x-www-form-urlencoded; charset=utf-8",
 }
 
-DEPRECATED_OPTIONS = {
+OBSOLETE_OPTIONS = {
     "--replicate": "use '--dump-format=SQLITE' instead",
     "--no-unescape": "use '--no-escape' instead",
     "--binary": "use '--binary-fields' instead",
@@ -290,6 +290,7 @@ DEPRECATED_OPTIONS = {
     "--purge-output": "use '--purge' instead",
     "--check-payload": None,
     "--check-waf": None,
+    "--identify-waf": "functionality being done automatically",
     "--pickled-options": "use '--api -c ...' instead",
 }
 

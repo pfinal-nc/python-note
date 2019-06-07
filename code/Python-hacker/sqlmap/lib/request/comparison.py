@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -13,6 +13,7 @@ from lib.core.common import listToStrValue
 from lib.core.common import removeDynamicContent
 from lib.core.common import wasLastResponseDBMSError
 from lib.core.common import wasLastResponseHTTPError
+from lib.core.convert import getBytes
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -28,6 +29,7 @@ from lib.core.settings import LOWER_RATIO_BOUND
 from lib.core.settings import UPPER_RATIO_BOUND
 from lib.core.settings import URI_HTTP_HEADER
 from lib.core.threads import getCurrentThreadData
+from thirdparty import six
 
 def comparison(page, headers, code=None, getRatioValue=False, pageLength=None):
     _ = _adjust(_comparison(page, headers, code, getRatioValue, pageLength), getRatioValue)
@@ -105,10 +107,10 @@ def _comparison(page, headers, code, getRatioValue, pageLength):
     else:
         # Preventing "Unicode equal comparison failed to convert both arguments to Unicode"
         # (e.g. if one page is PDF and the other is HTML)
-        if isinstance(seqMatcher.a, str) and isinstance(page, unicode):
-            page = page.encode(kb.pageEncoding or DEFAULT_PAGE_ENCODING, "ignore")
-        elif isinstance(seqMatcher.a, unicode) and isinstance(page, str):
-            seqMatcher.a = seqMatcher.a.encode(kb.pageEncoding or DEFAULT_PAGE_ENCODING, "ignore")
+        if isinstance(seqMatcher.a, six.binary_type) and isinstance(page, six.text_type):
+            page = getBytes(page, kb.pageEncoding or DEFAULT_PAGE_ENCODING, "ignore")
+        elif isinstance(seqMatcher.a, six.text_type) and isinstance(page, six.binary_type):
+            seqMatcher.a = getBytes(seqMatcher.a, kb.pageEncoding or DEFAULT_PAGE_ENCODING, "ignore")
 
         if any(_ is None for _ in (page, seqMatcher.a)):
             return None

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -13,7 +13,6 @@ from lib.core.common import Backend
 from lib.core.common import clearConsoleLine
 from lib.core.common import getLimitRange
 from lib.core.common import getSafeExString
-from lib.core.common import getUnicode
 from lib.core.common import isInferenceAvailable
 from lib.core.common import isListLike
 from lib.core.common import isNoneValue
@@ -26,6 +25,7 @@ from lib.core.common import singleTimeLogMessage
 from lib.core.common import singleTimeWarnMessage
 from lib.core.common import unArrayizeValue
 from lib.core.common import unsafeSQLIdentificatorNaming
+from lib.core.convert import getUnicode
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -45,6 +45,8 @@ from lib.core.settings import NULL
 from lib.request import inject
 from lib.utils.hash import attackDumpedTable
 from lib.utils.pivotdumptable import pivotDumpTable
+from thirdparty import six
+from thirdparty.six.moves import zip as _zip
 
 class Entries:
     """
@@ -91,9 +93,9 @@ class Entries:
             self.getTables()
 
             if len(kb.data.cachedTables) > 0:
-                tblList = kb.data.cachedTables.values()
+                tblList = list(six.itervalues(kb.data.cachedTables))
 
-                if isinstance(tblList[0], (set, tuple, list)):
+                if tblList and isListLike(tblList[0]):
                     tblList = tblList[0]
             elif not conf.search:
                 errMsg = "unable to retrieve the tables "
@@ -223,7 +225,7 @@ class Entries:
 
                                 if retVal:
                                     entries, _ = retVal
-                                    entries = zip(*[entries[colName] for colName in colList])
+                                    entries = _zip(*[entries[colName] for colName in colList])
                         else:
                             query = rootQuery.inband.query % (colString, conf.db, tbl)
                     elif Backend.getIdentifiedDbms() in (DBMS.MYSQL, DBMS.PGSQL, DBMS.HSQLDB, DBMS.H2):
@@ -244,7 +246,7 @@ class Entries:
                             logger.warn(warnMsg)
 
                     if not isNoneValue(entries):
-                        if isinstance(entries, basestring):
+                        if isinstance(entries, six.string_types):
                             entries = [entries]
                         elif not isListLike(entries):
                             entries = []
@@ -259,7 +261,7 @@ class Entries:
                                 if entry is None or len(entry) == 0:
                                     continue
 
-                                if isinstance(entry, basestring):
+                                if isinstance(entry, six.string_types):
                                     colEntry = entry
                                 else:
                                     colEntry = unArrayizeValue(entry[index]) if index < len(entry) else u''

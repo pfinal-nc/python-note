@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -13,6 +13,7 @@ from lib.core.common import popValue
 from lib.core.common import pushValue
 from lib.core.common import randomStr
 from lib.core.common import singleTimeWarnMessage
+from lib.core.compat import xrange
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -29,9 +30,6 @@ from lib.techniques.union.use import unionUse
 from plugins.generic.filesystem import Filesystem as GenericFilesystem
 
 class Filesystem(GenericFilesystem):
-    def __init__(self):
-        GenericFilesystem.__init__(self)
-
     def nonStackedReadFile(self, rFile):
         infoMsg = "fetching file: '%s'" % rFile
         logger.info(infoMsg)

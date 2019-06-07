@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -8,11 +8,12 @@ See the file 'LICENSE' for copying permission
 from __future__ import print_function
 
 import difflib
-import random
 import threading
 import time
 import traceback
 
+from lib.core.compat import WichmannHill
+from lib.core.compat import xrange
 from lib.core.data import conf
 from lib.core.data import kb
 from lib.core.data import logger
@@ -57,7 +58,7 @@ class _ThreadData(threading.local):
         self.lastRequestMsg = None
         self.lastRequestUID = 0
         self.lastRedirectURL = None
-        self.random = random.WichmannHill()
+        self.random = WichmannHill()
         self.resumed = False
         self.retriesCount = 0
         self.seqMatcher = difflib.SequenceMatcher(None)
@@ -99,7 +100,7 @@ def exceptionHandledFunction(threadFunction, silent=False):
             errMsg = ex.message if isinstance(ex, SqlmapBaseException) else "%s: %s" % (type(ex).__name__, ex.message)
             logger.error("thread %s: '%s'" % (threading.currentThread().getName(), errMsg))
 
-            if conf.get("verbose") > 1:
+            if conf.get("verbose") > 1 and not isinstance(ex, (SqlmapUserQuitException,)):
                 traceback.print_exc()
 
 def setDaemon(thread):
@@ -154,7 +155,7 @@ def runThreads(numThreads, threadFunction, cleanupFunction=None, forwardExceptio
             try:
                 thread.start()
             except Exception as ex:
-                errMsg = "error occurred while starting new thread ('%s')" % ex.message
+                errMsg = "error occurred while starting new thread ('%s')" % ex
                 logger.critical(errMsg)
                 break
 
@@ -190,7 +191,7 @@ def runThreads(numThreads, threadFunction, cleanupFunction=None, forwardExceptio
     except (SqlmapConnectionException, SqlmapValueException) as ex:
         print()
         kb.threadException = True
-        logger.error("thread %s: %s" % (threading.currentThread().getName(), ex.message))
+        logger.error("thread %s: '%s'" % (threading.currentThread().getName(), ex))
 
         if conf.get("verbose") > 1:
             traceback.print_exc()

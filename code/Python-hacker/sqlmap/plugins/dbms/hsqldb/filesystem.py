@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 
 """
 Copyright (c) 2006-2019 sqlmap developers (http://sqlmap.org/)
@@ -9,9 +9,6 @@ from lib.core.exception import SqlmapUnsupportedFeatureException
 from plugins.generic.filesystem import Filesystem as GenericFilesystem
 
 class Filesystem(GenericFilesystem):
-    def __init__(self):
-        GenericFilesystem.__init__(self)
-
     def readFile(self, rFile):
         errMsg = "on HSQLDB it is not possible to read files"
         raise SqlmapUnsupportedFeatureException(errMsg)
