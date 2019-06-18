@@ -29,7 +29,7 @@ class TqsParse(Spider):
         results = nodes["data"]
         for node in results: 
             msg = node["name"] + '【优惠券领取】'
-            url = "http://tb.pfinal.club/"
+            url = node["coupon_link"]
             item = "%s %s" % (msg, url)
             items.append({"text":item,"images":[node["z_img"],node["z_img"],node["z_img"]]})
         return items
