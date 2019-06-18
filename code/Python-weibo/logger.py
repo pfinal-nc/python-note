@@ -7,7 +7,6 @@ logger.setLevel(logging.DEBUG)
 
 # log format
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-
 if LOG_FILE:
     fh = logging.FileHandler('log.log')
     fh.setLevel( logging.DEBUG )

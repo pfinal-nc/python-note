@@ -12,8 +12,8 @@ if __name__ == '__main__':
         task.start()
 
         while True:
-            cmd = input('enter [exit] to stop:')
-            if cmd.upper() == "EXIT":
+            # cmd = input('enter [exit] to stop:')
+            # if cmd.upper() == "EXIT":
                 task.stop()
                 break
 

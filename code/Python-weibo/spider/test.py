@@ -4,16 +4,11 @@ import os
 import sys
 sys.path.insert(0, '..')
 
-# from cnbeta import CnbetaParser
-# from cnblog import CnblogParser
-# from miaopai import MiaopaParser
-# from myBlog import MyBlogParser
-# from techweb import TechwebParser
-# from tuicool import TuicoolParser
-from spider.tqs import GetTaoBaoParse
+from tqs import TqsParse
+
 if __name__ == '__main__':
     types = [
-       GetTaoBaoParse
+       TqsParse
     ]
     for c in types:
         print(os.linesep + '************* ' + str(c) + ' start *************')

@@ -9,10 +9,10 @@ PASSWD = "nancheng123qwe"                      # 密码
 
 # 发送设置
 TIME_SLOG = 30 * 60                 # 发送微博的时间间隔 (秒)
-MAX_IMAGES = 0                      # 允许上传图片的最大数量。如果设置为0，则不上传图片。
+MAX_IMAGES = 9                      # 允许上传图片的最大数量。如果设置为0，则不上传图片。
 ADD_WATERMARK = False               # 是否添加图片水印，为True时，应设置以下两项
-WATERMARK_NIKE = "@微博"             # 水印名称
-WATERMARK_URL = "weibo.com"         # 水印链接
+WATERMARK_NIKE = "@淘券鼠_"             # 水印名称
+WATERMARK_URL = "http://tb.pfinal.club/"         # 水印链接
 
 # 日志设置
 LOG_FILE = False                    # 运行日志是否记录文件
