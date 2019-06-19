@@ -2,7 +2,9 @@ https://api.lovelive.tools/api/SweetNothings/10000/Serialization/Json
 https://zhaodao.ai/
 https://code2048.com/
 https://blog.csdn.net/woniu_001/article/details/80558514
-https://www.nihaowua.com/home.html ╤╬╪╕лю
-http://www.nows.fun/   ╤╬╪╕лю
+https://www.nihaowua.com/home.html О©╫О©╫О©╫О©╫О©╫О©╫
+http://www.nows.fun/   О©╫О©╫О©╫О©╫О©╫О©╫
 
-http://bs4.ntp.org.cn/ 
+http://bs4.ntp.org.cn/
+
+$CONFIG['location']='page_100505_home';
