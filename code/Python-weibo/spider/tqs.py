@@ -28,8 +28,8 @@ class TqsParse(Spider):
         nodes = json.loads(jsonStr)
         results = nodes["data"]
         for node in results: 
-            msg = node["name"] + '【优惠券领取】'
+            msg = '[给力] '+ node["name"] + ' [赞啊] 券后价: 【'+ str(node['payment']) +'】 [赞啊]【优惠券领取】'
             url = node["tk_link"]
             item = "%s %s" % (msg, url)
-            items.append({"text":item,"images":[node["z_img"],node["z_img"],node["z_img"]]})
+            items.append({"text":item,"images":[node["z_img"],"https://wx4.sinaimg.cn/mw1024/9db4902dgy1g43wz7ua2aj20br0ekq51.jpg",node["z_img"]]})
         return items
