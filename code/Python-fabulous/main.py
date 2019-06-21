@@ -8,6 +8,6 @@ import time
 if __name__ == '__main__':
     (wei_session, uid) = wblogin()
     if uid is not None:
-        weibo.weibo_fabulous.get_profile_list(wei_session,['6051400444'])
+        weibo.weibo_fabulous.get_profile_list(wei_session,['7197765669'])
 
     # print(result)

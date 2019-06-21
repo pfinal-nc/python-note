@@ -12,6 +12,7 @@ session = requests.session()
 session.headers['User-Agent'] = USER_AGENT
 
 SEARCH_URL = "https://d.weibo.com/1087030002_2975_2006_0?page=%s"
+# SEARCH_URL = "https://s.weibo.com/user?q=宝妈&Refer=SUer_history&page=%s"
 # FOLLOW_URL = "http://weibo.com/aj/f/followed?ajwvr=6&__rnd=1560923446453"
 FOLLOW_URL = "https://weibo.com/aj/f/followed?ajwvr=6&__rnd=%d" % int(time.time() * 1000)
 USER_INFO_URL = "https://weibo.com/u/%s"
@@ -24,6 +25,7 @@ def weibo_get_search_user(wei_session):
         result = wei_session.get(SEARCH_URL % page)
         # print(result.text)
         pattern = r'span\s+node-type=\\"widget_followBtnBox\\"\s+action-data=\\".*?uid=(\d+)'
+        # pattern = r'class="s-btn-c"\s+uid=(.*?)\s+action-type=userFollow'
         uid_list_pattern = re.compile(pattern)
         uid_list_a += re.findall(uid_list_pattern, result.text)
         page += 1
