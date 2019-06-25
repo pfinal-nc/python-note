@@ -1,30 +1,23 @@
 # -*- coding:utf-8 -*-
 import os
-import cv2
-
-# from spider import xk
+from generate_img.generate_img import generate_bg_img
+from generate_img.generate_img import generate_img
+from generate_img.generate_img import get_text
+from generate_img.generate_img import img_to_video
+from generate_img.generate_img import video_to_img
 
 if __name__ == '__main__':
-    fps = 30
-    size = (1920, 1080)
-    name = 1
-    video_writer = cv2.VideoWriter(str(name) + ".avi", cv2.VideoWriter_fourcc(*'MJPG'), fps, size)
-    path = os.path.abspath('image') + '/aa/'
-    # print(path)
-    # print(os.listdir(path))
-    num = 0
-    for i in os.listdir(path):
-        print(path + i)
-        try:
-            img = cv2.imread(path + i)
-        # print(img)
-            cv2.waitKey(100)
-            video_writer.write(img)
-        except Exception as exc:
-            print(exc)
-        # if num % 100 == 0:
-        #     videowriter = cv2.VideoWriter(str(name) + ".avi", cv2.VideoWriter_fourcc(*'mp4v'), fps, size)
-        #     name += 1
-        # num += 1
+    # video_to_img()
 
-    video_writer.release()
+    if os.path.exists('bg.png') == False:
+        generate_bg_img()
+    #
+    text_list_all = get_text()
+    if len(text_list_all) > 0:
+        for text_list in text_list_all:
+            i = 1
+            for text in text_list:
+                generate_img(text, i, 50)
+                i += 1
+            #  generate_img(text, i, 50, text_list[i])
+            img_to_video(len(text_list))
