@@ -10,10 +10,11 @@ if __name__ == '__main__':
     page = 1
     while page <= 5:
         # print(page)
-        # uids = weibo_get_search_user(wei_session, uid)
-        uids = weibo_get_follow_user(wei_session, uid,page)
-        for uid in uids:
-            # add_follow(wei_session, uid)
-            time.sleep(2)
-            weibo_send_messages(wei_session, uid)
+        uids = weibo_get_search_user(wei_session, uid,page)
+        print(uids)
+        # uids = weibo_get_follow_user(wei_session, uid,page)
+        # for uid in uids:
+        #     # add_follow(wei_session, uid)
+        #     time.sleep(2)
+        #     weibo_send_messages(wei_session, uid)
     #     page += 1

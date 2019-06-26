@@ -4,6 +4,11 @@ import cv2
 import numpy as np
 import random
 import time
+import config
+from aip import AipSpeech
+from struct import *
+from moviepy.editor import *
+from moviepy.audio.fx import all
 
 
 def generate_bg_img():
@@ -20,6 +25,7 @@ def get_text():
         for string in f.readlines():
             text_list.append(string.split(','))
     return text_list
+
 
 def generate_img(text="中文", k=1, num=50, last_string=''):
     img = cv2.imdecode(np.fromfile('bg_' + str(random.randint(1, 2)) + '.jpg', dtype=np.uint8), -1)
@@ -43,11 +49,11 @@ def generate_img(text="中文", k=1, num=50, last_string=''):
         f += 1
 
 
-def img_to_video(total):
-    # print(total)
+def img_to_video(total, radio):
+    # print(open('auido_%s.mp3' % str(radio)))
     fps = 28
     size = (544, 960)
-    name = random.randint(1,1000)
+    name = random.randint(1, 1000)
     videowriter = cv2.VideoWriter(str(name) + ".mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, size)
     for f in range(1, 51):
         img_fen = cv2.imread('fen.png')
@@ -60,6 +66,15 @@ def img_to_video(total):
             cv2.waitKey(1)
             videowriter.write(img)
     videowriter.release()
+    time.sleep(1)
+    print("video audio merge!!!!!")
+    audioclip = AudioFileClip('auido_%s.mp3' % str(radio))
+    print(str(name) + ".mp4")
+    videoclip = VideoFileClip(str(name) + ".mp4")
+    # print(videoclip)
+    videoclip2 = videoclip.set_audio(audioclip)
+    video = CompositeVideoClip([videoclip2])
+    video.write_videofile(str(name) + str(random.randint(1, 10)) + ".mp4", codec='mpeg4', fps=28)
 
 
 def video_to_img():
@@ -81,3 +96,15 @@ def video_to_img():
         print(file_name)
         if flag == True:
             cv2.imwrite(file_name, frame, [cv2.IMWRITE_JPEG_QUALITY])  # 保存图片
+
+
+def get_radio(text, i):
+    client = AipSpeech(config.APP_ID, config.API_KEY, config.SECRET_KEY)
+    result = client.synthesis(text, 'zh', 1, {
+        'vol': 5,
+        'spd': 2,
+        'per': 4
+    })
+    if not isinstance(result, dict):
+        with open('auido_%s.mp3' % str(i), 'wb') as f:
+            f.write(result)

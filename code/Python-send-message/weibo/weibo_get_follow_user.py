@@ -51,9 +51,12 @@ def add_follow(wei_session, uid):
 
 def weibo_get_search_user(wei_session, uid, page=1):
     result = wei_session.get(SEARCH_USER_URL % ('宝妈', int(page)))
+    print(result.text)
     pattern_s = r'\s+class="s-btn-c"\s+uid=(\d+)'
     search_uids = re.compile(pattern_s)
+
     users_ids = re.findall(search_uids, result.text)
+    print(users_ids)
     return users_ids
 
 

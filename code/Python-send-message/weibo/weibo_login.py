@@ -36,8 +36,7 @@ def wblogin():
         'http://login.sina.com.cn/sso/prelogin.php?'
         'entry=weibo&callback=sinaSSOController.preloginCallBack&'
         'su=%s&rsakt=mod&checkpin=1&client=%s' %
-        (base64.b64encode(username.encode('utf-8')), WBCLIENT)
-        , proxies=random.choice(proxy_list))
+        (base64.b64encode(username.encode('utf-8')), WBCLIENT))
 
     pre_login_str = re.match(r'[^{]+({.+?})', resp.text).group(1)
     pre_login = json.loads(pre_login_str)
