@@ -49,14 +49,14 @@ def add_follow(wei_session, uid):
         logger.info('微博[%s]关注失败' % str(params['fnick']))
 
 
-def weibo_get_search_user(wei_session, uid, page=1):
-    result = wei_session.get(SEARCH_USER_URL % ('宝妈', int(page)))
-    print(result.text)
+def weibo_get_search_user(wei_session,text, uid, page=1):
+    result = wei_session.get(SEARCH_USER_URL % (text, int(page)))
+    # print(page)
     pattern_s = r'\s+class="s-btn-c"\s+uid=(\d+)'
     search_uids = re.compile(pattern_s)
 
     users_ids = re.findall(search_uids, result.text)
-    print(users_ids)
+    # print(users_ids)
     return users_ids
 
 

@@ -8,3 +8,5 @@ http://www.nows.fun/   ������
 http://bs4.ntp.org.cn/
 
  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple moviepy
+
+ 每天一碗毒鸡汤, 身轻气爽,逼死强迫症系列

@@ -74,7 +74,7 @@ def img_to_video(total, radio):
     # print(videoclip)
     videoclip2 = videoclip.set_audio(audioclip)
     video = CompositeVideoClip([videoclip2])
-    video.write_videofile(str(name) + str(random.randint(1, 10)) + ".mp4", codec='mpeg4', fps=28)
+    video.write_videofile('video/'+ str(name) + str(random.randint(1, 10)) + ".mp4", codec='mpeg4', fps=28)
 
 
 def video_to_img():
