@@ -9,6 +9,10 @@ from aip import AipSpeech
 from struct import *
 from moviepy.editor import *
 from moviepy.audio.fx import all
+import requests
+import time
+import hashlib
+import base64
 
 
 def generate_bg_img():
@@ -74,7 +78,7 @@ def img_to_video(total, radio):
     # print(videoclip)
     videoclip2 = videoclip.set_audio(audioclip)
     video = CompositeVideoClip([videoclip2])
-    video.write_videofile('video/'+ str(name) + str(random.randint(1, 10)) + ".mp4", codec='mpeg4', fps=28)
+    video.write_videofile('video/' + str(name) + str(random.randint(1, 10)) + ".mp4", codec='mpeg4', fps=28)
 
 
 def video_to_img():
@@ -101,10 +105,65 @@ def video_to_img():
 def get_radio(text, i):
     client = AipSpeech(config.APP_ID, config.API_KEY, config.SECRET_KEY)
     result = client.synthesis(text, 'zh', 1, {
-        'vol': 5,
-        'spd': 2,
+        'spd': 3,
+        'vol': 10,
+        'pit': 6,
         'per': 4
     })
     if not isinstance(result, dict):
         with open('auido_%s.mp3' % str(i), 'wb') as f:
             f.write(result)
+
+
+def get_radio_2(text, i):
+    url = config.KD_RADIO_URL
+    r = requests.post(url, headers=getHeader(), data={"text": text})
+
+    contentType = r.headers['Content-Type']
+    if contentType == "audio/mpeg":
+        sid = r.headers['sid']
+        if config.AUE == "raw":
+            print(r.content)
+            #   合成音频格式为pcm、wav并保存在audio目录下
+            writeFile("" + sid + ".wav", r.content)
+        else:
+            print(r.content)
+            #   合成音频格式为mp3并保存在audio目录下
+            writeFile("auido_" + str(i) + ".mp3", r.content)
+        print("success, sid = " + sid)
+    else:
+        #   错误码链接：https://www.xfyun.cn/document/error-code （code返回错误码时必看）
+        print(r.text)
+
+
+def getHeader():
+    curTime = str(int(time.time()))
+    # ttp=ssml
+    param = "{\"aue\":\"" + config.AUE + "\",\"auf\":\"audio/L16;rate=16000\",\"voice_name\":\"xiaoyan\",\"engine_type\":\"intp65\",\"volume\":\"60\",\"pitch\":\"20\"}"
+    # print("param:{}".format(param))
+
+    paramBase64 = str(base64.b64encode(param.encode('utf-8')), 'utf-8')
+    # print("x_param:{}".format(paramBase64))
+
+    m2 = hashlib.md5()
+    m2.update((config.API_KEY + curTime + paramBase64).encode('utf-8'))
+
+    checkSum = m2.hexdigest()
+    print('checkSum:{}'.format(checkSum))
+
+    header = {
+        'X-CurTime': curTime,
+        'X-Param': paramBase64,
+        'X-Appid': config.APPID,
+        'X-CheckSum': checkSum,
+        'X-Real-Ip': '127.0.0.1',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+    }
+    print(header)
+    return header
+
+
+def writeFile(file, content):
+    with open(file, 'wb') as f:
+        f.write(content)
+    f.close()
