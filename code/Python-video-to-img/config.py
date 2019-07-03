@@ -1,0 +1,5 @@
+REQUEST_URL = "https://aip.baidubce.com/rest/2.0/face/v3/detect"
+HOST_URL = "https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=%d&client_secret=%s"
+APP_ID = "16133793"
+APP_KEY = ""
+SECRET_KEY = ""

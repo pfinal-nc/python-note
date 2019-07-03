@@ -17,7 +17,7 @@ if __name__ == '__main__':
         radio = 1
         for text_list in text_list_all:
             i = 1
-            get_radio_2(','.join(text_list), radio)
+            get_radio(','.join(text_list), radio)
             for text in text_list:
                 generate_img(text, i, 50)
                 i += 1
