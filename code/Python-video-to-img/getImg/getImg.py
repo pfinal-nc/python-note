@@ -123,7 +123,6 @@ def generate_gif(path_gif):
                 i += 1
     gif_name = 'created_gif.gif'
     create_gif(image_list, gif_name, os.getcwd() + '\\' + path_gif + '\image_Intercept')
-    # 截取图片
 
 
 def image_Intercept(image_path, image):
