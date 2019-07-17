@@ -1,0 +1,41 @@
+  {
+    "api": "http://brand.huaningkeji.cn/sendSms",
+    "method": "post",
+    "params": {
+      "phone": "",
+      "sign": "ODE5MDljODFlZWFiZGUyNjU4N2FmYzNhOGY4Yjk5NTdiODA3Y2FlZg=="
+    }
+  },
+  {
+    "api": "http://www.96900.com.cn/api/RegisterMsg",
+    "method": "post",
+    "params": {
+      "tel": "",
+      "logintype": 0
+    }
+  },
+  {
+    "api": "http://www.ptmgy.com/ajax/TipsAction.php",
+    "method": "get",
+    "params": {
+      "regmob": "",
+      "type": "regmobyzm"
+    }
+  },
+  {
+    "api": "https://login-user.kugou.com/v1/send_sms_for_reg",
+    "method": "get",
+    "params": {
+      "mobile": "",
+      "appid": "1014"
+    }
+  },
+  {
+    "api": "https://www.jzez100.com/api/v6/message",
+    "method": "post",
+    "params": {
+      "Phone2": "",
+      "type": "register"
+    },
+    "params_type": "json"
+  }

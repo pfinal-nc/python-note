@@ -59,7 +59,7 @@ def img_to_video(total, radio):
     size = (544, 960)
     name = random.randint(1, 1000)
     videowriter = cv2.VideoWriter(str(name) + ".mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, size)
-    for f in range(1, 51):
+    for f in range(1, 20):
         img_fen = cv2.imread('fen.png')
         videowriter.write(img_fen)
     path = r'image/'
