@@ -3,6 +3,7 @@ import os
 import threading
 import time
 from pathlib import Path
+import random
 from getImage.getImage import get_img
 from getImage.getImage import read_excel
 from getImage.getImage import read_data
@@ -14,7 +15,7 @@ def self_thread(data, thread_num):
     print("开始线程：" + str(thread_num))
     if len(data) > 0:
         for i in data:
-            time.sleep(2)
+            # time.sleep(2)
             # print(type(i['id']))
             get_img(i['url'], i['platform'], i['id'])
             # download_img(i['url'])
@@ -22,7 +23,7 @@ def self_thread(data, thread_num):
 
 
 if __name__ == '__main__':
-    # read_data()
+    read_data()
     # # 读取excel
     excel_path = os.getcwd() + '/excel/test.xls'
     data_list = read_excel(excel_path)
@@ -31,6 +32,7 @@ if __name__ == '__main__':
         thread_data = [data_list[i:i + 10] for i in range(0, len(data_list), 10)]
         j = 1
         for i in thread_data:
+            #　self_thread(i, j)
             t1 = threading.Thread(target=self_thread, args=(i, j))
             thread_list.append(threading.Thread(target=self_thread, args=(i, j)))
             j += 1
@@ -40,5 +42,6 @@ if __name__ == '__main__':
                 k.start()
                 k.join()
     else:
+        # pass
         # selfThread('1', data_list).start()
         threading.Thread(target=self_thread, args=(data_list, 1)).start()

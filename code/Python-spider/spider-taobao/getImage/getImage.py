@@ -6,6 +6,7 @@ import xlrd
 import xlwt
 import config
 import pymysql
+import random
 from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
@@ -14,12 +15,22 @@ from fake_useragent import UserAgent
 
 
 def get_img(url, platform, id):
+    proxies = [
+        'http://58.218.214.198:4251',
+        'http://58.218.214.139:9835',
+        'http://58.218.92.157:2088',
+        'http://58.218.92.154:9676',
+        'http://58.218.214.162:5827',
+        'http://58.218.214.158:6532',
+        'http://58.218.92.169:3685',
+    ]
     if Path(os.getcwd() + '/images/' + id).exists() == False:
         images = {}
         opts = FirefoxOptions()
         opts.add_argument("--headless")
-        driver = webdriver.Firefox(executable_path="/usr/local/bin/geckodriver", firefox_options=opts)
-        # driver = webdriver.Firefox(executable_path="/home/pfinal/.pyenv/versions/3.7.3/geckodriver")
+        opts.add_argument("--proxy-server=%s" % (random.sample(proxies, 1)[0]))
+        # driver = webdriver.Firefox(executable_path="/usr/local/bin/geckodriver", firefox_options=opts)
+        driver = webdriver.Firefox(executable_path="/home/pfinal/.pyenv/versions/3.7.3/geckodriver")
         driver.get(url)
         time.sleep(3)
         btn = driver.find_element_by_id('sufei-dialog-close')
@@ -40,7 +51,7 @@ def get_img(url, platform, id):
                 img = driver.find_elements_by_css_selector(img_selector)
                 if len(img) > 0:
                     images['goods_image'].append(img[0].get_attribute('src'))
-                time.sleep(1)
+                # time.sleep(1)
 
         # driver.maximize_window()
         driver.execute_script("""
@@ -63,7 +74,7 @@ def get_img(url, platform, id):
                     })();
                     """)
         WebDriverWait(driver, 50)
-        time.sleep(10)
+        # time.sleep(10)
         # print(images)
         images['goods_info_image'] = []
         if platform == u'天猫':
@@ -111,22 +122,22 @@ def get_img(url, platform, id):
                         except:
                             continue
 
-        with open(os.getcwd() + '/images.txt', "a+", encoding="utf-8") as f:
-            f.write(str(images) + '\n')
-            f.flush()
-            f.close()
+        # with open(os.getcwd() + '/images.txt', "a+", encoding="utf-8") as f:
+        # f.write(str(images) + '\n')
+        # f.flush()
+        # f.close()
         img_save(images, os.getcwd() + '/images/' + str(id), platform, url)
         # download_img(url)
-        db = pymysql.connect(config.HOST, config.USER, config.PASSWORD, config.DATABASE)
-        # 使用 cursor() 方法创建一个游标对象 cursor
-        cursor = db.cursor()
-        sql = "UPDATE shopnc_taobao_goods SET pic_spilder_status=1 WHERE t_id=" + id
-        try:
-            cursor.execute(sql)
-            db.commit()
-        except:
-            db.rollback()
-        driver.close()
+        # db = pymysql.connect(config.HOST, config.USER, config.PASSWORD, config.DATABASE)
+        # # 使用 cursor() 方法创建一个游标对象 cursor
+        # cursor = db.cursor()
+        # sql = "UPDATE shopnc_taobao_goods SET pic_spilder_status=1 WHERE t_id=" + id
+        # try:
+        #     cursor.execute(sql)
+        #     db.commit()
+        # except:
+        #     db.rollback()
+        # driver.close()
 
 
 def img_save(images, file_path, platform, url):
@@ -135,6 +146,15 @@ def img_save(images, file_path, platform, url):
         "User-Agent": UserAgent().random,
         "Referer": url
     }
+    proxy_list = [
+        {'http': '58.218.214.198:4251'},
+        {'http': '58.218.214.139:9835'},
+        {'http': '58.218.92.157:2088'},
+        {'http': '58.218.92.154:9676'},
+        {'http': '58.218.214.162:5827'},
+        {'http': '58.218.214.158:6532'},
+        {'http': '58.218.92.169:3685'}
+    ]
     if len(images['goods_image']) > 0:
         i = 1
         for img in images['goods_image']:
@@ -147,7 +167,7 @@ def img_save(images, file_path, platform, url):
                     img_url = img.strip('.jpg').strip('400x400').strip('_')
             # print(img_url)
             if img.find('gif') < 0:
-                r = requests.get(img_url + '?time=' + str(time.time()), timeout=30, headers=headers)
+                r = requests.get(img_url + '?time=' + str(time.time()), proxies=random.choice(proxy_list), timeout=30, headers=headers)
                 # print(r)
                 save_path = Path(str(file_path) + '/cover/')
                 if save_path.exists() == False:
@@ -158,7 +178,6 @@ def img_save(images, file_path, platform, url):
     if len(images['goods_info_image']) > 0:
         j = 1
         for img_info in images['goods_info_image']:
-            time.sleep(1)
             res = requests.get(img_info + '?time=' + str(time.time()), timeout=30, headers=headers)
             # print()
             save_info_path = Path(str(file_path) + '/details/')
@@ -173,7 +192,7 @@ def read_data():
     db = pymysql.connect(config.HOST, config.USER, config.PASSWORD, config.DATABASE)
     # 使用 cursor() 方法创建一个游标对象 cursor
     cursor = db.cursor()
-    sql = "SELECT t_id,detail_url,system_type FROM shopnc_taobao_goods WHERE pic_spilder_status=0"
+    sql = "SELECT t_id,detail_url,system_type FROM shopnc_taobao_goods WHERE pic_spilder_status=0 AND system_type='天猫'"
     try:
         cursor.execute(sql)
         results = cursor.fetchall()
