@@ -4557,3 +4557,937 @@ Exiting due to channel error.
 Exiting due to channel error.
 1564634983098	geckodriver	INFO	geckodriver 0.21.0
 1564634983106	geckodriver	INFO	Listening on 127.0.0.1:41693
+1564642251239	geckodriver	INFO	geckodriver 0.21.0
+1564642251276	geckodriver	INFO	Listening on 127.0.0.1:45731
+1564642252223	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YxmvwSqiPH5r"
+1564642257655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564642257655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1564642257655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564642257655	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564642258019	Marionette	TRACE	Received observer notification profile-after-change
+1564642258306	Marionette	TRACE	Received observer notification command-line-startup
+1564642258306	Marionette	TRACE	Received observer notification nsPref:changed
+1564642258307	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1564642259547	Marionette	TRACE	Received observer notification toplevel-window-ready
+1564642263801	Marionette	TRACE	Received observer notification marionette-startup-requested
+1564642263802	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1564642263885	Marionette	TRACE	All scripts recorded.
+1564642263886	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1564642263886	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1564642263886	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1564642263886	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1564642263887	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1564642263888	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1564642263888	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1564642263888	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1564642263889	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1564642263889	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1564642263889	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1564642263889	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1564642263889	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1564642263889	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1564642263890	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1564642263890	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1564642263890	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1564642263891	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1564642263891	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1564642263891	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1564642263892	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1564642263892	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1564642263893	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1564642263893	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1564642263893	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1564642263893	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1564642263893	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1564642263894	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1564642263894	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1564642263894	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1564642264112	Marionette	INFO	Listening on port 38367
+1564642264113	Marionette	DEBUG	Remote service is active
+1564642264190	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:41984
+1564642264197	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1564642264198	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564642264246	Marionette	TRACE	[4294967297] Frame script loaded
+1564642264813	Marionette	TRACE	[4294967297] Frame script registered
+1564642264825	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"88218ea5-e8bc-4d14-9848-da5cd41f433a","capabilities":{"browserName":"firefox","browserVersion":"68.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1564642264831	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=531555433779"}]
+1564642264871	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1564642265868	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1564642268293	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=531555433779
+1564642268818	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=531555433779
+1564642268820	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+
+(/usr/lib/firefox/firefox:6761): dconf-WARNING **: 14:51:09.090: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+1564642271827	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1564642271835	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"12c12b15-a7b6-4463-9aef-436b59594cc3"}}]
+1564642271839	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"12c12b15-a7b6-4463-9aef-436b59594cc3"}]
+1564642272172	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1564642272175	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1564642272196	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1564642272358	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"4a3fec36-75f0-463b-b7e8-544084a33ce6"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"71a80f71-a46c-454b-970b-88484d9b82b2"},{"element-6066-11e4-a52e-4f735466cecf":"90da6083-82a5-4799-aa6b-9c4b618734b7"}]]
+1564642272362	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1564642272388	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"4a3fec36-75f0-463b-b7e8-544084a33ce6"}]]
+1564642272402	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"4a3fec36-75f0-463b-b7e8-544084a33ce6","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564642272411	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/i3/2089590212/O1CN01PEx6nS1DR8UwKppXn_!!0-item_pic.jpg_60x60q90.jpg"}]
+1564642272415	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1564642272418	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"99e11bc3-fdce-4ef9-b426-80bb89126952"}]]
+1564642272423	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"99e11bc3-fdce-4ef9-b426-80bb89126952","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564642272431	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/i2/2089590212/O1CN01jC037L1DR8TeGJENU_!!2089590212.jpg_60x60q90.jpg"}]
+1564642272434	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1564642272437	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"5cda09ea-d5a7-4437-be6d-b541645cf21e"}]]
+1564642272441	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"5cda09ea-d5a7-4437-be6d-b541645cf21e","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564642272448	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/i4/2089590212/O1CN01CM6XPV1DR8TdRCgNI_!!2089590212.jpg_60x60q90.jpg"}]
+1564642272452	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1564642272460	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"71a80f71-a46c-454b-970b-88484d9b82b2"}]]
+1564642272466	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"71a80f71-a46c-454b-970b-88484d9b82b2","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564642272477	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/i2/2089590212/O1CN014r2l2q1DR8TUvZroU_!!2089590212.jpg_60x60q90.jpg"}]
+1564642272481	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1564642272485	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"90da6083-82a5-4799-aa6b-9c4b618734b7"}]]
+1564642272489	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"90da6083-82a5-4799-aa6b-9c4b618734b7","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564642272497	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/i1/2089590212/O1CN011aCszK1DR8TcprcDO_!!2089590212.jpg_60x60q90.jpg"}]
+1564642272500	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1564642272504	Marionette	DEBUG	0 <- [1,16,null,{"value":null}]
+1564642272507	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1564642272510	Marionette	DEBUG	0 <- [1,17,null,[]]
+1564642272514	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1564642272516	Marionette	DEBUG	0 <- [1,18,null,[]]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Refused to create native OpenGL context because of blacklist entry: FEATURE_FAILURE_OLD_NVIDIA
+* Exhausted GL driver options.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1564642285207	Marionette	DEBUG	Closed connection 0
+1564642286382	geckodriver	INFO	geckodriver 0.21.0
+1564642286388	geckodriver	INFO	Listening on 127.0.0.1:46175
+Exiting due to channel error.
+1564643488961	geckodriver	INFO	geckodriver 0.21.0
+1564643488969	geckodriver	INFO	Listening on 127.0.0.1:47833
+1564643489973	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ecJSjphRh2q1"
+*** You are running in headless mode.
+1564643490725	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564643490725	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1564643490725	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564643490725	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564643490909	Marionette	TRACE	Received observer notification profile-after-change
+1564643491023	Marionette	TRACE	Received observer notification command-line-startup
+1564643491023	Marionette	TRACE	Received observer notification nsPref:changed
+1564643491024	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1564643491721	Marionette	TRACE	Received observer notification toplevel-window-ready
+1564643493832	Marionette	TRACE	Received observer notification marionette-startup-requested
+1564643493833	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1564643493843	Marionette	TRACE	All scripts recorded.
+1564643493843	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1564643493843	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1564643493843	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1564643493844	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1564643493844	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1564643493845	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1564643493845	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1564643493845	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1564643493845	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1564643493845	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1564643493846	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1564643493847	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1564643493847	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1564643493847	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1564643493847	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1564643493847	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1564643493847	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1564643493847	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1564643493848	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1564643493848	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1564643493848	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1564643493907	Marionette	INFO	Listening on port 46245
+1564643493908	Marionette	DEBUG	Remote service is active
+1564643493986	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:53986
+1564643493988	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1564643493989	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564643494035	Marionette	TRACE	[4294967297] Frame script loaded
+1564643494036	Marionette	TRACE	[4294967297] Frame script registered
+1564643494044	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"b3f4735c-dc35-4547-b7db-c91916a155a8","capabilities":{"browserName":"firefox","browserVersion":"68.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1564643494053	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=558132737623"}]
+1564643494089	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1564643495299	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1564643495983	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=558132737623
+
+(/usr/lib/firefox/firefox:10083): dconf-WARNING **: 15:11:37.845: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+1564643498220	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=558132737623
+1564643498222	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643501231	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643501639	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"616a030a-9164-4193-acd3-b0b2cc72667b"}}]
+1564643501644	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"616a030a-9164-4193-acd3-b0b2cc72667b"}]
+1564643501962	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1564643501963	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1564643501975	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1564643502019	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"e0825449-c054-4472-8908-d89c245151ba"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"8ae7579a-c431-4f46-9075-1c62134e9f46"},{"element-6066-11e4-a52e-4f735466cecf":"1d29f94f-0951-41a7-b7e2-aa96f001bc73"}]]
+1564643502023	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1564643502028	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"e0825449-c054-4472-8908-d89c245151ba"}]]
+1564643502032	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e0825449-c054-4472-8908-d89c245151ba","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643502042	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/1057413487/O1CN01WjE8Kn1bd5d1T8PrJ_!!1057413487.jpg_60x60q90.jpg"}]
+1564643502047	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1564643502052	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"84c19e76-9ef0-4084-b311-786084f93902"}]]
+1564643502056	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"84c19e76-9ef0-4084-b311-786084f93902","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643502065	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/1057413487/O1CN01eggQ3G1bd5d2NJhOs_!!1057413487.jpg_60x60q90.jpg"}]
+1564643502068	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1564643502072	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"f95c71fa-ee84-406c-94f8-bbb31c69fe67"}]]
+1564643502076	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"f95c71fa-ee84-406c-94f8-bbb31c69fe67","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643502085	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1057413487/O1CN01UHebj81bd5d0qwikI_!!1057413487.jpg_60x60q90.jpg"}]
+1564643502088	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1564643502091	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"8ae7579a-c431-4f46-9075-1c62134e9f46"}]]
+1564643502097	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"8ae7579a-c431-4f46-9075-1c62134e9f46","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643502107	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/1057413487/O1CN01XfZApw1bd5cu1BSZs_!!1057413487.jpg_60x60q90.jpg"}]
+1564643502111	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1564643502115	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"1d29f94f-0951-41a7-b7e2-aa96f001bc73"}]]
+1564643502118	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"1d29f94f-0951-41a7-b7e2-aa96f001bc73","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643502127	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/1057413487/O1CN01pmyi7m1bd5ZB8Nbj9_!!1057413487.jpg_60x60q90.jpg"}]
+1564643502130	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1564643502134	Marionette	DEBUG	0 <- [1,16,null,{"value":null}]
+1564643502137	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1564643502140	Marionette	DEBUG	0 <- [1,17,null,[]]
+1564643502143	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1564643502145	Marionette	DEBUG	0 <- [1,18,null,[]]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1564643504240	geckodriver	INFO	geckodriver 0.21.0
+1564643504247	geckodriver	INFO	Listening on 127.0.0.1:33849
+1564643505252	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OKVWqWTvvaNg"
+*** You are running in headless mode.
+1564643506104	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564643506104	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1564643506104	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564643506105	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564643506361	Marionette	TRACE	Received observer notification profile-after-change
+1564643506477	Marionette	TRACE	Received observer notification command-line-startup
+1564643506478	Marionette	TRACE	Received observer notification nsPref:changed
+1564643506478	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1564643507282	Marionette	TRACE	Received observer notification toplevel-window-ready
+1564643509557	Marionette	TRACE	Received observer notification marionette-startup-requested
+1564643509558	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1564643509588	Marionette	TRACE	All scripts recorded.
+1564643509589	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1564643509589	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1564643509589	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1564643509590	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1564643509590	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1564643509591	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1564643509591	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1564643509592	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1564643509592	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1564643509592	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1564643509594	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1564643509594	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1564643509594	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1564643509594	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1564643509594	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1564643509595	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1564643509595	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1564643509595	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1564643509595	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1564643509595	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1564643509596	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1564643509660	Marionette	INFO	Listening on port 34593
+1564643509660	Marionette	DEBUG	Remote service is active
+1564643509667	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:48484
+1564643509674	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1564643509674	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564643509723	Marionette	TRACE	[4294967297] Frame script loaded
+1564643509725	Marionette	TRACE	[4294967297] Frame script registered
+1564643509732	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"690e9ae8-8b48-4dd8-9ad7-bb4a4fff419c","capabilities":{"browserName":"firefox","browserVersion":"68.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1564643509740	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=593909867384"}]
+1564643509779	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1564643510400	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1564643510985	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=593909867384
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+(/usr/lib/firefox/firefox:10287): dconf-WARNING **: 15:11:52.490: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643513368	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=593909867384
+1564643513370	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221564617613350%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643516379	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1564643516387	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"f693c3ff-3948-4277-94bd-aa648b670e72"}}]
+1564643516391	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"f693c3ff-3948-4277-94bd-aa648b670e72"}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643517008	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1564643517009	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1564643517013	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1564643517144	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"6d1557e5-3db0-4c7b-8c54-d19c9e42ce0b"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"aa861d9e-b0fc-4c0a-8abb-8888976fe152"},{"element-6066-11e4-a52e-4f735466cecf":"a26921bd-ee9a-4767-980a-7b23e32926b3"}]]
+1564643517148	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1564643517174	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"6d1557e5-3db0-4c7b-8c54-d19c9e42ce0b"}]]
+1564643517179	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"6d1557e5-3db0-4c7b-8c54-d19c9e42ce0b","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643517189	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/1040599884/O1CN01tZLcNM2MsvFLrdnZE_!!1040599884.jpg_60x60q90.jpg"}]
+1564643517195	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1564643517200	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"9e532e29-6206-4502-b3a0-a0275bb1c68d"}]]
+1564643517204	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"9e532e29-6206-4502-b3a0-a0275bb1c68d","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643517216	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/1040599884/O1CN01rnLK812MsvFQbAANa_!!1040599884.jpg_60x60q90.jpg"}]
+1564643517219	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1564643517253	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"65828012-df86-44be-abd7-540276d72d45"}]]
+1564643517263	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"65828012-df86-44be-abd7-540276d72d45","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643517277	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/1040599884/O1CN01ZgqyFk2MsvFNRumo9_!!1040599884.jpg_60x60q90.jpg"}]
+1564643517282	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1564643517285	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"aa861d9e-b0fc-4c0a-8abb-8888976fe152"}]]
+1564643517290	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"aa861d9e-b0fc-4c0a-8abb-8888976fe152","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643517319	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1040599884/O1CN01E8mdsS2MsvFQ87HPu_!!1040599884.jpg_60x60q90.jpg"}]
+1564643517324	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1564643517328	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"a26921bd-ee9a-4767-980a-7b23e32926b3"}]]
+1564643517331	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"a26921bd-ee9a-4767-980a-7b23e32926b3","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643517338	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/1040599884/O1CN01NN4Z672MsvFLrfXp1_!!1040599884.jpg_60x60q90.jpg"}]
+1564643517341	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1564643517346	Marionette	DEBUG	0 <- [1,16,null,{"value":null}]
+1564643517350	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1564643517352	Marionette	DEBUG	0 <- [1,17,null,[]]
+1564643517356	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1564643517359	Marionette	DEBUG	0 <- [1,18,null,[]]
+1564643519466	geckodriver	INFO	geckodriver 0.21.0
+1564643519473	geckodriver	INFO	Listening on 127.0.0.1:60781
+1564643520478	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bLHq387rtp1s"
+*** You are running in headless mode.
+1564643521402	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564643521403	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1564643521403	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564643521403	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564643521660	Marionette	TRACE	Received observer notification profile-after-change
+1564643521741	Marionette	TRACE	Received observer notification command-line-startup
+1564643521742	Marionette	TRACE	Received observer notification nsPref:changed
+1564643521742	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1564643522741	Marionette	TRACE	Received observer notification toplevel-window-ready
+1564643525009	Marionette	TRACE	Received observer notification marionette-startup-requested
+1564643525009	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1564643525017	Marionette	TRACE	All scripts recorded.
+1564643525018	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1564643525018	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1564643525018	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1564643525018	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1564643525019	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1564643525019	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1564643525020	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1564643525020	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1564643525020	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1564643525020	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1564643525021	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1564643525021	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1564643525022	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1564643525022	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1564643525022	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1564643525022	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1564643525022	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1564643525023	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1564643525023	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1564643525023	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1564643525023	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1564643525087	Marionette	INFO	Listening on port 39101
+1564643525087	Marionette	DEBUG	Remote service is active
+1564643525099	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:42444
+1564643525103	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1564643525103	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564643525154	Marionette	TRACE	[4294967297] Frame script loaded
+1564643525155	Marionette	TRACE	[4294967297] Frame script registered
+1564643525162	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"0d79c1f9-201e-4328-9863-58e4043850f5","capabilities":{"browserName":"firefox","browserVersion":"68.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1564643525168	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=580244580152"}]
+1564643525210	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1564643525985	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1564643526316	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=580244580152
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+(/usr/lib/firefox/firefox:10499): dconf-WARNING **: 15:12:08.167: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643528950	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=580244580152
+1564643528956	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221564617613350%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.44/sku/stock.js,tm/detail/1.11.44/sku/address.js,tm/detail/1.11.44/sku/thumbViewer.js,tm/detail/1.11.44/view/main.js,tm/detail/1.11.44/sku/padadapte.js,tm/detail/1.11.44/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+1564643531967	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643532336	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"99969c95-eaaf-49a5-ba33-65e7a6e8acdc"}}]
+1564643532341	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"99969c95-eaaf-49a5-ba33-65e7a6e8acdc"}]
+1564643532731	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1564643532733	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1564643532736	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1564643532749	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"310ee8b2-751f-4993-9eae-f084b2372bef"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"6214ce7c-1684-4dfb-b077-888feb78c938"},{"element-6066-11e4-a52e-4f735466cecf":"81eef541-6015-4fd1-a9e6-bea9b47a4778"}]]
+1564643532758	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1564643532787	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"310ee8b2-751f-4993-9eae-f084b2372bef"}]]
+1564643532791	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"310ee8b2-751f-4993-9eae-f084b2372bef","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643532804	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/4136601247/O1CN01w5eMgo1L5AMqEYLn6_!!4136601247.jpg_60x60q90.jpg"}]
+1564643532808	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1564643532811	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"b1272295-be7b-44f8-a6fc-f9c5c0a4a67a"}]]
+1564643532815	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"b1272295-be7b-44f8-a6fc-f9c5c0a4a67a","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643532823	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/4136601247/O1CN01fakSSh1L5AMnNDVKZ_!!4136601247.jpg_60x60q90.jpg"}]
+1564643532827	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1564643532830	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"2ef2134a-b983-4e44-bbd6-3b709a636d07"}]]
+1564643532834	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"2ef2134a-b983-4e44-bbd6-3b709a636d07","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643532843	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/4136601247/O1CN01NtEQ9X1L5AMmwM6G1_!!4136601247.jpg_60x60q90.jpg"}]
+1564643532846	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1564643532848	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"6214ce7c-1684-4dfb-b077-888feb78c938"}]]
+1564643532855	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"6214ce7c-1684-4dfb-b077-888feb78c938","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643532866	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/4136601247/O1CN011L5AMoTCgcR1QsC_!!4136601247.jpg_60x60q90.jpg"}]
+1564643532872	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1564643532989	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"81eef541-6015-4fd1-a9e6-bea9b47a4778"}]]
+1564643532995	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"81eef541-6015-4fd1-a9e6-bea9b47a4778","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643533027	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/4136601247/O1CN01oCfmIM1L5AMoTEITZ_!!4136601247.jpg_60x60q90.jpg"}]
+1564643533030	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1564643533035	Marionette	DEBUG	0 <- [1,16,null,{"value":null}]
+1564643533039	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1564643533044	Marionette	DEBUG	0 <- [1,17,null,[]]
+1564643533047	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1564643533049	Marionette	DEBUG	0 <- [1,18,null,[]]
+1564643533100	Marionette	DEBUG	Closed connection 0
+1564643533103	Marionette	DEBUG	Closed connection 0
+1564643534686	geckodriver	INFO	geckodriver 0.21.0
+1564643534693	geckodriver	INFO	Listening on 127.0.0.1:33553
+1564643535696	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PxPIngNUPB3h"
+*** You are running in headless mode.
+1564643536614	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564643536615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1564643536615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564643536615	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564643536871	Marionette	TRACE	Received observer notification profile-after-change
+1564643536993	Marionette	TRACE	Received observer notification command-line-startup
+1564643536994	Marionette	TRACE	Received observer notification nsPref:changed
+1564643536994	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1564643537936	Marionette	TRACE	Received observer notification toplevel-window-ready
+1564643540674	Marionette	TRACE	Received observer notification marionette-startup-requested
+1564643540674	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1564643540686	Marionette	TRACE	All scripts recorded.
+1564643540686	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1564643540686	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1564643540686	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1564643540687	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1564643540687	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1564643540688	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1564643540688	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1564643540688	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1564643540688	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1564643540688	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1564643540690	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1564643540690	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1564643540690	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1564643540690	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1564643540690	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1564643540690	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1564643540690	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1564643540691	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1564643540691	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1564643540691	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1564643540691	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1564643540759	Marionette	INFO	Listening on port 35379
+1564643540760	Marionette	DEBUG	Remote service is active
+1564643540813	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:45276
+1564643540816	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1564643540817	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564643540866	Marionette	TRACE	[4294967297] Frame script loaded
+1564643540867	Marionette	TRACE	[4294967297] Frame script registered
+1564643540873	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"31b62077-0ad4-4f74-92ad-e24f1fb12e28","capabilities":{"browserName":"firefox","browserVersion":"68.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1564643540882	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=584146035302"}]
+1564643540920	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1564643541888	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1564643542514	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=584146035302
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221564617613350%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+(/usr/lib/firefox/firefox:10712): dconf-WARNING **: 15:12:25.674: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.44/sku/stock.js,tm/detail/1.11.44/sku/address.js,tm/detail/1.11.44/sku/thumbViewer.js,tm/detail/1.11.44/view/main.js,tm/detail/1.11.44/sku/padadapte.js,tm/detail/1.11.44/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643549377	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=584146035302
+1564643549379	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643552385	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1564643552393	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"59997015-04b0-40a9-a2f3-f25f3057d015"}}]
+1564643552402	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"59997015-04b0-40a9-a2f3-f25f3057d015"}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564643553314	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1564643553319	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1564643553330	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1564643553382	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"88723239-d076-4325-9e8e-c6883e5bc7bd"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"f087248a-1057-4716-ad5a-c9437addb08e"},{"element-6066-11e4-a52e-4f735466cecf":"9083ae1b-4a4d-4fe7-93c4-2ea68340aa17"}]]
+1564643553387	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1564643553479	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"88723239-d076-4325-9e8e-c6883e5bc7bd"}]]
+1564643553487	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"88723239-d076-4325-9e8e-c6883e5bc7bd","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553524	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/i4/3483157751/O1CN01h2hcAU2780S79xaFB_!!0-item_pic.jpg_60x60q90.jpg"}]
+1564643553530	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1564643553534	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"b52779af-3f94-4c7d-8bf0-317358b579fd"}]]
+1564643553537	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"b52779af-3f94-4c7d-8bf0-317358b579fd","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553546	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/i2/3483157751/O1CN01YFYqZ02780RjtAmQ4_!!3483157751.jpg_60x60q90.jpg"}]
+1564643553558	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1564643553566	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"eded3c04-8194-439d-b826-d6f8eb704702"}]]
+1564643553570	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"eded3c04-8194-439d-b826-d6f8eb704702","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553621	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/i2/3483157751/O1CN01zfw6hA2780RGfEv56_!!3483157751.jpg_60x60q90.jpg"}]
+1564643553624	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1564643553637	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"f087248a-1057-4716-ad5a-c9437addb08e"}]]
+1564643553647	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"f087248a-1057-4716-ad5a-c9437addb08e","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553662	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/i2/3483157751/TB2SiPxEFOWBuNjy0FiXXXFxVXa_!!3483157751.jpg_60x60q90.jpg"}]
+1564643553665	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1564643553693	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"9083ae1b-4a4d-4fe7-93c4-2ea68340aa17"}]]
+1564643553697	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"9083ae1b-4a4d-4fe7-93c4-2ea68340aa17","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553708	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/i3/3483157751/O1CN01sut40K2780OIUzZJM_!!3483157751.jpg_60x60q90.jpg"}]
+1564643553711	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1564643553721	Marionette	DEBUG	0 <- [1,16,null,{"value":null}]
+1564643553724	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1564643553730	Marionette	DEBUG	0 <- [1,17,null,[{"element-6066-11e4-a52e-4f735466cecf":"b225d07a-e5ab-4eff-901a-4edab1080f4a"},{"element-6066-11e4-a52e-4f735466c ... ecf":"e89181b7-4187-4b0e-8dd3-d24039f73ec3"},{"element-6066-11e4-a52e-4f735466cecf":"4e161b04-3a8f-4b4f-a3d4-7e9818a844c9"}]]
+1564643553734	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(1)"}]
+1564643553737	Marionette	DEBUG	0 <- [1,18,null,[{"element-6066-11e4-a52e-4f735466cecf":"b225d07a-e5ab-4eff-901a-4edab1080f4a"}]]
+1564643553741	Marionette	DEBUG	0 -> [0,19,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"b225d07a-e5ab-4eff-901a-4edab1080f4a","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553749	Marionette	DEBUG	0 <- [1,19,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643553752	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(2)"}]
+1564643553756	Marionette	DEBUG	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"6e5626f8-83ae-4b44-828c-9411a8a0032e"}]]
+1564643553760	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"6e5626f8-83ae-4b44-828c-9411a8a0032e","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553771	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643553774	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(3)"}]
+1564643553779	Marionette	DEBUG	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"e046b778-4ee9-411c-af51-6ffdb5765231"}]]
+1564643553783	Marionette	DEBUG	0 -> [0,23,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e046b778-4ee9-411c-af51-6ffdb5765231","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553792	Marionette	DEBUG	0 <- [1,23,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643553797	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(4)"}]
+1564643553892	Marionette	DEBUG	0 <- [1,24,null,[{"element-6066-11e4-a52e-4f735466cecf":"8cfb9815-03f9-43cf-82c9-180a7a1323c8"}]]
+1564643553895	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"8cfb9815-03f9-43cf-82c9-180a7a1323c8","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643553950	Marionette	DEBUG	0 <- [1,25,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643553954	Marionette	DEBUG	0 -> [0,26,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(5)"}]
+1564643553964	Marionette	DEBUG	0 <- [1,26,null,[{"element-6066-11e4-a52e-4f735466cecf":"f5c976f8-512c-4bdb-a7b7-22d358f692b3"}]]
+1564643553969	Marionette	DEBUG	0 -> [0,27,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"f5c976f8-512c-4bdb-a7b7-22d358f692b3","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643554012	Marionette	DEBUG	0 <- [1,27,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643554019	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(6)"}]
+1564643554024	Marionette	DEBUG	0 <- [1,28,null,[{"element-6066-11e4-a52e-4f735466cecf":"d2870efa-b8c6-4965-a8f9-6d57ec149317"}]]
+1564643554028	Marionette	DEBUG	0 -> [0,29,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d2870efa-b8c6-4965-a8f9-6d57ec149317","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643554037	Marionette	DEBUG	0 <- [1,29,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643554042	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(7)"}]
+1564643554055	Marionette	DEBUG	0 <- [1,30,null,[{"element-6066-11e4-a52e-4f735466cecf":"e4cd0644-e93b-4085-bb88-510f70d0fa2e"}]]
+1564643554059	Marionette	DEBUG	0 -> [0,31,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e4cd0644-e93b-4085-bb88-510f70d0fa2e","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643554070	Marionette	DEBUG	0 <- [1,31,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643554074	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(8)"}]
+1564643554079	Marionette	DEBUG	0 <- [1,32,null,[{"element-6066-11e4-a52e-4f735466cecf":"e89181b7-4187-4b0e-8dd3-d24039f73ec3"}]]
+1564643554084	Marionette	DEBUG	0 -> [0,33,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e89181b7-4187-4b0e-8dd3-d24039f73ec3","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643554095	Marionette	DEBUG	0 <- [1,33,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643554101	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img:nth-child(9)"}]
+1564643554105	Marionette	DEBUG	0 <- [1,34,null,[{"element-6066-11e4-a52e-4f735466cecf":"4e161b04-3a8f-4b4f-a3d4-7e9818a844c9"}]]
+1564643554110	Marionette	DEBUG	0 -> [0,35,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"4e161b04-3a8f-4b4f-a3d4-7e9818a844c9","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564643554119	Marionette	DEBUG	0 <- [1,35,null,{"value":"https://img-tmdetail.alicdn.com/tps/i3/T1BYd_XwFcXXb9RTPq-90-90.png"}]
+1564643556198	geckodriver	INFO	geckodriver 0.21.0
+1564643556231	geckodriver	INFO	Listening on 127.0.0.1:60273
+1564643557212	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yWPbrglrYxfM"
+*** You are running in headless mode.
+1564643558650	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564643558650	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1564643558650	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564643558651	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564643559267	Marionette	TRACE	Received observer notification profile-after-change
+1564643559361	Marionette	TRACE	Received observer notification command-line-startup
+1564643559361	Marionette	TRACE	Received observer notification nsPref:changed
+1564643559362	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221564617613350%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 80: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1564643560987	Marionette	TRACE	Received observer notification toplevel-window-ready
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.44/sku/stock.js,tm/detail/1.11.44/sku/address.js,tm/detail/1.11.44/sku/thumbViewer.js,tm/detail/1.11.44/view/main.js,tm/detail/1.11.44/sku/padadapte.js,tm/detail/1.11.44/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 27: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x240016,name=PCameras::Msg_AllDone) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x240016,name=PCameras::Msg_AllDone) Channel error: cannot send/recv
+
+[Child 10756, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10712, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10689, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10499, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10476, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+Sandbox: Unexpected EOF, op 0 flags 00 path /usr/share/locale/zh_CN.UTF-8/LC_MESSAGES/libc.mo
+[Child 10553, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+1564646653390	geckodriver	INFO	geckodriver 0.21.0
+1564646653397	geckodriver	INFO	Listening on 127.0.0.1:53247
+1564646654403	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.L7jd1lbaOr0T"
+*** You are running in headless mode.
+1564646655114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564646655114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1564646655114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564646655114	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564646655316	Marionette	TRACE	Received observer notification profile-after-change
+1564646655372	Marionette	TRACE	Received observer notification command-line-startup
+1564646655372	Marionette	TRACE	Received observer notification nsPref:changed
+1564646655372	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1564646656161	Marionette	TRACE	Received observer notification toplevel-window-ready
+1564646658293	Marionette	TRACE	Received observer notification marionette-startup-requested
+1564646658293	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1564646658302	Marionette	TRACE	All scripts recorded.
+1564646658302	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1564646658303	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1564646658303	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1564646658303	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1564646658304	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1564646658305	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1564646658305	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1564646658305	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1564646658305	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1564646658305	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1564646658307	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1564646658307	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1564646658307	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1564646658307	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1564646658307	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1564646658307	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1564646658308	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1564646658308	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1564646658308	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1564646658308	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1564646658308	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1564646658371	Marionette	INFO	Listening on port 42943
+1564646658371	Marionette	DEBUG	Remote service is active
+1564646658418	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:39776
+1564646658419	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1564646658420	Marionette	WARN	TLS certificate errors will be ignored for this session
+1564646658465	Marionette	TRACE	[4294967297] Frame script loaded
+1564646658467	Marionette	TRACE	[4294967297] Frame script registered
+1564646658472	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"eca0e42e-7d92-4cff-9a92-9b48e010991a","capabilities":{"browserName":"firefox","browserVersion":"68.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1564646658478	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=549761965332"}]
+1564646658515	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1564646658722	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1564646660655	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://item.taobao.com/item.htm?id=549761965332
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+(/usr/lib/firefox/firefox:12371): dconf-WARNING **: 16:04:21.808: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://login.taobao.com/jump?target=https://www.tmall.com, line 27: SyntaxError: expected expression, got '<'
+1564646663906	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://item.taobao.com/item.htm?id=549761965332
+1564646663908	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.7.4/index.js, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/secdev/nsv/1.0.63/ns_c_74_3_n.js, line 2: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564646666915	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564646667153	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"8e140b29-0bba-4e13-b619-030a7d5bf2c4"}}]
+1564646667159	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"8e140b29-0bba-4e13-b619-030a7d5bf2c4"}]
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 8: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: getContext: Disallowing antialiased backbuffers due to blacklisting.
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://g.alicdn.com/AWSC/WebUMID/1.73.2/um.js?d=1, line 1: Error: WebGL warning: <SetDimensions>: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1564646667423	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1564646667425	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1564646667429	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>div>a>img"}]
+1564646667441	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"97af7d7f-7323-4b14-bd7f-02cc8a7f0cdf"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"87ab9bf1-8b52-4d9e-be4a-b6a9adec87d1"},{"element-6066-11e4-a52e-4f735466cecf":"d6ff23df-9bf7-4360-aff2-e135effaa5dd"}]]
+1564646667445	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > div > a > img"}]
+1564646667449	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"97af7d7f-7323-4b14-bd7f-02cc8a7f0cdf"}]]
+1564646667453	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"97af7d7f-7323-4b14-bd7f-02cc8a7f0cdf","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667464	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://gd1.alicdn.com/imgextra/i3/1649724996/O1CN01w6tZ201mmDHwYq5yj_!!1649724996.jpg_50x50.jpg"}]
+1564646667469	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > div > a > img"}]
+1564646667476	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"e6887ede-b35f-45eb-a32f-a9ecd566dab4"}]]
+1564646667482	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e6887ede-b35f-45eb-a32f-a9ecd566dab4","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667513	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://gd1.alicdn.com/imgextra/i1/1649724996/O1CN01dPnfa11mmDDv053Vr_!!1649724996.jpg_50x50.jpg"}]
+1564646667517	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > div > a > img"}]
+1564646667519	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"83689422-155b-4975-89b7-db45f2ac1743"}]]
+1564646667523	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"83689422-155b-4975-89b7-db45f2ac1743","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667533	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://gd2.alicdn.com/imgextra/i2/1649724996/TB2CgM8tH1YBuNjSszeXXablFXa_!!1649724996.jpg_50x50.jpg"}]
+1564646667536	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > div > a > img"}]
+1564646667539	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"87ab9bf1-8b52-4d9e-be4a-b6a9adec87d1"}]]
+1564646667545	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"87ab9bf1-8b52-4d9e-be4a-b6a9adec87d1","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667556	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://gd2.alicdn.com/imgextra/i2/1649724996/TB2yGxOtYSYBuNjSspfXXcZCpXa_!!1649724996.jpg_50x50.jpg"}]
+1564646667559	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > div > a > img"}]
+1564646667564	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"d6ff23df-9bf7-4360-aff2-e135effaa5dd"}]]
+1564646667568	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d6ff23df-9bf7-4360-aff2-e135effaa5dd","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667579	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://gd1.alicdn.com/imgextra/i1/1649724996/TB28hfLnuuSBuNjy1XcXXcYjFXa_!!1649724996.jpg_50x50.jpg"}]
+1564646667583	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1564646667586	Marionette	DEBUG	0 <- [1,16,null,{"value":null}]
+1564646667589	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p:nth-child(1) > img"}]
+1564646667592	Marionette	DEBUG	0 <- [1,17,null,[]]
+1564646667595	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p > img"}]
+1564646667600	Marionette	DEBUG	0 <- [1,18,null,[{"element-6066-11e4-a52e-4f735466cecf":"6ee5f3b7-5578-4275-95cb-ce23ed7a21ff"},{"element-6066-11e4-a52e-4f735466c ... ecf":"ee339973-9988-483c-8bd3-6c63e06acf2b"},{"element-6066-11e4-a52e-4f735466cecf":"97859bb0-b55e-4b9a-8725-ee1a622dd987"}]]
+1564646667603	Marionette	DEBUG	0 -> [0,19,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p > img:nth-child(1)"}]
+1564646667605	Marionette	DEBUG	0 <- [1,19,null,[]]
+1564646667609	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p > img:nth-child(2)"}]
+1564646667613	Marionette	DEBUG	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"6ee5f3b7-5578-4275-95cb-ce23ed7a21ff"}]]
+1564646667617	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"6ee5f3b7-5578-4275-95cb-ce23ed7a21ff","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667624	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://img.alicdn.com/imgextra/i2/1649724996/O1CN017JmvQR1mmDFOSLRFq_!!1649724996.jpg"}]
+1564646667627	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p > img:nth-child(3)"}]
+1564646667631	Marionette	DEBUG	0 <- [1,22,null,[]]
+1564646667634	Marionette	DEBUG	0 -> [0,23,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p > img:nth-child(4)"}]
+1564646667637	Marionette	DEBUG	0 <- [1,23,null,[{"element-6066-11e4-a52e-4f735466cecf":"cb093eaa-a9f9-41e6-9595-642cfaa296bb"}]]
+1564646667641	Marionette	DEBUG	0 -> [0,24,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"cb093eaa-a9f9-41e6-9595-642cfaa296bb","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667652	Marionette	DEBUG	0 <- [1,24,null,{"value":"https://img.alicdn.com/imgextra/i1/1649724996/TB20BVlt1OSBuNjy0FdXXbDnVXa_!!1649724996.jpg"}]
+1564646667655	Marionette	DEBUG	0 -> [0,25,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p > img:nth-child(5)"}]
+1564646667657	Marionette	DEBUG	0 <- [1,25,null,[{"element-6066-11e4-a52e-4f735466cecf":"1ce7914a-ff37-443f-84bf-ca70d4124531"}]]
+1564646667661	Marionette	DEBUG	0 -> [0,26,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"1ce7914a-ff37-443f-84bf-ca70d4124531","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667669	Marionette	DEBUG	0 <- [1,26,null,{"value":"https://img.alicdn.com/imgextra/i4/1649724996/TB2mI.7tH1YBuNjSszeXXablFXa_!!1649724996.jpg"}]
+1564646667672	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElements",{"using":"css selector","value":"#J_DivItemDesc > p > img:nth-child(6)"}]
+1564646667674	Marionette	DEBUG	0 <- [1,27,null,[{"element-6066-11e4-a52e-4f735466cecf":"c550b303-f0ae-43b8-a7a1-800f0f659a65"}]]
+1564646667677	Marionette	DEBUG	0 -> [0,28,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"c550b303-f0ae-43b8-a7a1-800f0f659a65","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1564646667685	Marionette	DEBUG	0 <- [1,28,null,{"value":"https://img.alicdn.com/imgextra/i1/1649724996/TB2_hpSt49YBuNjy0FfXXXIsVXa_!!1649724996.jpg"}]
+1564646670261	geckodriver	INFO	geckodriver 0.21.0
+1564646670269	geckodriver	INFO	Listening on 127.0.0.1:49201
+1564646671280	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qYvv2yLWozUX"
+*** You are running in headless mode.
+Exiting due to channel error.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x240016,name=PCameras::Msg_AllDone) Channel error: cannot send/recv
+
+Exiting due to channel error.
+Exiting due to channel error.

@@ -10,27 +10,32 @@ import random
 from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver import FirefoxOptions
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
+from selenium.webdriver.common.proxy import Proxy, ProxyType
 from fake_useragent import UserAgent
 
 
 def get_img(url, platform, id):
     proxies = [
-        'http://58.218.214.198:4251',
-        'http://58.218.214.139:9835',
-        'http://58.218.92.157:2088',
-        'http://58.218.92.154:9676',
-        'http://58.218.214.162:5827',
-        'http://58.218.214.158:6532',
-        'http://58.218.92.169:3685',
+        '58.218.214.198:4251',
+        '58.218.214.139:9835',
+        '58.218.92.157:2088',
+        '58.218.92.154:9676',
+        '58.218.214.162:5827',
+        '58.218.214.158:6532',
+        '58.218.92.169:3685',
     ]
     if Path(os.getcwd() + '/images/' + id).exists() == False:
         images = {}
-        opts = FirefoxOptions()
-        opts.add_argument("--headless")
-        opts.add_argument("--proxy-server=%s" % (random.sample(proxies, 1)[0]))
+        options = webdriver.FirefoxOptions()
+        options.add_argument('-headless')
+        profile = FirefoxProfile()
+        proxies_on = random.choice(proxies).split(':')
+        profile.set_preference("network.proxy.http", proxies_on[0])
+        profile.set_preference("network.proxy.http_port", proxies_on[1])
         # driver = webdriver.Firefox(executable_path="/usr/local/bin/geckodriver", firefox_options=opts)
-        driver = webdriver.Firefox(executable_path="/home/pfinal/.pyenv/versions/3.7.3/geckodriver")
+        driver = webdriver.Firefox(profile, options=options,
+                                   executable_path="/home/pfinal/.pyenv/versions/3.7.3/geckodriver")
         driver.get(url)
         time.sleep(3)
         btn = driver.find_element_by_id('sufei-dialog-close')
@@ -167,7 +172,8 @@ def img_save(images, file_path, platform, url):
                     img_url = img.strip('.jpg').strip('400x400').strip('_')
             # print(img_url)
             if img.find('gif') < 0:
-                r = requests.get(img_url + '?time=' + str(time.time()), proxies=random.choice(proxy_list), timeout=30, headers=headers)
+                r = requests.get(img_url + '?time=' + str(time.time()), proxies=random.choice(proxy_list), timeout=30,
+                                 headers=headers)
                 # print(r)
                 save_path = Path(str(file_path) + '/cover/')
                 if save_path.exists() == False:
@@ -192,7 +198,7 @@ def read_data():
     db = pymysql.connect(config.HOST, config.USER, config.PASSWORD, config.DATABASE)
     # 使用 cursor() 方法创建一个游标对象 cursor
     cursor = db.cursor()
-    sql = "SELECT t_id,detail_url,system_type FROM shopnc_taobao_goods WHERE pic_spilder_status=0 AND system_type='天猫'"
+    sql = "SELECT t_id,detail_url,system_type FROM shopnc_taobao_goods WHERE pic_spilder_status=0"
     try:
         cursor.execute(sql)
         results = cursor.fetchall()

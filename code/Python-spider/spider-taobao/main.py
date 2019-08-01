@@ -23,8 +23,9 @@ def self_thread(data, thread_num):
 
 
 if __name__ == '__main__':
+    # print(proxies_on)
     read_data()
-    # # 读取excel
+    # 读取excel
     excel_path = os.getcwd() + '/excel/test.xls'
     data_list = read_excel(excel_path)
     thread_list = []
@@ -32,7 +33,7 @@ if __name__ == '__main__':
         thread_data = [data_list[i:i + 10] for i in range(0, len(data_list), 10)]
         j = 1
         for i in thread_data:
-            #　self_thread(i, j)
+            # 　self_thread(i, j)
             t1 = threading.Thread(target=self_thread, args=(i, j))
             thread_list.append(threading.Thread(target=self_thread, args=(i, j)))
             j += 1
