@@ -43,7 +43,8 @@ def generate_img(text="中文", k=1, num=50, last_string=''):
         cv2img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # cv2和PIL中颜色的hex码的储存顺序不同
         pilimg = Image.fromarray(cv2img)
         draw = ImageDraw.Draw(pilimg)
-        font = ImageFont.truetype("font/padmaa.ttf", font_size + random.randint(1, 2), encoding="utf-8")
+        font = ImageFont.truetype("font/ukai.ttc", font_size + random.randint(1, 2),
+                                  encoding="utf-8")
         draw.text((x + random.randint(-5, +5), y + random.randint(-5, +5)), text, colors[random.randint(1, 3)],
                   font=font)  # 参数1：打印坐标，参数2：文本，参数3：字体颜色，参数4：字体
         cv2charimg = cv2.cvtColor(np.array(pilimg), cv2.COLOR_RGB2BGR)
@@ -58,27 +59,30 @@ def img_to_video(total, radio):
     fps = 28
     size = (544, 960)
     name = random.randint(1, 1000)
-    videowriter = cv2.VideoWriter(str(name) + ".mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, size)
-    for f in range(1, 20):
-        img_fen = cv2.imread('fen.png')
-        videowriter.write(img_fen)
-    path = r'image/'
-    for x in range(1, total + 1):
-        for i in range(1, 51):
-            # print(path + str(x) + '_' + str(i) + '.jpg')
-            img = cv2.imread(path + str(x) + '_' + str(i) + '.jpg')
-            cv2.waitKey(1)
-            videowriter.write(img)
-    videowriter.release()
-    time.sleep(1)
-    print("video audio merge!!!!!")
-    audioclip = AudioFileClip('auido_%s.mp3' % str(radio))
-    print(str(name) + ".mp4")
-    videoclip = VideoFileClip(str(name) + ".mp4")
-    # print(videoclip)
-    videoclip2 = videoclip.set_audio(audioclip)
-    video = CompositeVideoClip([videoclip2])
-    video.write_videofile('video/' + str(name) + str(random.randint(1, 10)) + ".mp4", codec='mpeg4', fps=28)
+    try:
+        videowriter = cv2.VideoWriter(str(name) + ".mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, size)
+        for f in range(1, 20):
+            img_fen = cv2.imread('fen.png')
+            videowriter.write(img_fen)
+        path = r'image/'
+        for x in range(1, total + 1):
+            for i in range(1, 51):
+                # print(path + str(x) + '_' + str(i) + '.jpg')
+                img = cv2.imread(path + str(x) + '_' + str(i) + '.jpg')
+                cv2.waitKey(1)
+                videowriter.write(img)
+        videowriter.release()
+        time.sleep(1)
+        print("video audio merge!!!!!")
+        audioclip = AudioFileClip('auido_%s.mp3' % str(radio))
+        print(str(name) + ".mp4")
+        videoclip = VideoFileClip(str(name) + ".mp4")
+        # print(videoclip)
+        videoclip2 = videoclip.set_audio(audioclip)
+        video = CompositeVideoClip([videoclip2])
+        video.write_videofile('video/' + str(name) + str(random.randint(1, 10)) + ".mp4", codec='mpeg4', fps=28)
+    except IOError as e:
+        print(e)
 
 
 def video_to_img():

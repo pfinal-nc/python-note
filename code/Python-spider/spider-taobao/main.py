@@ -1,48 +1,35 @@
 # -*- coding:utf-8 -*-
 import os
-import threading
-import time
-from pathlib import Path
-import random
+import config
 from getImage.getImage import get_img
 from getImage.getImage import read_excel
 from getImage.getImage import read_data
-from fake_useragent import UserAgent
+from getImage.getImage import get_check_data
 
 
 def self_thread(data, thread_num):
     # print(data)
-    print("开始线程：" + str(thread_num))
+    print("开始爬取：" + str(thread_num))
     if len(data) > 0:
         for i in data:
-            # time.sleep(2)
-            # print(type(i['id']))
-            get_img(i['url'], i['platform'], i['id'])
-            # download_img(i['url'])
-    # print("退出线程：" + self.threadID)
+            get_img(i[1], i[2], i[0])
 
 
 if __name__ == '__main__':
-    # print(proxies_on)
-    read_data()
-    # 读取excel
-    excel_path = os.getcwd() + '/excel/test.xls'
-    data_list = read_excel(excel_path)
-    thread_list = []
-    if len(data_list) > 10:
-        thread_data = [data_list[i:i + 10] for i in range(0, len(data_list), 10)]
+    # goods_list = read_data()
+    goods_list = get_check_data()
+    print(goods_list)
+    # print(goods_list)
+    # for i in goods_list:
+    #     get_img(i[1], i[2], i[0])
+    # excel_path = os.getcwd() + '/excel/test.xls'
+    # data_list = read_excel(excel_path)
+    # thread_list = []
+    if len(goods_list) > 50:
+        thread_data = [goods_list[i:i + 50] for i in range(0, len(goods_list), 10)]
+        # print(thread_data)
         j = 1
         for i in thread_data:
-            # 　self_thread(i, j)
-            t1 = threading.Thread(target=self_thread, args=(i, j))
-            thread_list.append(threading.Thread(target=self_thread, args=(i, j)))
-            j += 1
-        # print()
-        if len(thread_list) > 0:
-            for k in thread_list:
-                k.start()
-                k.join()
+            self_thread(i, j)
     else:
-        # pass
-        # selfThread('1', data_list).start()
-        threading.Thread(target=self_thread, args=(data_list, 1)).start()
+        self_thread(goods_list, 1)
