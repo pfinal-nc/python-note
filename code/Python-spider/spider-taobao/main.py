@@ -17,8 +17,8 @@ def self_thread(data, thread_num):
 
 
 if __name__ == '__main__':
-    # goods_list = read_data()
-    goods_list = get_check_data()
+    goods_list = read_data()
+    # goods_list = get_check_data()
     # print(goods_list)
     # for i in goods_list:
     #     get_img(i[1], i[2], i[0])
