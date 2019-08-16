@@ -1,0 +1,7 @@
+[Desktop Entry] 
+Name = test 
+Comment= android studio 
+Exec=/home/pfinal/www/code/python-note/code/Python-tkinter/test.sh 
+Icon=/home/pfinal/Downloads/fm.jpg
+Terminal=false 
+Type=Application

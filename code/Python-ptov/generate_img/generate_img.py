@@ -109,7 +109,7 @@ def video_to_img():
 def get_radio(text, i):
     client = AipSpeech(config.APP_ID, config.API_KEY, config.SECRET_KEY)
     result = client.synthesis(text, 'zh', 1, {
-        'spd': 3,
+        'spd': 4,
         'vol': 10,
         'pit': 6,
         'per': 4
