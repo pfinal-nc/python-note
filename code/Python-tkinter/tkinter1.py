@@ -6,21 +6,25 @@ from tkinter import simpledialog
 class App:
     def __init__(self, master):
         fm1 = tk.Frame(master)
-        tk.Button(fm1, text='打豆豆', command=self.CreatDialog, fg="#fff", bg="red").pack(side=tk.TOP, anchor=tk.W,
-                                                                                       fill=tk.X,
-                                                                                       expand=tk.YES)
-        tk.Button(fm1, text='Center').pack(side=tk.TOP, anchor=tk.W, fill=tk.X, expand=tk.YES)
-        tk.Button(fm1, text='bottom').pack(side=tk.TOP, anchor=tk.W, fill=tk.X, expand=tk.YES)
-        fm1.pack(side=tk.LEFT, fill=tk.BOTH, expand=tk.YES)
+        menu = tk.Menu(fm1)
+        root.config(menu=menu)
+        # 设置菜单选项
+        menu_one = self.get_menu(menu)
+        menu.add_cascade(label='语言', menu=menu_one)
 
-    def CreatDialog(self):
-        world = simpledialog.askstring('告诉我', '你是不是猪', initialvalue='是')
-        if world != "是":
-            self.CreatDialog()
+    def get_menu(self, menu):
+        menu1 = tk.Menu(menu, tearoff=False)
+        for item in ['python', 'c', 'java', 'c++', 'c#', 'php', 'B', '退出']:
+            if item == '退出':
+                menu1.add_separator()
+                menu1.add_command(label=item, command=root.quit)
+            else:
+                menu1.add_command(label=item, command=lambda: print(item))
+        return menu1
 
 
 root = tk.Tk()  # 主窗口
 root.title('吃饱喝足')  # 窗口标题
-root.size(200, 200)
+root.geometry("800x800+200+50")
 display = App(root)
 root.mainloop()
