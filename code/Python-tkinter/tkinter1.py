@@ -1,6 +1,7 @@
 import tkinter as tk  # 导入tkinter模块
 from tkinter import messagebox
 from tkinter import simpledialog
+import config
 
 
 class App:
@@ -9,22 +10,25 @@ class App:
         menu = tk.Menu(fm1)
         root.config(menu=menu)
         # 设置菜单选项
-        menu_one = self.get_menu(menu)
-        menu.add_cascade(label='语言', menu=menu_one)
+        # menu_one = self.get_menu(menu)
+        # menu.add_cascade(label='首页', menu=menu_one)
+        # self.get_menu(self, menu)
+        # menu.add_command(label='关于', command=self.about_me)
 
-    def get_menu(self, menu):
-        menu1 = tk.Menu(menu, tearoff=False)
-        for item in ['python', 'c', 'java', 'c++', 'c#', 'php', 'B', '退出']:
-            if item == '退出':
-                menu1.add_separator()
-                menu1.add_command(label=item, command=root.quit)
-            else:
-                menu1.add_command(label=item, command=lambda: print(item))
-        return menu1
+    def get_menu(self):
+        menu_list = config.MENU
+        print(menu_list)
+
+    def menu_func(self, params):
+        print(params)
+
+    def about_me(self):
+        tk.messagebox.showinfo('欢迎', "欢迎使用!\nBy PFinal")
 
 
 root = tk.Tk()  # 主窗口
 root.title('吃饱喝足')  # 窗口标题
 root.geometry("800x800+200+50")
 display = App(root)
-root.mainloop()
+display.get_menu()
+# root.mainloop()
