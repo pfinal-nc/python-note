@@ -39,6 +39,9 @@ class App:
         eval('self.' + self.party.get())(view_frame)
         view_frame.pack(side=tk.TOP)
 
+    def json_view(self, view_frame):
+        tk.Label(view_frame, text="开发中", bg="Azure", font=('Arial', 12), width=300, height=2, justify="center").pack()
+        
     def md52(self, view_frame):
         tk.Label(view_frame, text="MD5加密", bg="Azure", font=('Arial', 12), width=300, height=2, justify="center").pack()
         form = tk.Frame(view_frame)
@@ -73,7 +76,8 @@ class App:
         self.textarea.delete('1.0', tk.END)
         if len(self.md5_str_list) > 0:
             for item in self.md5_str_list:
-                self.textarea.insert(tk.END, str(item) + "\n")
+                for k in item:
+                    self.textarea.insert(tk.END, k + "【" + item[k] + "】\n")
 
 
 root = tk.Tk()
