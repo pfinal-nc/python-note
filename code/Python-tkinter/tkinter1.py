@@ -41,7 +41,7 @@ class App:
 
     def json_view(self, view_frame):
         tk.Label(view_frame, text="开发中", bg="Azure", font=('Arial', 12), width=300, height=2, justify="center").pack()
-        
+
     def md52(self, view_frame):
         tk.Label(view_frame, text="MD5加密", bg="Azure", font=('Arial', 12), width=300, height=2, justify="center").pack()
         form = tk.Frame(view_frame)
