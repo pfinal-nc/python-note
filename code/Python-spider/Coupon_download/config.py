@@ -20,3 +20,7 @@ __mtime__ = '2019/8/22'
 """
 TB_URL = 'https://pub.alimama.com/'
 GECKODRIVER_PATH = '/home/pfinal/.pyenv/versions/3.7.3/geckodriver'
+DEBUG = False
+USERNAME = ''
+PASSWORD = ''
+EXCEL_URL = 'https://pub.alimama.com/coupon/qq/export.json?adzoneId=261910834&siteId=42776937'
