@@ -13,7 +13,7 @@ __mtime__ = '2019/8/22'
             ┗━┓      ┏━┛
                 ┃      ┗━━━┓
                 ┃  神兽保佑    ┣┓
-                ┃　永无BUG！   ┏┛
+                ┃ 永无BUG！   ┏┛
                 ┗┓┓┏━┳┓┏┛
                   ┃┫┫  ┃┫┫
                   ┗┻┛  ┗┻┛
@@ -24,3 +24,13 @@ DEBUG = False
 USERNAME = ''
 PASSWORD = ''
 EXCEL_URL = 'https://pub.alimama.com/coupon/qq/export.json?adzoneId=261910834&siteId=42776937'
+
+
+# MYSQL
+MYSQL_HOST = '127.0.0.1'
+MYSQL_USERNAME = 'root'
+MYSQL_PASSWORD = 'root'
+MYSQL_DB = 'shopnc'
+MYSQL_TABLE = 'shopnc_taobao_goods'
+
+

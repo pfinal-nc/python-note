@@ -106,6 +106,7 @@ class Spider(object):
             {'select': '#desc-lazyload-container > p > img', "nth": True},
             {'select': '#desc-lazyload-container > p:nth-child(14) > span > img', "nth": True},
         ]
+        
         for selector in image_selectors:
             goods_info_img = driver.find_elements_by_css_selector(selector['select'])
             if len(goods_info_img) > 0:

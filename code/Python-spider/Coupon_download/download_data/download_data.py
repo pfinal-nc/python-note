@@ -23,6 +23,8 @@ import random
 import time
 import requests
 import datetime
+import xlrd
+import pymysql
 import json
 from pathlib import Path
 from selenium import webdriver
@@ -99,6 +101,8 @@ def login():
     except Exception as e:  # try捕获异常，防止程序进入死循环
         print('文件下载失败！！')
 
+    return filename
+
 
 def _input_simulation(e, text):
     for i in range(len(text)):
@@ -143,3 +147,36 @@ def _error(device):
     except Exception as e:
         if config.DEBUG: print(e)
         return True
+
+
+def read_excel(excel_path):
+    excel_data = []
+    data = xlrd.open_workbook(excel_path)
+    sheet0 = data.sheet_by_index(0)
+    rows = sheet0.nrows  # 行总数
+    # print(rows)
+    i = 1
+    while (i < rows):
+        row_data = sheet0.row_values(i)
+        # print(row_data[19])
+        if row_data[13] == "天猫":
+            excel_data.append(
+                {'id': i, 't_id': row_data[0], 'name': row_data[1], 'cover': row_data[2], 'detail_url': row_data[3],
+                 'cate_name': row_data[4], 'tbk_url': row_data[5], 'price': row_data[6], 'sale_num': row_data[7],
+                 'income_ratio': row_data[8], 'commission': row_data[9], 'wangwang': row_data[10],
+                 'seller_id': row_data[11], 'store_name': row_data[12], 'system_type': row_data[13],
+                 'coupon_id': row_data[14], 'coupon_count_num': row_data[15], 'coupon_num': row_data[16],
+                 'coupon_desc': row_data[17], 'coupon_start_time': row_data[18], 'coupon_end_time': row_data[19],
+                 'coupon_url': row_data[20], 'goods_coupon_url': row_data[21]})
+        i = i + 1
+    return excel_data
+
+
+def save_data(data):
+    db = pymysql.connect(config.MYSQL_HOST, config.MYSQL_USERNAME, config.MYSQL_PASSWORD, config.MYSQL_DB)
+    cursor = db.cursor()
+    sql = "INSRT INTO " + config.MYSQL_TABLE + '(`id`,`t_id`,`name`,`cover`,`detail_url`,`cate_name`,`tbk_url`,`price`,`sale_num`,`income_ratio`,`commission`,`wangwang`,`seller_id`,`store_name`,`system_type`,`coupon_id`,`coupon_count_num`,`coupon_num`,`coupon_desc`,`coupon_start_time`,`coupon_end_time`,`coupon_url`,`goods_coupon_url`)VALUES'
+    if len(data):
+        for item in data:
+            tmp = '(%d,%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)' % (
+                item['id'], item['t_id'], item['name'],  item['cover'], item['detail_url'], item['cate_name'], item['tbk_url'], item['price'], item['sale_num'], item['sale_num'])
