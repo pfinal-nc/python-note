@@ -1,0 +1,1006 @@
+1569398594387	geckodriver	INFO	geckodriver 0.21.0
+1569398594387	geckodriver	INFO	geckodriver 0.21.0
+1569398594387	geckodriver	INFO	geckodriver 0.21.0
+1569398594387	geckodriver	INFO	geckodriver 0.21.0
+1569398594387	geckodriver	INFO	geckodriver 0.21.0
+1569398594388	geckodriver	INFO	geckodriver 0.21.0
+1569398594424	geckodriver	INFO	Listening on 127.0.0.1:51177
+1569398594438	geckodriver	INFO	Listening on 127.0.0.1:56605
+1569398594438	geckodriver	INFO	Listening on 127.0.0.1:47669
+1569398594439	geckodriver	INFO	Listening on 127.0.0.1:44469
+1569398594440	geckodriver	INFO	Listening on 127.0.0.1:44667
+1569398594440	geckodriver	INFO	Listening on 127.0.0.1:45571
+1569398595390	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Sv77wPTvaPOV"
+1569398595399	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tBx0Zq5ZzuZX"
+1569398595407	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.znf4OgPaqbS4"
+1569398595413	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3pLEys6VjYTv"
+1569398595422	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JBj1oBIt5fgG"
+1569398595429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PqAZgEpblE4Z"
+1569398597740	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569398597741	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569398597742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569398597742	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569398598098	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569398598098	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569398598099	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569398598099	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569398598181	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569398598182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569398598182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569398598182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569398598236	Marionette	TRACE	Received observer notification profile-after-change
+1569398598288	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569398598288	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569398598289	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569398598289	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569398598382	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569398598384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569398598384	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569398598385	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569398598446	Marionette	TRACE	Received observer notification command-line-startup
+1569398598446	Marionette	TRACE	Received observer notification nsPref:changed
+1569398598447	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1569398598490	Marionette	TRACE	Received observer notification profile-after-change
+1569398598583	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569398598584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569398598584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569398598584	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569398598654	Marionette	TRACE	Received observer notification profile-after-change
+1569398598691	Marionette	TRACE	Received observer notification command-line-startup
+1569398598691	Marionette	TRACE	Received observer notification nsPref:changed
+1569398598691	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1569398598718	Marionette	TRACE	Received observer notification profile-after-change
+1569398598829	Marionette	TRACE	Received observer notification command-line-startup
+1569398598830	Marionette	TRACE	Received observer notification nsPref:changed
+1569398598830	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1569398598888	Marionette	TRACE	Received observer notification profile-after-change
+1569398598895	Marionette	TRACE	Received observer notification command-line-startup
+1569398598896	Marionette	TRACE	Received observer notification nsPref:changed
+1569398598896	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1569398598916	Marionette	TRACE	Received observer notification profile-after-change
+1569398598997	Marionette	TRACE	Received observer notification command-line-startup
+1569398598997	Marionette	TRACE	Received observer notification nsPref:changed
+1569398598997	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1569398599006	Marionette	TRACE	Received observer notification command-line-startup
+1569398599006	Marionette	TRACE	Received observer notification nsPref:changed
+1569398599006	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+
+(firefox:3069): Gtk-WARNING **: 16:03:20.486: Theme directory status/scalable of theme Cupertino has no size field
+
+1569398600529	Marionette	TRACE	Received observer notification toplevel-window-ready
+
+(firefox:3067): Gtk-WARNING **: 16:03:21.141: Theme directory status/scalable of theme Cupertino has no size field
+
+1569398601224	Marionette	TRACE	Received observer notification toplevel-window-ready
+
+(firefox:3082): Gtk-WARNING **: 16:03:21.286: Theme directory status/scalable of theme Cupertino has no size field
+
+
+(firefox:3066): Gtk-WARNING **: 16:03:21.333: Theme directory status/scalable of theme Cupertino has no size field
+
+1569398601422	Marionette	TRACE	Received observer notification toplevel-window-ready
+
+(firefox:3071): Gtk-WARNING **: 16:03:21.425: Theme directory status/scalable of theme Cupertino has no size field
+
+
+(firefox:3076): Gtk-WARNING **: 16:03:21.428: Theme directory status/scalable of theme Cupertino has no size field
+
+1569398601447	Marionette	TRACE	Received observer notification toplevel-window-ready
+1569398601534	Marionette	TRACE	Received observer notification toplevel-window-ready
+1569398601542	Marionette	TRACE	Received observer notification toplevel-window-ready
+1569398610829	Marionette	TRACE	Received observer notification marionette-startup-requested
+1569398610829	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1569398610854	Marionette	TRACE	Received observer notification marionette-startup-requested
+1569398610854	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1569398611545	Marionette	TRACE	All scripts recorded.
+1569398611555	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1569398611559	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1569398611561	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1569398611565	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1569398611567	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1569398611573	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1569398611577	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1569398611579	Marionette	TRACE	All scripts recorded.
+1569398611579	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1569398611579	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1569398611579	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1569398611580	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1569398611580	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1569398611581	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1569398611582	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1569398611582	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1569398611582	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1569398611583	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1569398611583	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1569398611587	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1569398611588	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1569398611588	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1569398611589	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1569398611593	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1569398611593	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1569398611593	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1569398611594	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1569398611594	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1569398611595	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1569398611595	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1569398611595	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1569398611595	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1569398611596	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1569398611596	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1569398611599	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1569398611600	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1569398611601	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1569398611601	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1569398611601	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1569398611601	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1569398611601	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1569398611601	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1569398611604	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1569398611604	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1569398611604	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1569398611604	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1569398611605	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1569398611605	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1569398611606	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1569398611607	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1569398611607	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1569398611609	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1569398611609	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1569398611613	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1569398611613	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1569398611613	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1569398611618	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1569398611618	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1569398611619	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1569398611619	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1569398611621	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1569398611621	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1569398611623	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1569398611625	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1569398611627	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1569398611878	Marionette	INFO	Listening on port 41971
+1569398611879	Marionette	DEBUG	Remote service is active
+1569398611978	Marionette	INFO	Listening on port 34749
+1569398611979	Marionette	DEBUG	Remote service is active
+1569398611987	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:41352
+1569398612000	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1569398612001	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569398612195	Marionette	TRACE	[4294967297] Frame script loaded
+1569398612116	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:41828
+1569398612215	Marionette	TRACE	[4294967297] Frame script registered
+1569398612217	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1569398612218	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569398612256	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"13e30f94-44e3-4973-9538-ebee77412f2a","capabilities":{"browserName":"firefox","browserVersion":"69.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1569398612297	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=561718299089"}]
+1569398612416	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1569398612439	Marionette	TRACE	[4294967297] Frame script loaded
+1569398612457	Marionette	TRACE	[4294967297] Frame script registered
+1569398612475	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"58fc17a0-36b1-4fcd-8394-b94bdcafe930","capabilities":{"browserName":"firefox","browserVersion":"69.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1569398612518	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=599060392238"}]
+1569398612544	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1569398612705	Marionette	TRACE	Received observer notification marionette-startup-requested
+1569398612710	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1569398612776	Marionette	TRACE	Received observer notification marionette-startup-requested
+1569398612776	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1569398612781	Marionette	TRACE	Received observer notification marionette-startup-requested
+1569398612781	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1569398612847	Marionette	TRACE	Received observer notification marionette-startup-requested
+1569398612848	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1569398612910	Marionette	TRACE	All scripts recorded.
+1569398612910	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1569398612912	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1569398612914	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1569398612915	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1569398612918	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1569398612925	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1569398612926	Marionette	TRACE	All scripts recorded.
+1569398612926	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1569398612926	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1569398612927	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1569398612927	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1569398612927	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1569398612932	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1569398612933	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1569398612933	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1569398612934	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1569398612937	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1569398612937	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1569398612937	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1569398612945	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1569398612947	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1569398612947	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1569398612951	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1569398612951	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1569398612951	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1569398612952	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1569398612960	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1569398612961	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1569398612960	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1569398612965	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1569398612965	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1569398612965	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1569398612966	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1569398612966	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1569398612966	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1569398612969	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1569398612970	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1569398612970	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1569398612972	Marionette	TRACE	All scripts recorded.
+1569398612972	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1569398612973	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1569398612973	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1569398612973	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1569398612973	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1569398612974	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1569398612974	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1569398612975	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1569398612975	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1569398612975	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1569398612976	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1569398612976	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1569398612977	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1569398612977	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1569398612977	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1569398612977	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1569398612978	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1569398612978	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1569398612978	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1569398612979	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1569398612980	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1569398612980	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1569398612980	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1569398612980	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1569398612982	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1569398612982	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1569398612988	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1569398612989	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1569398613000	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1569398613005	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1569398613005	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1569398613005	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1569398613005	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1569398613005	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1569398613006	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1569398613006	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1569398613009	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1569398613009	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1569398613011	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1569398613013	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1569398613013	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1569398613016	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1569398613017	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1569398613043	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1569398613044	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1569398613076	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1569398613094	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1569398613100	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1569398613101	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1569398613102	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1569398613113	Marionette	TRACE	All scripts recorded.
+1569398613113	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1569398613116	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1569398613117	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1569398613121	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1569398613121	Marionette	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1569398613125	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1569398613130	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1569398613130	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1569398613131	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1569398613131	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1569398613133	Marionette	DEBUG	Setting recommended pref browser.search.update to false
+1569398613134	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1569398613134	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1569398613135	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1569398613135	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1569398613135	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1569398613136	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1569398613136	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1569398613136	Marionette	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1569398613137	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1569398613138	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1569398613145	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1569398613146	Marionette	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1569398613146	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1569398613150	Marionette	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1569398613150	Marionette	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1569398613156	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1569398613157	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1569398613158	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1569398613158	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1569398613159	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1569398613159	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1569398613159	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1569398613159	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1569398613159	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1569398613160	Marionette	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1569398613162	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1569398613162	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1569398613162	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1569398613163	Marionette	DEBUG	Setting recommended pref signon.rememberSignons to false
+1569398613163	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1569398613258	Marionette	INFO	Listening on port 39305
+1569398613259	Marionette	DEBUG	Remote service is active
+1569398613314	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:43878
+1569398613317	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1569398613318	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569398613324	Marionette	INFO	Listening on port 36177
+1569398613324	Marionette	DEBUG	Remote service is active
+1569398613393	Marionette	INFO	Listening on port 45519
+1569398613393	Marionette	DEBUG	Remote service is active
+1569398613410	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:48168
+1569398613422	Marionette	TRACE	[4294967297] Frame script loaded
+1569398613443	Marionette	TRACE	[4294967297] Frame script registered
+1569398613450	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1569398613453	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569398613495	Marionette	INFO	Listening on port 44809
+1569398613516	Marionette	DEBUG	Remote service is active
+1569398613517	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:48842
+1569398613534	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"281134c4-1d34-4b64-84d0-8a71616d70ee","capabilities":{"browserName":"firefox","browserVersion":"69.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1569398613570	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=600075960524"}]
+1569398613592	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1569398613593	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569398613603	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:46882
+1569398613613	Marionette	TRACE	[4294967297] Frame script loaded
+1569398613617	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1569398613618	Marionette	WARN	TLS certificate errors will be ignored for this session
+1569398613632	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1569398613637	Marionette	TRACE	[4294967297] Frame script registered
+1569398613691	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"264e77e3-fd5e-480f-9b72-1c02930ac841","capabilities":{"browserName":"firefox","browserVersion":"69.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1569398613700	Marionette	TRACE	[4294967297] Frame script loaded
+1569398613712	Marionette	TRACE	[4294967297] Frame script registered
+1569398613714	Marionette	TRACE	[4294967297] Frame script loaded
+1569398613729	Marionette	TRACE	[4294967297] Frame script registered
+1569398613734	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=594899520988"}]
+1569398613749	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"f4f06a70-ee8e-445a-bb64-9b05a05d66dd","capabilities":{"browserName":"firefox","browserVersion":"69.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1569398613776	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"aa57adb2-1dae-4c65-a6c4-8644187b7e52","capabilities":{"browserName":"firefox","browserVersion":"69.0. ... alse,"moz:webdriverClick":true,"capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}}]
+1569398613777	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1569398613793	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=597176517198"}]
+1569398613810	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://item.taobao.com/item.htm?id=578287356105"}]
+1569398613827	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1569398613842	Marionette	TRACE	[4294967297] Received DOM event beforeunload for about:blank
+1569398613990	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1569398614095	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1569398614666	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1569398614833	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1569398614923	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1569398615260	Marionette	TRACE	[4294967297] Received DOM event pagehide for about:blank
+1569398622407	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=600075960524
+1569398622410	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=599060392238
+1569398622546	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=597176517198
+1569398623068	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=594899520988
+1569398623094	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=561718299089
+1569398623173	Marionette	TRACE	[4294967297] Received DOM event DOMContentLoaded for https://detail.tmall.com/item.htm?id=578287356105
+1569398624871	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=599060392238
+1569398624874	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1569398625270	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=561718299089
+1569398625286	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.50/sku/stock.js,tm/detail/1.11.50/sku/address.js,tm/detail/1.11.50/sku/thumbViewer.js,tm/detail/1.11.50/view/main.js,tm/detail/1.11.50/sku/padadapte.js,tm/detail/1.11.50/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: ReferenceError: lastRecordIndex is not defined
+1569398625886	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1569398625958	Marionette	DEBUG	0 <- [1,3,{"error":"no such element","message":"Unable to locate element: [id=\"sufei-dialog-close\"]","stacktrace":"WebDriverErro ... entError@chrome://marionette/content/error.js:387:5\nelement.find/</<@chrome://marionette/content/element.js:343:16\n"},null]
+1569398625985	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1569398626075	Marionette	DEBUG	0 <- [1,4,null,[{"element-6066-11e4-a52e-4f735466cecf":"40f96cff-ddfc-4acb-826b-378046eeb9f5"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"27c73447-fb5a-45dc-9732-a6430a3bb86c"},{"element-6066-11e4-a52e-4f735466cecf":"d5e28db7-c4d4-4267-9cae-c105b7f0bcde"}]]
+1569398626079	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1569398626097	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"40f96cff-ddfc-4acb-826b-378046eeb9f5"}]]
+1569398626102	Marionette	DEBUG	0 -> [0,6,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"40f96cff-ddfc-4acb-826b-378046eeb9f5","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398626179	Marionette	DEBUG	0 <- [1,6,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/2769683567/O1CN01DZhT6V1cDjKIt6CFI_!!2769683567.jpg_60x60q90.jpg"}]
+1569398626183	Marionette	DEBUG	0 -> [0,7,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1) > a > img"}]
+1569398626297	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1569398626338	Marionette	DEBUG	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"40f96cff-ddfc-4acb-826b-378046eeb9f5"}]]
+1569398626361	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"5c55913b-24c6-4f68-9711-48561b81c1fe"}}]
+1569398626367	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"5c55913b-24c6-4f68-9711-48561b81c1fe"}]
+1569398626645	Marionette	DEBUG	0 -> [0,8,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"40f96cff-ddfc-4acb-826b-378046eeb9f5","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398626682	Marionette	DEBUG	0 <- [1,8,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/2769683567/O1CN01DZhT6V1cDjKIt6CFI_!!2769683567.jpg_60x60q90.jpg"}]
+1569398627612	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1569398627620	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1569398627640	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1569398627705	Marionette	DEBUG	0 -> [0,9,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1569398627919	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"e2b543e0-9c09-4cb8-a477-013dea36120b"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"39e7cc57-6f87-44d6-bda4-5d92cacab913"},{"element-6066-11e4-a52e-4f735466cecf":"4443a71b-ce68-4c8b-acee-b61926a53a14"}]]
+1569398627928	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1569398628076	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"e2b543e0-9c09-4cb8-a477-013dea36120b"}]]
+1569398628118	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e2b543e0-9c09-4cb8-a477-013dea36120b","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+WebGL(0x7f34e66c4000)::ForceLoseContext
+
+(/usr/lib/firefox/firefox:3476): dconf-WARNING **: 16:03:48.319: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+WebGL(0x7f4b21155800)::ForceLoseContext
+
+(/usr/lib/firefox/firefox:3339): dconf-WARNING **: 16:03:48.931: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+WebGL(0x7f34d59ca000)::ForceLoseContext
+1569398628965	Marionette	DEBUG	0 <- [1,9,null,[{"element-6066-11e4-a52e-4f735466cecf":"9f4ceeed-4153-405f-9bc9-361e1d1879ce"}]]
+1569398628987	Marionette	DEBUG	0 -> [0,10,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"9f4ceeed-4153-405f-9bc9-361e1d1879ce","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+
+(/usr/lib/firefox/firefox:3537): dconf-WARNING **: 16:03:49.164: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+
+(/usr/lib/firefox/firefox:3498): dconf-WARNING **: 16:03:49.272: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+
+(/usr/lib/firefox/firefox:3542): dconf-WARNING **: 16:03:49.318: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+1569398629348	Marionette	DEBUG	0 <- [1,10,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/2769683567/O1CN01V0fICS1cDjKAG0pwN_!!2769683567.jpg_60x60q90.jpg"}]
+1569398629364	Marionette	DEBUG	0 -> [0,11,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2) > a > img"}]
+
+(/usr/lib/firefox/firefox:3526): dconf-WARNING **: 16:03:49.411: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+WebGL(0x7f4b20f84000)::ForceLoseContext
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398630367	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/i4/3081566001/O1CN01AumP1q1uCVHq29yFd_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398630374	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1) > a > img"}]
+1569398630753	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=600075960524
+1569398630760	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1569398630886	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=578287356105
+1569398630888	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1569398631103	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=597176517198
+1569398631116	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1569398631300	Marionette	TRACE	[4294967297] Received DOM event pageshow for https://detail.tmall.com/item.htm?id=594899520988
+1569398631304	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1569398631346	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"e2b543e0-9c09-4cb8-a477-013dea36120b"}]]
+1569398631358	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e2b543e0-9c09-4cb8-a477-013dea36120b","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398631368	Marionette	DEBUG	0 <- [1,11,null,[{"element-6066-11e4-a52e-4f735466cecf":"9f4ceeed-4153-405f-9bc9-361e1d1879ce"}]]
+1569398631389	Marionette	DEBUG	0 -> [0,12,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"9f4ceeed-4153-405f-9bc9-361e1d1879ce","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398631617	Marionette	DEBUG	0 <- [1,12,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/2769683567/O1CN01V0fICS1cDjKAG0pwN_!!2769683567.jpg_60x60q90.jpg"}]
+1569398631765	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1569398631895	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1569398632124	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+1569398632310	Marionette	DEBUG	0 -> [0,3,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"sufei-dialog-close\"]"}]
+WebGL(0x7f1247039000)::ForceLoseContext
+1569398632407	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/i4/3081566001/O1CN01AumP1q1uCVHq29yFd_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398632626	Marionette	DEBUG	0 -> [0,13,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+WebGL(0x7f7255c1c000)::ForceLoseContext
+1569398632798	Marionette	DEBUG	0 <- [1,13,null,[{"element-6066-11e4-a52e-4f735466cecf":"98953840-7284-43bc-8932-9bb7f8cec75b"}]]
+1569398632805	Marionette	DEBUG	0 -> [0,14,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"98953840-7284-43bc-8932-9bb7f8cec75b","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+WebGL(0x7f8c9c856800)::ForceLoseContext
+1569398632997	Marionette	DEBUG	0 <- [1,14,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/2769683567/O1CN01xs6s2G1cDjJi6cHeK_!!2769683567.jpg_60x60q90.jpg"}]
+1569398633005	Marionette	DEBUG	0 -> [0,15,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3) > a > img"}]
+WebGL(0x7f402a8aa000)::ForceLoseContext
+1569398633198	Marionette	DEBUG	0 <- [1,15,null,[{"element-6066-11e4-a52e-4f735466cecf":"98953840-7284-43bc-8932-9bb7f8cec75b"}]]
+1569398633215	Marionette	DEBUG	0 -> [0,16,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"98953840-7284-43bc-8932-9bb7f8cec75b","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398633239	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"03a3e201-236f-4d4a-97ad-1f2beed38e20"}}]
+1569398633261	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"03a3e201-236f-4d4a-97ad-1f2beed38e20"}]
+1569398633426	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+WebGL(0x7f724bbaa800)::ForceLoseContext
+1569398633615	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"f2f4254d-c166-443a-ab9f-792469529bb4"}]]
+1569398633621	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"f2f4254d-c166-443a-ab9f-792469529bb4","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398633689	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/i2/3081566001/TB2S3xKejnD8KJjSspbXXbbEXXa_!!3081566001.jpg_60x60q90.jpg"}]
+1569398633697	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2) > a > img"}]
+1569398633700	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"2a902313-addf-470a-80b0-bef47f9da878"}}]
+1569398633712	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"2a902313-addf-470a-80b0-bef47f9da878"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398633834	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"90d75084-de65-4e13-8ba6-b7b9edf94f86"}}]
+1569398633876	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"90d75084-de65-4e13-8ba6-b7b9edf94f86"}]
+WebGL(0x7f72476cc000)::ForceLoseContext
+1569398634020	Marionette	DEBUG	0 <- [1,3,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"65aa10ad-7b86-4283-a37c-24720e65349c"}}]
+WebGL(0x7f122c40f800)::ForceLoseContext
+1569398634062	Marionette	DEBUG	0 -> [0,4,"WebDriver:ElementClick",{"id":"65aa10ad-7b86-4283-a37c-24720e65349c"}]
+WebGL(0x7f122c428000)::ForceLoseContext
+1569398634474	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"f2f4254d-c166-443a-ab9f-792469529bb4"}]]
+1569398634480	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"f2f4254d-c166-443a-ab9f-792469529bb4","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398634639	Marionette	DEBUG	0 <- [1,16,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/2769683567/O1CN01xs6s2G1cDjJi6cHeK_!!2769683567.jpg_60x60q90.jpg"}]
+WebGL(0x7f122c429000)::ForceLoseContext
+WebGL(0x7f4011f6b800)::ForceLoseContext
+WebGL(0x7f8c9c840800)::ForceLoseContext
+1569398635104	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569398635154	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569398635166	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569398635255	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:237:64
+1569398635265	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/i2/3081566001/TB2S3xKejnD8KJjSspbXXbbEXXa_!!3081566001.jpg_60x60q90.jpg"}]
+WebGL(0x7f8c9f4f3800)::ForceLoseContext
+WebGL(0x7f401b4b1800)::ForceLoseContext
+1569398635520	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1569398635521	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1569398635529	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1569398635569	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1569398635570	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1569398635575	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1569398635670	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"687329e7-aec8-4b6a-9332-b7ca15e8d958"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"d8fb84bd-abc2-479a-8447-059992e0a62f"},{"element-6066-11e4-a52e-4f735466cecf":"0b571600-74cf-49cd-9c5a-3b65c32dde34"}]]
+1569398635714	Marionette	DEBUG	0 -> [0,17,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1569398635727	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"a04a13ea-6b6b-44cf-aefd-1116472325bd"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"95018c12-d557-436c-a885-6ad946817ea7"},{"element-6066-11e4-a52e-4f735466cecf":"b9d20a97-1028-4779-9914-d37f0f762f95"}]]
+1569398635733	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+WebGL(0x7f8c8d639800)::ForceLoseContext
+1569398635897	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+WebGL(0x7f725b20d000)::ForceLoseContext
+WebGL(0x7f34e6774800)::ForceLoseContext
+WebGL(0x7f4b26bbd000)::ForceLoseContext
+1569398636270	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1569398636378	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1569398636394	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1569398636399	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1569398636412	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1569398636416	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1569398636447	Marionette	DEBUG	0 -> [0,5,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb>li>a>img"}]
+1569398636466	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"a04a13ea-6b6b-44cf-aefd-1116472325bd"}]]
+1569398636472	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"a04a13ea-6b6b-44cf-aefd-1116472325bd","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398636623	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"72f7208e-5569-4b6b-92d5-de9c1419c7b7"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"47775843-66fa-4d8b-869d-63168c32dfae"},{"element-6066-11e4-a52e-4f735466cecf":"392d43e2-8943-4f13-bf65-4610b567fb22"}]]
+1569398636630	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1569398636748	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"687329e7-aec8-4b6a-9332-b7ca15e8d958"}]]
+1569398636771	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"687329e7-aec8-4b6a-9332-b7ca15e8d958","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398636923	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/i3/3953693347/O1CN01gkvmBs1aayBT2USLr_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398636929	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1) > a > img"}]
+WebGL(0x7f4b26bc0800)::ForceLoseContext
+WebGL(0x7f401b4b5000)::ForceLoseContext
+1569398636972	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"72f7208e-5569-4b6b-92d5-de9c1419c7b7"}]]
+1569398636981	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"72f7208e-5569-4b6b-92d5-de9c1419c7b7","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398637091	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/4012569456/O1CN01mYkbtW2Jith37qFkR_!!4012569456.jpg_60x60q90.jpg"}]
+1569398637111	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1) > a > img"}]
+1569398637149	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"687329e7-aec8-4b6a-9332-b7ca15e8d958"}]]
+1569398637162	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"687329e7-aec8-4b6a-9332-b7ca15e8d958","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398637310	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"2ce7e156-4b1e-41e3-9265-fea2fef7cfa2"}]]
+1569398637317	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"2ce7e156-4b1e-41e3-9265-fea2fef7cfa2","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398637341	Marionette	DEBUG	0 <- [1,5,null,[{"element-6066-11e4-a52e-4f735466cecf":"3623165e-5236-4356-8029-2e2a85ad6287"},{"element-6066-11e4-a52e-4f735466ce ... ecf":"c6912554-7fed-4889-bca0-5dff23a4fed0"},{"element-6066-11e4-a52e-4f735466cecf":"e42dc971-5d5b-4d8d-92dc-8bac35f449ca"}]]
+1569398637348	Marionette	DEBUG	0 -> [0,6,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1)  > a > img"}]
+1569398637349	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"72f7208e-5569-4b6b-92d5-de9c1419c7b7"}]]
+1569398637354	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"72f7208e-5569-4b6b-92d5-de9c1419c7b7","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398637421	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/i2/3081566001/TB2fZuYajgy_uJjSZK9XXXvlFXa_!!3081566001.jpg_60x60q90.jpg"}]
+1569398637425	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3) > a > img"}]
+1569398637493	Marionette	DEBUG	0 <- [1,6,null,[{"element-6066-11e4-a52e-4f735466cecf":"3623165e-5236-4356-8029-2e2a85ad6287"}]]
+1569398637509	Marionette	DEBUG	0 -> [0,7,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"3623165e-5236-4356-8029-2e2a85ad6287","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398637637	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/i3/3953693347/O1CN01gkvmBs1aayBT2USLr_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398637654	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i1/4012569456/O1CN01mYkbtW2Jith37qFkR_!!4012569456.jpg_60x60q90.jpg"}]
+WebGL(0x7f1220695800)::ForceLoseContext
+1569398637785	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/i4/2093310801/O1CN01QLFGw21HmtoF88EEz_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398637791	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1) > a > img"}]
+1569398637878	Marionette	DEBUG	0 <- [1,16,null,[{"element-6066-11e4-a52e-4f735466cecf":"2ce7e156-4b1e-41e3-9265-fea2fef7cfa2"}]]
+1569398637883	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"2ce7e156-4b1e-41e3-9265-fea2fef7cfa2","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398638037	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"3623165e-5236-4356-8029-2e2a85ad6287"}]]
+WebGL(0x7f123d8b8000)::ForceLoseContext
+1569398638054	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"3623165e-5236-4356-8029-2e2a85ad6287","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398638121	Marionette	DEBUG	0 <- [1,7,null,{"value":"https://img.alicdn.com/imgextra/i3/1674422407/O1CN01bO8awU1TeRslDibEp_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398638126	Marionette	DEBUG	0 -> [0,8,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(1) > a > img"}]
+WebGL(0x7f34d399a000)::ForceLoseContext
+1569398638236	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/i4/2093310801/O1CN01QLFGw21HmtoF88EEz_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398638348	Marionette	DEBUG	0 <- [1,17,null,{"value":"https://img.alicdn.com/imgextra/i2/3081566001/TB2fZuYajgy_uJjSZK9XXXvlFXa_!!3081566001.jpg_60x60q90.jpg"}]
+1569398638362	Marionette	DEBUG	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"a04a13ea-6b6b-44cf-aefd-1116472325bd"}]]
+1569398638369	Marionette	DEBUG	0 -> [0,9,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"a04a13ea-6b6b-44cf-aefd-1116472325bd","element-6066-11e4-a52e-4f735466cec ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398638643	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1569398638649	Marionette	DEBUG	0 <- [1,9,null,{"value":"https://img.alicdn.com/imgextra/i3/1674422407/O1CN01bO8awU1TeRslDibEp_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398638659	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1569398638671	Marionette	DEBUG	0 <- [1,17,null,[{"element-6066-11e4-a52e-4f735466cecf":"27c73447-fb5a-45dc-9732-a6430a3bb86c"}]]
+1569398638676	Marionette	DEBUG	0 -> [0,18,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"27c73447-fb5a-45dc-9732-a6430a3bb86c","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398638955	Marionette	DEBUG	0 <- [1,18,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/2769683567/O1CN01kOlVXN1cDjJVfjzIQ_!!2769683567.jpg_60x60q90.jpg"}]
+1569398638965	Marionette	DEBUG	0 -> [0,19,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4) > a > img"}]
+1569398639246	Marionette	DEBUG	0 <- [1,19,null,[{"element-6066-11e4-a52e-4f735466cecf":"27c73447-fb5a-45dc-9732-a6430a3bb86c"}]]
+1569398639292	Marionette	DEBUG	0 -> [0,20,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"27c73447-fb5a-45dc-9732-a6430a3bb86c","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398639333	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1569398639357	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1569398639405	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"05d2dce7-1a6c-4f7c-b4b4-b6a03c347dab"}]]
+1569398639410	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"05d2dce7-1a6c-4f7c-b4b4-b6a03c347dab","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398639429	Marionette	DEBUG	0 <- [1,20,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/2769683567/O1CN01kOlVXN1cDjJVfjzIQ_!!2769683567.jpg_60x60q90.jpg"}]
+WebGL(0x7f8c8d005000)::ForceLoseContext
+1569398639650	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/4012569456/O1CN01eD5iHV2Jith3bCwpC_!!4012569456.jpg_60x60q90.jpg"}]
+1569398639661	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2) > a > img"}]
+1569398639823	Marionette	DEBUG	0 -> [0,10,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2)  > a > img"}]
+1569398639847	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"05d2dce7-1a6c-4f7c-b4b4-b6a03c347dab"}]]
+1569398639855	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"05d2dce7-1a6c-4f7c-b4b4-b6a03c347dab","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+WebGL(0x7f8c8d16a000)::ForceLoseContext
+1569398639957	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"5f150a52-8fa8-4d47-9ae0-ae77a965f37c"}]]
+1569398639973	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"5f150a52-8fa8-4d47-9ae0-ae77a965f37c","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398640079	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/4012569456/O1CN01eD5iHV2Jith3bCwpC_!!4012569456.jpg_60x60q90.jpg"}]
+1569398640089	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"60a1bc96-0c2b-4e12-975f-ecee2b7c99a2"}]]
+1569398640100	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"60a1bc96-0c2b-4e12-975f-ecee2b7c99a2","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398640108	Marionette	DEBUG	0 <- [1,18,null,[{"element-6066-11e4-a52e-4f735466cecf":"39e7cc57-6f87-44d6-bda4-5d92cacab913"}]]
+1569398640119	Marionette	DEBUG	0 -> [0,19,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"39e7cc57-6f87-44d6-bda4-5d92cacab913","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398640203	Marionette	DEBUG	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"d6e84a84-b0d6-4e74-92eb-d195b6af9987"}]]
+1569398640207	Marionette	DEBUG	0 -> [0,11,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d6e84a84-b0d6-4e74-92eb-d195b6af9987","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398640236	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/i3/3953693347/O1CN01e5PR9Y1aayBHuRfki_!!3953693347.jpg_60x60q90.jpg"}]
+1569398640240	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2) > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398640434	Marionette	DEBUG	0 -> [0,21,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398640712	Marionette	DEBUG	0 <- [1,21,null,[{"element-6066-11e4-a52e-4f735466cecf":"d5e28db7-c4d4-4267-9cae-c105b7f0bcde"}]]
+1569398640754	Marionette	DEBUG	0 <- [1,19,null,{"value":"https://img.alicdn.com/imgextra/i4/3081566001/O1CN01suBJn61uCVHjIb31n_!!3081566001.jpg_60x60q90.jpg"}]
+1569398640756	Marionette	DEBUG	0 -> [0,22,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d5e28db7-c4d4-4267-9cae-c105b7f0bcde","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398640759	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4) > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398640871	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"5f150a52-8fa8-4d47-9ae0-ae77a965f37c"}]]
+1569398640905	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"5f150a52-8fa8-4d47-9ae0-ae77a965f37c","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398641097	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1569398641125	Marionette	DEBUG	0 <- [1,22,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/2769683567/O1CN01jB0QMU1cDjJpFVyxq_!!2769683567.jpg_60x60q90.jpg"}]
+1569398641139	Marionette	DEBUG	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"39e7cc57-6f87-44d6-bda4-5d92cacab913"}]]
+1569398641146	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"39e7cc57-6f87-44d6-bda4-5d92cacab913","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398641146	Marionette	DEBUG	0 -> [0,23,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5) > a > img"}]
+WebGL(0x7f7248a91000)::ForceLoseContext
+1569398641220	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://img.alicdn.com/imgextra/i4/3081566001/O1CN01suBJn61uCVHjIb31n_!!3081566001.jpg_60x60q90.jpg"}]
+1569398641391	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/i1/2093310801/O1CN01EK12Ic1HmtmOJv3FP_!!2093310801.jpg_60x60q90.jpg"}]
+1569398641395	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2) > a > img"}]
+1569398641395	Marionette	DEBUG	0 <- [1,11,null,{"value":"https://img.alicdn.com/imgextra/i4/1674422407/O1CN01THTadW1TeRsBZCHFL_!!1674422407.png_60x60q90.jpg"}]
+WebGL(0x7f4b14957800)::ForceLoseContext
+1569398641399	Marionette	DEBUG	0 -> [0,12,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(2) > a > img"}]
+1569398641480	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/i3/3953693347/O1CN01e5PR9Y1aayBHuRfki_!!3953693347.jpg_60x60q90.jpg"}]
+1569398641649	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"60a1bc96-0c2b-4e12-975f-ecee2b7c99a2"}]]
+1569398641676	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"60a1bc96-0c2b-4e12-975f-ecee2b7c99a2","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398641764	Marionette	DEBUG	0 <- [1,12,null,[{"element-6066-11e4-a52e-4f735466cecf":"d6e84a84-b0d6-4e74-92eb-d195b6af9987"}]]
+1569398641769	Marionette	DEBUG	0 -> [0,13,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d6e84a84-b0d6-4e74-92eb-d195b6af9987","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+WebGL(0x7f4b1edde800)::ForceLoseContext
+1569398641803	Marionette	DEBUG	0 <- [1,23,null,[{"element-6066-11e4-a52e-4f735466cecf":"d5e28db7-c4d4-4267-9cae-c105b7f0bcde"}]]
+WebGL(0x7f7247755800)::ForceLoseContext
+WebGL(0x7f400ed76800)::ForceLoseContext
+1569398641927	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/i1/2093310801/O1CN01EK12Ic1HmtmOJv3FP_!!2093310801.jpg_60x60q90.jpg"}]
+1569398641938	Marionette	DEBUG	0 -> [0,24,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d5e28db7-c4d4-4267-9cae-c105b7f0bcde","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398642110	Marionette	DEBUG	0 <- [1,24,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/2769683567/O1CN01jB0QMU1cDjJpFVyxq_!!2769683567.jpg_60x60q90.jpg"}]
+1569398642128	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"67427e84-cad0-400a-8014-99985287b2bb"}]]
+1569398642136	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"67427e84-cad0-400a-8014-99985287b2bb","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398642227	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1569398642312	Marionette	DEBUG	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"4443a71b-ce68-4c8b-acee-b61926a53a14"}]]
+1569398642317	Marionette	DEBUG	0 -> [0,23,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"4443a71b-ce68-4c8b-acee-b61926a53a14","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398642333	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/4012569456/O1CN01Bx5pVj2Jith2d0rnP_!!4012569456.jpg_60x60q90.jpg"}]
+WebGL(0x7f401ac5b000)::ForceLoseContext
+1569398642432	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3) > a > img"}]
+1569398642499	Marionette	DEBUG	0 <- [1,16,null,[{"element-6066-11e4-a52e-4f735466cecf":"67427e84-cad0-400a-8014-99985287b2bb"}]]
+1569398642547	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"67427e84-cad0-400a-8014-99985287b2bb","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398642561	Marionette	DEBUG	0 <- [1,23,null,{"value":"https://img.alicdn.com/imgextra/i1/3081566001/TB1enWedIbI8KJjy1zdXXbe1VXa_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398642569	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5) > a > img"}]
+WebGL(0x7f34d3980000)::ForceLoseContext
+1569398642694	Marionette	DEBUG	0 <- [1,17,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/4012569456/O1CN01Bx5pVj2Jith2d0rnP_!!4012569456.jpg_60x60q90.jpg"}]
+1569398642715	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1569398642824	Marionette	DEBUG	0 <- [1,24,null,[{"element-6066-11e4-a52e-4f735466cecf":"4443a71b-ce68-4c8b-acee-b61926a53a14"}]]
+1569398642831	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"4443a71b-ce68-4c8b-acee-b61926a53a14","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398642937	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1569398642963	Marionette	DEBUG	0 <- [1,25,null,{"value":"https://img.alicdn.com/imgextra/i1/3081566001/TB1enWedIbI8KJjy1zdXXbe1VXa_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398643000	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"3f003a26-ba1b-4eef-9045-d3e49c914001"}]]
+1569398643005	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"3f003a26-ba1b-4eef-9045-d3e49c914001","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398643069	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/i1/3953693347/O1CN01oHcx381aayBNS6NsB_!!3953693347.jpg_60x60q90.jpg"}]
+1569398643073	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3) > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 24: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 9: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398643115	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1569398643139	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"214f2c28-5a78-4e8b-9556-9407aa879352"}]]
+1569398643145	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"214f2c28-5a78-4e8b-9556-9407aa879352","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398643147	Marionette	DEBUG	0 <- [1,16,null,[{"element-6066-11e4-a52e-4f735466cecf":"3f003a26-ba1b-4eef-9045-d3e49c914001"}]]
+1569398643153	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"3f003a26-ba1b-4eef-9045-d3e49c914001","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+WebGL(0x7f34e6be6000)::ForceLoseContext
+1569398643207	Marionette	DEBUG	0 <- [1,17,null,{"value":"https://img.alicdn.com/imgextra/i1/3953693347/O1CN01oHcx381aayBNS6NsB_!!3953693347.jpg_60x60q90.jpg"}]
+1569398643310	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/i1/2093310801/O1CN01jIGIqw1HmtmMHOAgC_!!2093310801.jpg_60x60q90.jpg"}]
+1569398643315	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3) > a > img"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 218: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398643430	Marionette	DEBUG	0 <- [1,25,null,{"value":null}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 148: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398643534	Marionette	DEBUG	0 <- [1,16,null,[{"element-6066-11e4-a52e-4f735466cecf":"214f2c28-5a78-4e8b-9556-9407aa879352"}]]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 38: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398643541	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"214f2c28-5a78-4e8b-9556-9407aa879352","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 100: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 21: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398643759	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1569398643814	Marionette	DEBUG	0 <- [1,17,null,{"value":"https://img.alicdn.com/imgextra/i1/2093310801/O1CN01jIGIqw1HmtmMHOAgC_!!2093310801.jpg_60x60q90.jpg"}]
+1569398643901	Marionette	DEBUG	0 <- [1,18,null,[{"element-6066-11e4-a52e-4f735466cecf":"47775843-66fa-4d8b-869d-63168c32dfae"}]]
+1569398643905	Marionette	DEBUG	0 -> [0,19,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"47775843-66fa-4d8b-869d-63168c32dfae","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398643944	Marionette	DEBUG	0 <- [1,19,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/4012569456/O1CN01FJUA4e2Jith12DZCz_!!4012569456.jpg_60x60q90.jpg"}]
+1569398643948	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4) > a > img"}]
+1569398643977	Marionette	DEBUG	0 -> [0,26,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1569398643990	Marionette	DEBUG	0 <- [1,13,null,{"value":"https://img.alicdn.com/imgextra/i4/1674422407/O1CN01THTadW1TeRsBZCHFL_!!1674422407.png_60x60q90.jpg"}]
+1569398644005	Marionette	DEBUG	0 <- [1,26,null,{"value":null}]
+1569398644059	Marionette	DEBUG	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"47775843-66fa-4d8b-869d-63168c32dfae"}]]
+1569398644064	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"47775843-66fa-4d8b-869d-63168c32dfae","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398644163	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i2/4012569456/O1CN01FJUA4e2Jith12DZCz_!!4012569456.jpg_60x60q90.jpg"}]
+1569398644218	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1569398644309	Marionette	DEBUG	0 <- [1,18,null,[{"element-6066-11e4-a52e-4f735466cecf":"d8fb84bd-abc2-479a-8447-059992e0a62f"}]]
+1569398644314	Marionette	DEBUG	0 -> [0,19,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d8fb84bd-abc2-479a-8447-059992e0a62f","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398644396	Marionette	DEBUG	0 <- [1,19,null,{"value":"https://img.alicdn.com/imgextra/i3/3953693347/O1CN01wRqZk11aayBOr3UGi_!!3953693347.jpg_60x60q90.jpg"}]
+1569398644403	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4) > a > img"}]
+1569398644428	Marionette	DEBUG	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"d8fb84bd-abc2-479a-8447-059992e0a62f"}]]
+1569398644433	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"d8fb84bd-abc2-479a-8447-059992e0a62f","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398644822	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1569398645008	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3)  > a > img"}]
+1569398645127	Marionette	DEBUG	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"4a9fcc82-3aa9-4d49-96f4-114748f02cde"}]]
+1569398645144	Marionette	DEBUG	0 -> [0,15,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"4a9fcc82-3aa9-4d49-96f4-114748f02cde","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398645153	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://img.alicdn.com/imgextra/i3/3953693347/O1CN01wRqZk11aayBOr3UGi_!!3953693347.jpg_60x60q90.jpg"}]
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.50/sku/stock.js,tm/detail/1.11.50/sku/address.js,tm/detail/1.11.50/sku/thumbViewer.js,tm/detail/1.11.50/view/main.js,tm/detail/1.11.50/sku/padadapte.js,tm/detail/1.11.50/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+1569398645188	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1569398645315	Marionette	DEBUG	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"392d43e2-8943-4f13-bf65-4610b567fb22"}]]
+1569398645319	Marionette	DEBUG	0 -> [0,23,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"392d43e2-8943-4f13-bf65-4610b567fb22","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398645339	Marionette	DEBUG	0 <- [1,18,null,[{"element-6066-11e4-a52e-4f735466cecf":"c6912554-7fed-4889-bca0-5dff23a4fed0"}]]
+1569398645347	Marionette	DEBUG	0 -> [0,19,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"c6912554-7fed-4889-bca0-5dff23a4fed0","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398645426	Marionette	DEBUG	0 <- [1,23,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/4012569456/O1CN01nGfnvg2Jitgy8Z5XC_!!4012569456.jpg_60x60q90.jpg"}]
+1569398645430	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5) > a > img"}]
+1569398645480	Marionette	DEBUG	0 <- [1,24,null,[{"element-6066-11e4-a52e-4f735466cecf":"392d43e2-8943-4f13-bf65-4610b567fb22"}]]
+1569398645483	Marionette	DEBUG	0 <- [1,15,null,{"value":"https://img.alicdn.com/imgextra/i3/1674422407/O1CN01L6zZoH1TeRryAcufE_!!0-item_pic.jpg_60x60q90.jpg"}]
+1569398645484	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"392d43e2-8943-4f13-bf65-4610b567fb22","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398645494	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(3) > a > img"}]
+1569398645519	Marionette	DEBUG	0 <- [1,19,null,{"value":"https://img.alicdn.com/imgextra/i2/2093310801/O1CN01kSLanj1HmtmODSVjq_!!2093310801.jpg_60x60q90.jpg"}]
+1569398645525	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4) > a > img"}]
+1569398645617	Marionette	DEBUG	0 <- [1,16,null,[{"element-6066-11e4-a52e-4f735466cecf":"4a9fcc82-3aa9-4d49-96f4-114748f02cde"}]]
+1569398645621	Marionette	DEBUG	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"c6912554-7fed-4889-bca0-5dff23a4fed0"}]]
+1569398645628	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"c6912554-7fed-4889-bca0-5dff23a4fed0","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398645630	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"4a9fcc82-3aa9-4d49-96f4-114748f02cde","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398645675	Marionette	DEBUG	0 <- [1,25,null,{"value":"https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i3/4012569456/O1CN01nGfnvg2Jitgy8Z5XC_!!4012569456.jpg_60x60q90.jpg"}]
+1569398645961	Marionette	DEBUG	0 <- [1,17,null,{"value":"https://img.alicdn.com/imgextra/i3/1674422407/O1CN01L6zZoH1TeRryAcufE_!!0-item_pic.jpg_60x60q90.jpg"}]
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.50/sku/stock.js,tm/detail/1.11.50/sku/address.js,tm/detail/1.11.50/sku/thumbViewer.js,tm/detail/1.11.50/view/main.js,tm/detail/1.11.50/sku/padadapte.js,tm/detail/1.11.50/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.50/sku/stock.js,tm/detail/1.11.50/sku/address.js,tm/detail/1.11.50/sku/thumbViewer.js,tm/detail/1.11.50/view/main.js,tm/detail/1.11.50/sku/padadapte.js,tm/detail/1.11.50/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+1569398646001	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://img.alicdn.com/imgextra/i2/2093310801/O1CN01kSLanj1HmtmODSVjq_!!2093310801.jpg_60x60q90.jpg"}]
+1569398646178	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1569398646221	Marionette	DEBUG	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"0b571600-74cf-49cd-9c5a-3b65c32dde34"}]]
+1569398646225	Marionette	DEBUG	0 -> [0,23,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"0b571600-74cf-49cd-9c5a-3b65c32dde34","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398646337	Marionette	DEBUG	0 <- [1,23,null,{"value":"https://img.alicdn.com/imgextra/i2/3953693347/O1CN01yhtbM91aayBRdSqtE_!!3953693347.jpg_60x60q90.jpg"}]
+1569398646343	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5) > a > img"}]
+1569398646350	Marionette	DEBUG	0 <- [1,24,null,[{"element-6066-11e4-a52e-4f735466cecf":"0b571600-74cf-49cd-9c5a-3b65c32dde34"}]]
+1569398646355	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"0b571600-74cf-49cd-9c5a-3b65c32dde34","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398646400	Marionette	DEBUG	0 <- [1,25,null,{"value":"https://img.alicdn.com/imgextra/i2/3953693347/O1CN01yhtbM91aayBRdSqtE_!!3953693347.jpg_60x60q90.jpg"}]
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.50/sku/stock.js,tm/detail/1.11.50/sku/address.js,tm/detail/1.11.50/sku/thumbViewer.js,tm/detail/1.11.50/view/main.js,tm/detail/1.11.50/sku/padadapte.js,tm/detail/1.11.50/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+1569398646682	Marionette	DEBUG	0 -> [0,26,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1569398646694	Marionette	DEBUG	0 <- [1,26,null,{"value":null}]
+1569398646967	Marionette	DEBUG	0 -> [0,18,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4)  > a > img"}]
+1569398647006	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1569398647010	Marionette	DEBUG	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"e42dc971-5d5b-4d8d-92dc-8bac35f449ca"}]]
+1569398647021	Marionette	DEBUG	0 -> [0,23,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e42dc971-5d5b-4d8d-92dc-8bac35f449ca","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398647132	Marionette	DEBUG	0 <- [1,23,null,{"value":"https://img.alicdn.com/imgextra/i3/2093310801/O1CN01bUybBT1HmtmOJvWNf_!!2093310801.jpg_60x60q90.jpg"}]
+1569398647138	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5) > a > img"}]
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.50/sku/stock.js,tm/detail/1.11.50/sku/address.js,tm/detail/1.11.50/sku/thumbViewer.js,tm/detail/1.11.50/view/main.js,tm/detail/1.11.50/sku/padadapte.js,tm/detail/1.11.50/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+1569398647218	Marionette	DEBUG	0 <- [1,24,null,[{"element-6066-11e4-a52e-4f735466cecf":"e42dc971-5d5b-4d8d-92dc-8bac35f449ca"}]]
+1569398647222	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"e42dc971-5d5b-4d8d-92dc-8bac35f449ca","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398647317	Marionette	DEBUG	0 <- [1,25,null,{"value":"https://img.alicdn.com/imgextra/i3/2093310801/O1CN01bUybBT1HmtmOJvWNf_!!2093310801.jpg_60x60q90.jpg"}]
+1569398647405	Marionette	DEBUG	0 -> [0,26,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1569398647443	Marionette	DEBUG	0 <- [1,26,null,{"value":null}]
+JavaScript error: https://g.alicdn.com/??tm/detail/1.11.50/sku/stock.js,tm/detail/1.11.50/sku/address.js,tm/detail/1.11.50/sku/thumbViewer.js,tm/detail/1.11.50/view/main.js,tm/detail/1.11.50/sku/padadapte.js,tm/detail/1.11.50/recommend/skuRight.js,tm/shop/3.2.20/dc/global/index.js,tm/shop/3.2.20/dc/header/index.js?t=1_2013072520131122.js, line 1: TypeError: a is null
+1569398648045	Marionette	DEBUG	0 <- [1,18,null,[{"element-6066-11e4-a52e-4f735466cecf":"95018c12-d557-436c-a885-6ad946817ea7"}]]
+1569398648114	Marionette	DEBUG	0 -> [0,19,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"95018c12-d557-436c-a885-6ad946817ea7","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398648148	Marionette	DEBUG	0 <- [1,19,null,{"value":"https://img.alicdn.com/imgextra/i4/1674422407/O1CN01IgdNvt1TeRrxp4OYC_!!1674422407.jpg_60x60q90.jpg"}]
+1569398648172	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(4) > a > img"}]
+1569398648194	Marionette	DEBUG	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"95018c12-d557-436c-a885-6ad946817ea7"}]]
+1569398648205	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"95018c12-d557-436c-a885-6ad946817ea7","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398648260	Marionette	DEBUG	0 <- [1,21,null,{"value":"https://img.alicdn.com/imgextra/i4/1674422407/O1CN01IgdNvt1TeRrxp4OYC_!!1674422407.jpg_60x60q90.jpg"}]
+1569398648325	Marionette	DEBUG	0 -> [0,26,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1569398648421	Marionette	DEBUG	0 <- [1,26,null,{"value":null}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 80: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 80: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398649266	Marionette	DEBUG	0 -> [0,22,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5)  > a > img"}]
+1569398649294	Marionette	DEBUG	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"b9d20a97-1028-4779-9914-d37f0f762f95"}]]
+1569398649302	Marionette	DEBUG	0 -> [0,23,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"b9d20a97-1028-4779-9914-d37f0f762f95","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398649328	Marionette	DEBUG	0 <- [1,23,null,{"value":"https://img.alicdn.com/imgextra/i1/1674422407/O1CN01bm9Bts1TeRryAWGiF_!!1674422407.jpg_60x60q90.jpg"}]
+1569398649341	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElements",{"using":"css selector","value":"#J_UlThumb > li:nth-child(5) > a > img"}]
+1569398649454	Marionette	DEBUG	0 <- [1,24,null,[{"element-6066-11e4-a52e-4f735466cecf":"b9d20a97-1028-4779-9914-d37f0f762f95"}]]
+1569398649460	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[{"ELEMENT":"b9d20a97-1028-4779-9914-d37f0f762f95","element-6066-11e4-a52e-4f735466ce ... dow!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);","scriptTimeout":null,"specialPowers":false}]
+1569398649509	Marionette	DEBUG	0 <- [1,25,null,{"value":"https://img.alicdn.com/imgextra/i1/1674422407/O1CN01bm9Bts1TeRryAWGiF_!!1674422407.jpg_60x60q90.jpg"}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 27: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398650517	Marionette	DEBUG	0 -> [0,26,"WebDriver:ExecuteScript",{"args":[],"newSandbox":false,"script":"\n                    (function () {\n                ...           setTimeout(f, 1000);\n                    })();\n                    ","scriptTimeout":null,"specialPowers":false}]
+1569398650523	Marionette	DEBUG	0 <- [1,26,null,{"value":null}]
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 80: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 27: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 27: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 80: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 80: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/runtime-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,kissy/k/1.4.2/overlay-min.js,kissy/k/1.4.2/component/container-min.js,kissy/k/1.4.2/component/control-min.js,kissy/k/1.4.2/component/manager-min.js,kissy/k/1.4.2/component/extension/shim-min.js,kissy/k/1.4.2/component/extension/align-min.js,kissy/k/1.4.2/component/extension/content-xtpl-min.js,kissy/k/1.4.2/component/extension/content-render-min.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js?t=1_2013072520131122.js, line 27: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 27: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 80: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/??mui/mallbar/3.2.36/index.js,kissy/k/1.4.2/swf-min.js,kissy/k/1.4.2/xtemplate-min.js,kissy/k/1.4.2/xtemplate/compiler-min.js,mui/mallbar/3.2.36/conf.js,mui/mallbar/3.2.36/util.js,mui/minilogin/3.1.6/index.js,mui/overlay/3.0.10/dialog.js,mui/mallbar/3.2.36/model.js,mui/mallbar/3.2.36/store.js,mui/storage/3.0.5/index.js,mui/storage/3.0.5/conf.js,mui/storage/3.0.5/util.js,mui/storage/3.0.5/xd.js,mui/storage/3.0.5/name.js,mui/mallbar/3.2.36/mallbar-item.js,mui/mallbar/3.2.36/mallbar-guide.js,mui/mallbar/3.2.36/plugin-prof.js,mui/mallbar/3.2.36/plugin-asset.js,mui/mallbar/3.2.36/plugin-brand.js,mui/mallbar/3.2.36/plugin-live.js,mui/mallbar/3.2.36/plugin-foot.js,mui/mallbar/3.2.36/plugin-top.js,mui/mallbar/3.2.36/plugin-ue.js,mui/mallbar/3.2.36/plugin-qrcode.js,mui/mallbar/3.2.36/plugin-favor.js,mui/mallbar/3.2.36/plugin-charge.js,mui/mallbar/3.2.36/plugin-cart.js,mui/minicart/3.0.38/minicart.js,mui/minicart/3.0.38/model.js,mui/minicart/3.0.38/util.js,mui/mallbar/3.2.36/plugin-nav.js,mui/mallbar/3.2.36/plugin-worth.js?t=1_2013072520131122.js, line 27: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1569398673464	Marionette	DEBUG	0 -> [0,26,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1569398673470	Marionette	DEBUG	0 <- [1,26,null,[]]
+1569398673474	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1569398673478	Marionette	DEBUG	0 <- [1,27,null,[]]
+1569398673483	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > div"}]
+1569398673492	Marionette	DEBUG	0 <- [1,28,null,[]]
+1569398673495	Marionette	DEBUG	0 -> [0,29,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table:nth-child(4) > tbody > tr > td > p:nth-child(3) > img"}]
+1569398673499	Marionette	DEBUG	0 <- [1,29,null,[]]
+1569398673509	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > div > img"}]
+1569398673512	Marionette	DEBUG	0 <- [1,30,null,[]]
+1569398673518	Marionette	DEBUG	0 -> [0,31,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(5) > a:nth-child(2) > img"}]
+1569398673522	Marionette	DEBUG	0 <- [1,31,null,[]]
+1569398673525	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > img"}]
+1569398673528	Marionette	DEBUG	0 <- [1,32,null,[]]
+1569398673531	Marionette	DEBUG	0 -> [0,33,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > div > table > tbody > tr > td > p > img"}]
+1569398673533	Marionette	DEBUG	0 <- [1,33,null,[]]
+1569398673537	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > img"}]
+1569398673541	Marionette	DEBUG	0 <- [1,34,null,[]]
+1569398673544	Marionette	DEBUG	0 -> [0,35,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > img"}]
+1569398673547	Marionette	DEBUG	0 <- [1,35,null,[]]
+1569398673552	Marionette	DEBUG	0 -> [0,36,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > a > img"}]
+1569398673558	Marionette	DEBUG	0 <- [1,36,null,[]]
+1569398673562	Marionette	DEBUG	0 -> [0,37,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > img"}]
+1569398673564	Marionette	DEBUG	0 <- [1,37,null,[]]
+1569398673568	Marionette	DEBUG	0 -> [0,38,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > span > img"}]
+1569398673575	Marionette	DEBUG	0 <- [1,38,null,[]]
+1569398673578	Marionette	DEBUG	0 -> [0,39,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(4) > b > img"}]
+1569398673579	Marionette	DEBUG	0 <- [1,39,null,[]]
+1569398674045	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1569398674051	Marionette	DEBUG	0 <- [1,27,null,[]]
+1569398674054	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1569398674059	Marionette	DEBUG	0 <- [1,28,null,[]]
+1569398674063	Marionette	DEBUG	0 -> [0,29,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > div"}]
+1569398674066	Marionette	DEBUG	0 <- [1,29,null,[]]
+1569398674069	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table:nth-child(4) > tbody > tr > td > p:nth-child(3) > img"}]
+1569398674074	Marionette	DEBUG	0 <- [1,30,null,[]]
+1569398674088	Marionette	DEBUG	0 -> [0,31,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > div > img"}]
+1569398674095	Marionette	DEBUG	0 <- [1,31,null,[]]
+1569398674099	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(5) > a:nth-child(2) > img"}]
+1569398674103	Marionette	DEBUG	0 <- [1,32,null,[]]
+1569398674111	Marionette	DEBUG	0 -> [0,33,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > img"}]
+1569398674115	Marionette	DEBUG	0 <- [1,33,null,[]]
+1569398674120	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > div > table > tbody > tr > td > p > img"}]
+1569398674123	Marionette	DEBUG	0 <- [1,34,null,[]]
+1569398674127	Marionette	DEBUG	0 -> [0,35,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > img"}]
+1569398674136	Marionette	DEBUG	0 <- [1,35,null,[]]
+1569398674140	Marionette	DEBUG	0 -> [0,36,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > img"}]
+1569398674143	Marionette	DEBUG	0 <- [1,36,null,[]]
+1569398674147	Marionette	DEBUG	0 -> [0,37,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > a > img"}]
+1569398674151	Marionette	DEBUG	0 <- [1,37,null,[]]
+1569398674155	Marionette	DEBUG	0 -> [0,38,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > img"}]
+1569398674157	Marionette	DEBUG	0 <- [1,38,null,[]]
+1569398674164	Marionette	DEBUG	0 -> [0,39,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > span > img"}]
+1569398674166	Marionette	DEBUG	0 <- [1,39,null,[]]
+1569398674171	Marionette	DEBUG	0 -> [0,40,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(4) > b > img"}]
+1569398674174	Marionette	DEBUG	0 <- [1,40,null,[]]
+1569398676728	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1569398676731	Marionette	DEBUG	0 <- [1,27,null,[]]
+1569398676736	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1569398676742	Marionette	DEBUG	0 <- [1,28,null,[]]
+1569398676747	Marionette	DEBUG	0 -> [0,29,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > div"}]
+1569398676750	Marionette	DEBUG	0 <- [1,29,null,[]]
+1569398676753	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table:nth-child(4) > tbody > tr > td > p:nth-child(3) > img"}]
+1569398676756	Marionette	DEBUG	0 <- [1,30,null,[]]
+1569398676761	Marionette	DEBUG	0 -> [0,31,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > div > img"}]
+1569398676764	Marionette	DEBUG	0 <- [1,31,null,[]]
+1569398676767	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(5) > a:nth-child(2) > img"}]
+1569398676776	Marionette	DEBUG	0 <- [1,32,null,[]]
+1569398676779	Marionette	DEBUG	0 -> [0,33,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > img"}]
+1569398676781	Marionette	DEBUG	0 <- [1,33,null,[]]
+1569398676786	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > div > table > tbody > tr > td > p > img"}]
+1569398676788	Marionette	DEBUG	0 <- [1,34,null,[]]
+1569398676794	Marionette	DEBUG	0 -> [0,35,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > img"}]
+1569398676797	Marionette	DEBUG	0 <- [1,35,null,[]]
+1569398676800	Marionette	DEBUG	0 -> [0,36,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > img"}]
+1569398676802	Marionette	DEBUG	0 <- [1,36,null,[]]
+1569398676807	Marionette	DEBUG	0 -> [0,37,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > a > img"}]
+1569398676814	Marionette	DEBUG	0 <- [1,37,null,[]]
+1569398676818	Marionette	DEBUG	0 -> [0,38,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > img"}]
+1569398676819	Marionette	DEBUG	0 <- [1,38,null,[]]
+1569398676826	Marionette	DEBUG	0 -> [0,39,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > span > img"}]
+1569398676828	Marionette	DEBUG	0 <- [1,39,null,[]]
+1569398676831	Marionette	DEBUG	0 -> [0,40,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(4) > b > img"}]
+1569398676833	Marionette	DEBUG	0 <- [1,40,null,[]]
+1569398677475	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1569398677479	Marionette	DEBUG	0 <- [1,27,null,[]]
+1569398677482	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1569398677485	Marionette	DEBUG	0 <- [1,28,null,[]]
+1569398677488	Marionette	DEBUG	0 -> [0,29,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > div"}]
+1569398677495	Marionette	DEBUG	0 <- [1,29,null,[]]
+1569398677498	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table:nth-child(4) > tbody > tr > td > p:nth-child(3) > img"}]
+1569398677501	Marionette	DEBUG	0 <- [1,30,null,[]]
+1569398677506	Marionette	DEBUG	0 -> [0,31,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > div > img"}]
+1569398677510	Marionette	DEBUG	0 <- [1,31,null,[]]
+1569398677513	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(5) > a:nth-child(2) > img"}]
+1569398677516	Marionette	DEBUG	0 <- [1,32,null,[]]
+1569398677519	Marionette	DEBUG	0 -> [0,33,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > img"}]
+1569398677522	Marionette	DEBUG	0 <- [1,33,null,[]]
+1569398677531	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > div > table > tbody > tr > td > p > img"}]
+1569398677536	Marionette	DEBUG	0 <- [1,34,null,[]]
+1569398677544	Marionette	DEBUG	0 -> [0,35,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > img"}]
+1569398677546	Marionette	DEBUG	0 <- [1,35,null,[]]
+1569398677551	Marionette	DEBUG	0 -> [0,36,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > img"}]
+1569398677554	Marionette	DEBUG	0 <- [1,36,null,[]]
+1569398677562	Marionette	DEBUG	0 -> [0,37,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > a > img"}]
+1569398677566	Marionette	DEBUG	0 <- [1,37,null,[]]
+1569398677570	Marionette	DEBUG	0 -> [0,38,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > img"}]
+1569398677572	Marionette	DEBUG	0 <- [1,38,null,[]]
+1569398677579	Marionette	DEBUG	0 -> [0,39,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > span > img"}]
+1569398677581	Marionette	DEBUG	0 <- [1,39,null,[]]
+1569398677583	Marionette	DEBUG	0 -> [0,40,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(4) > b > img"}]
+1569398677585	Marionette	DEBUG	0 <- [1,40,null,[]]
+1569398678467	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1569398678471	Marionette	DEBUG	0 <- [1,27,null,[]]
+1569398678476	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1569398678489	Marionette	DEBUG	0 <- [1,28,null,[]]
+1569398678495	Marionette	DEBUG	0 -> [0,29,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > div"}]
+1569398678500	Marionette	DEBUG	0 <- [1,29,null,[]]
+1569398678504	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table:nth-child(4) > tbody > tr > td > p:nth-child(3) > img"}]
+1569398678507	Marionette	DEBUG	0 <- [1,30,null,[]]
+1569398678510	Marionette	DEBUG	0 -> [0,31,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > div > img"}]
+1569398678513	Marionette	DEBUG	0 <- [1,31,null,[]]
+1569398678525	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(5) > a:nth-child(2) > img"}]
+1569398678532	Marionette	DEBUG	0 <- [1,32,null,[]]
+1569398678536	Marionette	DEBUG	0 -> [0,33,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > img"}]
+1569398678539	Marionette	DEBUG	0 <- [1,33,null,[]]
+1569398678545	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > div > table > tbody > tr > td > p > img"}]
+1569398678547	Marionette	DEBUG	0 <- [1,34,null,[]]
+1569398678552	Marionette	DEBUG	0 -> [0,35,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > img"}]
+1569398678554	Marionette	DEBUG	0 <- [1,35,null,[]]
+1569398678559	Marionette	DEBUG	0 -> [0,36,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > img"}]
+1569398678564	Marionette	DEBUG	0 <- [1,36,null,[]]
+1569398678567	Marionette	DEBUG	0 -> [0,37,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > a > img"}]
+1569398678573	Marionette	DEBUG	0 <- [1,37,null,[]]
+1569398678578	Marionette	DEBUG	0 -> [0,38,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > img"}]
+1569398678584	Marionette	DEBUG	0 <- [1,38,null,[]]
+1569398678587	Marionette	DEBUG	0 -> [0,39,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > span > img"}]
+1569398678589	Marionette	DEBUG	0 <- [1,39,null,[]]
+1569398678594	Marionette	DEBUG	0 -> [0,40,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(4) > b > img"}]
+1569398678596	Marionette	DEBUG	0 <- [1,40,null,[]]
+1569398680560	Marionette	DEBUG	0 -> [0,27,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > img"}]
+1569398680567	Marionette	DEBUG	0 <- [1,27,null,[]]
+1569398680575	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(2) > img"}]
+1569398680579	Marionette	DEBUG	0 <- [1,28,null,[]]
+1569398680585	Marionette	DEBUG	0 -> [0,29,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > div"}]
+1569398680592	Marionette	DEBUG	0 <- [1,29,null,[]]
+1569398680598	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table:nth-child(4) > tbody > tr > td > p:nth-child(3) > img"}]
+1569398680604	Marionette	DEBUG	0 <- [1,30,null,[]]
+1569398680626	Marionette	DEBUG	0 -> [0,31,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > div > img"}]
+1569398680666	Marionette	DEBUG	0 <- [1,31,null,[]]
+1569398680691	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(5) > a:nth-child(2) > img"}]
+1569398680708	Marionette	DEBUG	0 <- [1,32,null,[]]
+1569398680715	Marionette	DEBUG	0 -> [0,33,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > img"}]
+1569398680718	Marionette	DEBUG	0 <- [1,33,null,[]]
+1569398680721	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > div > table > tbody > tr > td > p > img"}]
+1569398680727	Marionette	DEBUG	0 <- [1,34,null,[]]
+1569398680731	Marionette	DEBUG	0 -> [0,35,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div > img"}]
+1569398680733	Marionette	DEBUG	0 <- [1,35,null,[]]
+1569398680747	Marionette	DEBUG	0 -> [0,36,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > div:nth-child(6) > img"}]
+1569398680750	Marionette	DEBUG	0 <- [1,36,null,[]]
+1569398680756	Marionette	DEBUG	0 -> [0,37,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > a > img"}]
+1569398680770	Marionette	DEBUG	0 <- [1,37,null,[]]
+1569398680775	Marionette	DEBUG	0 -> [0,38,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > table > tbody > tr > td > img"}]
+1569398680777	Marionette	DEBUG	0 <- [1,38,null,[]]
+1569398680787	Marionette	DEBUG	0 -> [0,39,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p > span > img"}]
+1569398680789	Marionette	DEBUG	0 <- [1,39,null,[]]
+1569398680794	Marionette	DEBUG	0 -> [0,40,"WebDriver:FindElements",{"using":"css selector","value":"#description > div > p:nth-child(4) > b > img"}]
+1569398680796	Marionette	DEBUG	0 <- [1,40,null,[]]
+1569398688012	Marionette	DEBUG	0 -> [0,40,"WebDriver:CloseWindow",{}]
+1569398688013	Marionette	DEBUG	0 <- [1,40,null,[]]
+1569398688017	Marionette	DEBUG	0 -> [0,41,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1569398688018	Marionette	INFO	Stopped listening on port 34749
+1569398688224	Marionette	TRACE	Received observer notification quit-application
+1569398688230	Marionette	DEBUG	0 <- [1,41,null,{"cause":"shutdown"}]
+1569398688397	Marionette	DEBUG	Closed connection 0
+1569398689590	Marionette	DEBUG	0 -> [0,41,"WebDriver:CloseWindow",{}]
+1569398689591	Marionette	DEBUG	0 <- [1,41,null,[]]
+1569398689598	Marionette	DEBUG	0 -> [0,42,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1569398689600	Marionette	INFO	Stopped listening on port 41971
+1569398690067	Marionette	TRACE	Received observer notification quit-application
+1569398690078	Marionette	DEBUG	0 <- [1,42,null,{"cause":"shutdown"}]
+1569398690367	Marionette	DEBUG	Closed connection 0
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4297, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-y_KX3Y/firefox-69.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3526, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-y_KX3Y/firefox-69.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3445, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-y_KX3Y/firefox-69.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4290, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-y_KX3Y/firefox-69.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3427, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-y_KX3Y/firefox-69.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4293, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-y_KX3Y/firefox-69.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 3420, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-y_KX3Y/firefox-69.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
