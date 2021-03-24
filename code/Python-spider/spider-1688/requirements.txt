@@ -74,7 +74,7 @@ qtconsole==4.5.2
 queuelib==1.5.0
 rarfile==3.0
 requests==2.22.0
-rsa==4.0
+rsa==4.1
 Scrapy==1.7.3
 selenium==3.141.0
 Send2Trash==1.5.0
