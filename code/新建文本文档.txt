@@ -1,14 +1,7 @@
 https://api.lovelive.tools/api/SweetNothings/10000/Serialization/Json
-https://zhaodao.ai/
 https://code2048.com/
 https://blog.csdn.net/woniu_001/article/details/80558514
 https://www.nihaowua.com/home.html ������
 http://www.nows.fun/   ������
 
-http://bs4.ntp.org.cn/
-
  pip install -i https://pypi.tuna.tsinghua.edu.cn/simple moviepy
-
- 每天一碗毒鸡汤, 身轻气爽,逼死强迫症系列
-
-累的时候，就要学会换种心情，不会很好，但不能太差。欢迎评论！
