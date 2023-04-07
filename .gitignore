@@ -3,3 +3,4 @@
 Python-weibo/config.py
 venv
 .DS_Store
+__pycache__
