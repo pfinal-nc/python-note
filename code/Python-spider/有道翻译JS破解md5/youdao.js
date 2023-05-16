@@ -1,41 +1,15 @@
-/**
- * Created by PFinal南丞.
- * @Author :PFinal南丞<lampxiezi@163.com>
- * @Date   :2023/5/16 16:17
- * @File    : youdao.js.js
- * @Software: PyCharm
- */
+// 引用 crypto-js 加密模块
+var CryptoJS = require('crypto-js')
 
-var n = {}
-    , a = {}
-    , c = o("1c46")
-    , r = o.n(c)
-    , i = {};
-const {CancelToken: s} = i["a"];
-let l;
-const d = "fanyideskweb"
-    , u = "webfanyi"
-    , m = "client,mysticTime,product"
-    , p = "1.0.0"
-    , b = "web"
-    , f = "fanyi.web";
-
-function g(e) {
-    return r.a.createHash("md5").update(e).digest()
+function getEncryptedParams(data, ua) {
+    var bv = CryptoJS.MD5(ua).toString(),
+        lts = "" + (new Date).getTime(),
+        salt = lts + parseInt(10 * Math.random(), 10)
+    var sign = CryptoJS.MD5('fanyideskweb' + data + salt + ']BjuETDhU)zqSxf-=B#7m').toString()
+    return { bv: bv, lts: lts, salt: salt, sign: sign }
 }
 
-function v(e) {
-    return r.a.createHash("md5").update(e.toString()).digest("hex")
-}
+var ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+var data = "测试"
+console.log(getEncryptedParams(data, ua));
 
-function h(e, t) {
-    return v(`client=${d}&mysticTime=${e}&product=${u}&key=${t}`)
-}
-
-function get_sign() {
-
-    console.log(e)
-    sign = h(t, e)
-}
-
-get_sign()
