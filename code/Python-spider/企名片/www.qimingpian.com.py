@@ -3,6 +3,8 @@
 # @Author  : PFinal南丞 <lampxiezi@163.com
 # @File    : www.qimingpian.com.py
 # @Software: PyCharm
+import csv
+
 import execjs
 import requests
 
