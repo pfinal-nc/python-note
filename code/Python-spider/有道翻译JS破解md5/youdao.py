@@ -41,7 +41,6 @@ def get_parameters_by_python(query, translate_from, translate_to):
     salt = lts + str(random.randint(0, 9))  # 13 位时间戳+随机数字，生成 salt 值
     sign = "fanyideskweb" + query + salt + "Y2FYu%TNSbMCxc3t2u^XT"  # 拼接字符串组成 sign
     sign = hashlib.md5(sign.encode()).hexdigest()  # 将 sign 进行 MD5 加密，生成最终 sign 值
-    print(sign)
     parameters = {
         'i': query,
         'from': translate_from,
@@ -62,24 +61,25 @@ def get_parameters_by_python(query, translate_from, translate_to):
 
 
 def get_parameters_by_javascript(query, translate_from, translate_to):
-    with open('youdao_encrypt.js', 'r', encoding='utf-8') as f:
+    with open('youdao.js', 'r', encoding='utf-8') as f:
         youdao_js = f.read()
-    params = execjs.compile(youdao_js).call('get_params', query, user_agent)  # 通过 JavaScript 代码获取各个参数
-    bv = hashlib.md5(user_agent.encode()).hexdigest()  # 对 UA 进行 MD5 加密，生成 bv 值
+    params = execjs.compile(youdao_js).call('getEncryptedParams')  # 通过 JavaScript 代码获取各个参数
+    print(params)
     parameters = {
         'i': query,
         'from': translate_from,
         'to': translate_to,
-        'smartresult': 'dict',
-        'client': 'fanyideskweb',
-        'salt': params['salt'],
+        "domain": 0,
+        "dictResult": "true",
+        "keyid": "webfanyi",
         'sign': params['sign'],
-        'lts': params['lts'],
-        'bv': bv,
-        'doctype': 'json',
-        'version': '2.1',
-        'keyfrom': 'fanyi.web',
-        'action': 'FY_BY_REALTlME'
+        "client": "fanyideskweb",
+        "product": "webfanyi",
+        "appVersion": "1.0.0",
+        "vendor": "web",
+        "pointParam": "client,mysticTime,product",
+        'mysticTime': params["t"],
+        'keyfrom': 'fanyi.web'
     }
     return parameters
 
@@ -87,9 +87,11 @@ def get_parameters_by_javascript(query, translate_from, translate_to):
 def main():
     query = input('请输入要翻译的文字：')
     # 原始语言，目标语言，默认自动处理
-    translate_from = translate_to = 'AUTO'
+    translate_from = 'auto'
+    translate_to = ''
     # 通过 Python 获取加密参数或者通过 JavaScript 获取参数，二选一
-    param = get_parameters_by_python(query, translate_from, translate_to)
+    param = get_parameters_by_javascript(query, translate_from, translate_to)
+    print(param)
     # param = get_parameters_by_javascript(query, translate_from, translate_to)
     result = get_translation_result(param)
     print('翻译的结果为：', result)
