@@ -1,0 +1,13 @@
+.idea
+venv
+/python-100/.ipynb_checkpoints/
+/Python-basics/.idea/
+/Python-basics/.ipynb_checkpoints/
+/Python-data/.ipynb_checkpoints/
+/Python-doc/.ipynb_checkpoints/
+/Python-jupyter/.ipynb_checkpoints/
+/Python-mysql/.ipynb_checkpoints/
+/python-pytorch/.idea/
+/python-pytorch/.ipynb_checkpoints/
+/Python-redis/.idea/
+/Python-redis/venv/
