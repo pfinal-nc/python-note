@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/7/11 14:09
 # @Author  : PFinal南丞 <lampxiezi@163.com
-# @File    : bool.py
+# @File    : _bool.py
 # @Software: PyCharm
 #  bool 它是在类中实现定义实例转化为布尔值的方式
 
