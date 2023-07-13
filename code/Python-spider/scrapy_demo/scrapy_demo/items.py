@@ -7,6 +7,14 @@ import scrapy
 
 
 class ScrapyDemoItem(scrapy.Item):
+    """ScrapyDemoItem"""
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    webname = scrapy.Field()
+    title = scrapy.Field()
+    category = scrapy.Field()
+    source_name = scrapy.Field()
+    pushddate = scrapy.Field()
+    content = scrapy.Field()
+    created_at = scrapy.Field()  # 创建时间
+    updated_at = scrapy.Field()  # 更新时间
