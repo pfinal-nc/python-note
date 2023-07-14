@@ -27,4 +27,3 @@ coroutines = [display(num) for num in range(10)]
 loop = asyncio.get_event_loop()
 loop.run_until_complete(asyncio.wait(coroutines))
 loop.close()
-
