@@ -46,12 +46,10 @@ class Student(object):
         return 2015 - self._birth
 
 
-
-
 if __name__ == '__main__':
-# s = Student()
-# s.score = 60  # OK 实际转化为 s.set_score(60)
-# print(s.score)
-#
-# s.score = 99999
-# print(s.score)
+    s = Student()
+    s.score = 60  # OK 实际转化为 s.set_score(60)
+    print(s.score)
+    #
+    # s.score = 99999
+    # print(s.score)

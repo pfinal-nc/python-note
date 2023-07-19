@@ -1,0 +1,4 @@
+2023/07/18 19:35:19 - __main__ - INFO - 26 - logging_demo - This is a log info
+2023/07/18 19:35:19 - __main__ - DEBUG - 27 - logging_demo - Debugging
+2023/07/18 19:35:19 - __main__ - WARNING - 28 - logging_demo - Warning exists
+2023/07/18 19:35:19 - __main__ - INFO - 29 - logging_demo - Finish
