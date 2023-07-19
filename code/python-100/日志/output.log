@@ -2,3 +2,6 @@
 2023/07/18 19:35:19 - __main__ - DEBUG - 27 - logging_demo - Debugging
 2023/07/18 19:35:19 - __main__ - WARNING - 28 - logging_demo - Warning exists
 2023/07/18 19:35:19 - __main__ - INFO - 29 - logging_demo - Finish
+2023-07-19 09:46:57,313 - __main__ - INFO - This is a log info
+2023-07-19 09:46:57,314 - __main__ - WARNING - Warning exists
+2023-07-19 09:46:57,314 - __main__ - INFO - Finish

@@ -50,3 +50,14 @@ if __name__ == '__main__':
 # level: 指定日志输出的类别, 程序会输出大于等于此级别的信息
 # stream: 在没有指定 filename 的时候会默认使用 streamhandler
 # handlers: 可以指定日志处理时所使用的 Handlers，必须是可迭代的。
+
+
+# 日志等级
+# CRITICAL 50
+# FATAL 50
+# ERROR 40
+# WARNING 30
+# WARN 30
+# INFO 30
+# DEBUG 10
+# NOTSET 0
