@@ -205,21 +205,21 @@ import asyncio
 #  创建future 的时候, task 为 pending 事件循环调用执行的时候当然就是 running 调用完毕自然就是 done, 如果需要停止事件循环, 就需要把task取消, 状态 cancel.
 
 
-def foo(future, result):
-    """ foo """
-    print(f"此时future的状态:{future}")
-    print(f"设置future 的结果:{result}")
-    future.set_result(result)
-    print(f"此时future 的状态:{future}")
-
-
-if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
-    try:
-        all_done = asyncio.Future()
-        loop.call_soon(foo, all_done, "Future is done!")
-        print("进入事件循环")
-        result =
-    finally:
-        print("关闭事件循环")
-        loop.close()
+# def foo(future, result):
+#     """ foo """
+#     print(f"此时future的状态:{future}")
+#     print(f"设置future 的结果:{result}")
+#     future.set_result(result)
+#     print(f"此时future 的状态:{future}")
+#
+#
+# if __name__ == '__main__':
+#     loop = asyncio.get_event_loop()
+#     try:
+#         all_done = asyncio.Future()
+#         loop.call_soon(foo, all_done, "Future is done!")
+#         print("进入事件循环")
+#         result =
+#     finally:
+#         print("关闭事件循环")
+#         loop.close()
