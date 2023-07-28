@@ -27,3 +27,13 @@ print(f"File root: {readme.root}")
 
 print(f"File directory: {readme.parent}")
 
+print(f"File suffix: {readme.suffix}")
+
+print(f"Is it absolute: {readme.is_absolute()}")
+
+# pathlib 的一个特性是可以使用 /（“除法”）运算符来连接路径：
+etc = Path('/etc')
+joined = etc / "cron.d" / "anacron"
+print(f"Exists? - {joined.exists()}")
+
+# 要注意滴是 pathliib 只是替代 os.path 而不是整个 os 模块,
