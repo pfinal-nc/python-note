@@ -16,7 +16,7 @@ decorator==4.4.0
 defusedxml==0.6.0
 entrypoints==0.3
 fake-useragent==0.1.11
-future==0.17.1
+future==0.18.3
 gevent==1.4.0
 greenlet==0.4.15
 hyperlink==19.0.0
