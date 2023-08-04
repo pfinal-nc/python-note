@@ -27,6 +27,7 @@
 #
 # f("hello")
 import time
+from functools import wraps
 
 # 为了使用装饰器不用时更好的回收而不是一个一个去注释  引入带参数的装饰器
 
@@ -35,6 +36,7 @@ FLAGE = True
 
 def timmer_out(flag):
     def timmer(func):
+        @wraps(func)
         def inner(*args, **kwargs):
             if flag:
                 start = time.time()
@@ -53,6 +55,7 @@ def timmer_out(flag):
 # timmer_out(FLAGE)
 # 也相当于执行  timmer_out(FLAGE)--->>返回timmer———————>>@timmer(wahaha = timmer(wahaha))
 def wahaha():
+    """ wahaha """
     time.sleep(0.1)  # 不休息的话函数执行的太快难以计算时间
     print('wahahahahahaha')
 
@@ -67,3 +70,10 @@ def erguotou():
 
 
 erguotou()
+
+print(wahaha.__name__)
+print(wahaha.__doc__)
+
+# 装饰器原则
+# 1.开放封闭原则  对于任何一个程序来说，不可能在设计之初就已想好了所有的功能并且未来不做任何更新和修改
+# 2. 对修改是封闭
