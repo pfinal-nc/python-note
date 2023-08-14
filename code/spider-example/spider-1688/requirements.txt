@@ -75,7 +75,7 @@ queuelib==1.5.0
 rarfile==3.0
 requests==2.22.0
 rsa==4.0
-Scrapy==1.7.3
+Scrapy==2.10.0
 selenium==3.141.0
 Send2Trash==1.5.0
 service-identity==18.1.0
