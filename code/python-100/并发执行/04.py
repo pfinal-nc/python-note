@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2023/5/30 11:36
 # @Author  : PFinal南丞 <lampxiezi@163.com
-# @File    : 04.py
+# @File    : day04.py
 # @Software: PyCharm
 import time
 from threading import Thread

@@ -46,7 +46,33 @@ if __name__ == '__main__':
     # a()
     # print(count)
     # print(user_input.translate(character_map))
-    s = itertools.islice(range(50), 10, 20)
-    for val in s:
-        print(val)
+    # s = itertools.islice(range(50), 10, 20)
+    # for val in s:
+    #     print(val)
     # 可以使用「itertools.islice」创建一个「islice」对象，该对象是一个迭代器，可以产生我们想要的项。但需要注意的是，该操作要使用切片之前的所有生成器项，以及「islice」对象中的所有项。
+
+    # 跳过可迭代对象的开头
+    # 有时你要处理一些不需要的行开头的文件. itertools 再次提供了一种简单的解决方案:
+    string_from_file = """
+    // Author: ...
+// License: ...
+//
+// Date: ...
+Actual content...
+
+    """
+    # 这段代码只打印初始注释部分之后的内容,如果我们只想舍弃可迭代对象的开头部分
+    for line in itertools.dropwhile(lambda line: line.startswith('//'), string_from_file.split("\n")):
+        print(line)
+
+    # 只包含关键字参数的函数
+    # 当我们使用下面的函数时, 创建仅仅需要关键字参数作为输入的函数来提供更清晰的函数定义，会很有帮助：
+    # def test(*, a, b):
+    #     pass
+    #
+    #
+    # test("value for a", "value for b")
+    # test(a="value", b="value 2")  # Works
+
+    # 创建支持 with 语句的对象
+    # 可以使用「__enter__」和「__exit__」来实现上下文管理协议:
