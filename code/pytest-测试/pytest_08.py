@@ -67,7 +67,7 @@
 
 # 使用生成器表达式
 lst = [1, 2, 3, 4, 5, 6]
-sumsum = sum(x ** 2 for x in lst if x % 2 == 0)
+sumsum = sum(x**2 for x in lst if x % 2 == 0)
 print(sumsum)
 # 在生成器表达式可以节省内存空间, 提高性能, 适合处理大量或无限的数据,而且不会占用额外的内存空间,特别使用于读取大批量的数据. 当然我们也可以用yeild 也能做一个生成器
 
@@ -75,17 +75,14 @@ print(sumsum)
 # 枚举是一种用于同时获取可迭代对象中的元素和索引的函数. 枚举可以避免使用额外的变量来记录索引, 提高了代码的可读性和效率
 
 # 使用浦东的循环
-
 lst = ["a", "b", "c", "d", "e"]
 index = 0
 for x in lst:
     print(index, x)
     index += 1
-
 # 使用枚举的代码更加简洁和清晰，而且不需要手动更新索引
 for index, x in enumerate(lst):
     print(index, x)
-
 # 三元运算符 (Ternary Operator)
 # 三元运算符是一种用于根据一个条件表达式来选择两个不同的值的简洁的语法
 num = -5
@@ -93,7 +90,6 @@ if num > 0:
     sign = "positive"
 else:
     sign = "negative"
-
 print(sign)
 
 sign = "positive" if num > 0 else "negative"
@@ -103,6 +99,7 @@ print(sign)
 
 #  字典处理条件判断
 #  遇到if 循环语句很长的时候,其实可以使用字典来替代, 两者的执行效率没有试验过
+
 
 # 使用多个if-elif-else 语句
 def foo(x):
@@ -122,7 +119,7 @@ print(foo("a"))
 
 # 使用字典
 def foo(x):
-    """foo """
+    """foo"""
     dic = {"a": 1, "b": 2, "c": 3}
     return dic.get(x, -1)
 
@@ -185,5 +182,3 @@ print(foo("a"))
 # with open("test.txt", "r") as file:
 #     content = file.read()
 #     print(content)
-
-

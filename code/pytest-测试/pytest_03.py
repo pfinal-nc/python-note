@@ -70,10 +70,12 @@ import pytest
 #     """test_multi_scope """
 #     pass
 
+
 # 对于类使用作用域 需要使用 pytest.mark.usefixtures
-@pytest.mark.usefixtures('class_scope')
+@pytest.mark.usefixtures("class_scope")
 class TestClassScope:
-    """ test_class_scope """
+    """test_class_scope"""
+
     def test_1(self):
         pass
 

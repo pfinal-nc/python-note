@@ -56,12 +56,13 @@ import pytest
 # def test_passwd_length(passwd):
 #     assert len(passwd) >= 8
 
+
 # 检验用户密码
-@pytest.mark.parametrize('user, passwd', [('jack', 'abcdefgh'), ('tom', 'a123456a')])
+@pytest.mark.parametrize("user, passwd", [("jack", "abcdefgh"), ("tom", "a123456a")])
 def test_passwd_md5(user, passwd):
     db = {
-        'jack': 'e8dc4081b13434b45189a720b77b6818',
-        'tom': '1702a132e769a623c1adb78353fc9503'
+        "jack": "e8dc4081b13434b45189a720b77b6818",
+        "tom": "1702a132e769a623c1adb78353fc9503",
     }
 
     import hashlib

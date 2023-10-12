@@ -5,13 +5,14 @@
 # @Software: PyCharm
 # 函数用例的前后置方法
 
+
 def setup_function(function):
     """setup_function"""
     print("函数用例前置方法执行")
 
 
 def teardown_function(function):
-    """ teardown_function"""
+    """teardown_function"""
     print("函数用例后置方法执行")
 
 

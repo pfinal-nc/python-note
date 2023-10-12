@@ -9,6 +9,7 @@ import pytest
 # 重命名
 # 固件的名称默认定义时的函数名, 如果不想使用默认, 可以通过 name 选项指定名称:
 
+
 @pytest.fixture(name="age")
 def calculate_age():
     """calculate age"""
