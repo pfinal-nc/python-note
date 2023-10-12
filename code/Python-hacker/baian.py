@@ -1,12 +1,13 @@
 # -*- coding: UTF-8 -*-
 
-import requests
 import re
 import sys
 
+import requests
+
 
 def get_beian(domain):
-    if domain.find('://') > -1:
+    if domain.find("://") > -1:
         print("Error:%s 不是一个有效的域名" % (domain))
         exit()
     http = "http://www.baidu.com/s?wd=site:%s&ie=utf-8" % (domain)

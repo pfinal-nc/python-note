@@ -1,10 +1,11 @@
 # -*- coding:utf-8 -*-
 
-import requests
 import hashlib
-import socket
 import os
+import socket
 import sys
+
+import requests
 
 data = []
 socket.setdefaulttimeout(10)
@@ -24,9 +25,9 @@ def getmd5(url):
 
 
 def init():
-    file_url = os.path.dirname(sys.argv[0]) + '/dna2.txt'
+    file_url = os.path.dirname(sys.argv[0]) + "/dna2.txt"
     # print(file_url)
-    file = open(file_url, "r+", encoding='utf-8')
+    file = open(file_url, "r+", encoding="utf-8")
     try:
         # print(file.read())
         for line in file:
@@ -49,16 +50,16 @@ def cms(url):
     for dataline in data:
         _url = url + dataline["url"]
         try:
-            status = requests.head(_url, timeout=10).status_code    
+            status = requests.head(_url, timeout=10).status_code
         except:
             continue
-            
+
         if status == 200:
-                md5 = get_md5_value(requests.get(_url).content)
+            md5 = get_md5_value(requests.get(_url).content)
             # print(md5)
-                if (md5 == dataline["md5"]):
-                    dataline["url"] = _url
-                    return dataline
+            if md5 == dataline["md5"]:
+                dataline["url"] = _url
+                return dataline
     return False
 
 
