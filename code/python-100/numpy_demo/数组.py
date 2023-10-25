@@ -116,4 +116,7 @@ print(temp)
 temp = arr[[0, 1, 2, 3], [3, 2, 1, 0]]
 print(temp)
 
-
+# 布尔数组索引示例
+cond = arr > 0  # cond is a boolean array
+temp = arr[cond]
+print(temp)
