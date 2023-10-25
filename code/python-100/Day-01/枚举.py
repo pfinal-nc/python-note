@@ -10,8 +10,21 @@
 
 # enumerate 也接受一些可选参数, 这使它更有用
 my_list = ['apple', 'banana', 'grapes', 'pear']
-for c, value in enumerate(my_list, 1):
-    print(c, value)
+# for c, value in enumerate(my_list, 1):
+#     print(c, value)
+#
+# counter_list = list(enumerate(my_list, 1))
+# print(counter_list)
+#
+print(dir(my_list))
 
-counter_list = list(enumerate(my_list, 1))
-print(counter_list)
+# type 函数返回一个对象的类型
+print(type(''))
+
+print(type([]))
+
+print(type({}))
+
+print(type(dict))
+
+print(type(3))
