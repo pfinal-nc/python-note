@@ -5,9 +5,9 @@
 # @Software: PyCharm
 from contextlib import ExitStack
 
-
 # 自定义上下文管理器
 # 通过定义 __enter__ 和 __exit__ 方法，就可以创建一个上下文管理器
+
 
 class MyContextManager:
     def __enter__(self):
