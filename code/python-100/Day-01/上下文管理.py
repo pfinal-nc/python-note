@@ -3,11 +3,7 @@
 # @Author  : PFinal南丞 <lampxiezi@163.com
 # @File    : 上下文管理.py
 # @Software: PyCharm
-import asyncio
-import ssl
-
-import aiohttp
-import certifi
+from contextlib import ExitStack
 
 
 # 自定义上下文管理器
@@ -128,35 +124,115 @@ with MyContextManager() as m:
 # 异步上下文管理器
 # 要创建异步上下文管理器, 需要定义__aenter__和__aexit__方法.
 
-class AsyncSession:
-    """ AsyncSession """
+# class AsyncSession:
+#     """ AsyncSession """
+#
+#     def __init__(self, url):
+#         self.url = url
+#
+#     async def __aenter__(self):
+#         sslcontext = ssl.create_default_context(cafile=certifi.where())
+#         self.session = aiohttp.ClientSession()
+#         response = await self.session.get(self.url, ssl=sslcontext)
+#         return response
+#
+#     async def __aexit__(self, exc_type, exc_value, exc_tb):
+#         await self.session.close()
+#
+#
+# async def check(url):
+#     async with AsyncSession(url) as response:
+#         print(f"{url}: status: {response.status}")
+#         html = await response.text()
+#         print(f"{url}: type -> {html[:17].strip()}")
+#
+#
+# async def main():
+#     """main"""
+#     await asyncio.gather(
+#         check("https://realpython.com"),
+#         check("https://pycoders.com"),
+#     )
+#
+#
+# asyncio.run(main())
 
-    def __init__(self, url):
-        self.url = url
+# 使用 asyc with 语句
+# async with 是 with 语句的异步版本, 可以使用他来编写依赖于 异步代码的上下文管理器
 
-    async def __aenter__(self):
-        sslcontext = ssl.create_default_context(cafile=certifi.where())
-        self.session = aiohttp.ClientSession()
-        response = await self.session.get(self.url, ssl=sslcontext)
-        return response
+# async def check(url):
+#     """check"""
+#     async with aiohttp.ClientSession() as session:
+#         async with session.get(url) as response:
+#             print(f"{url}: status: {response.status}")
+#             html = await response.text()
+#             print(f"{url}: type -> {html[:17].strip()}")
+#
+#
+# async def main():
+#     """main"""
+#     await asyncio.gather(
+#         check("https://realpython.com"),
+#         check("https://pycoders.com"),
+#     )
+#
+#
+# asyncio.run(main())
 
-    async def __aexit__(self, exc_type, exc_value, exc_tb):
-        await self.session.close()
+# contextlib 简化上下文管理器的实现和管理
+# contextlib 模块提供了一些使用工具, 用于简化创建和操作上下文管理器,一下是一个写常用的 contextlib 工具
+# 1. contextlib.contextmanager 装饰器, 用于将生成器函数转换为上下文管理器
 
+# @contextmanager
+# def my_context():
+#     print("Enter 进入")
+#     yield
+#     print("Exit 结束")
+#
+# with my_context():
+#     print("测试一下")
 
-async def check(url):
-    async with AsyncSession(url) as response:
-        print(f"{url}: status: {response.status}")
-        html = await response.text()
-        print(f"{url}: type -> {html[:17].strip()}")
+# @contextmanager
+# def test():
+#     print('before')
+#     try:
+#         yield 'hello'
+#         # 这里发生异常必须自己处理异常逻辑否则不会向下执行
+#         a = 1 / 0
+#     finally:
+#         print('after')
+#
+#
+# with test() as t:
+#     print(t)
 
+# contextlib.closing 是一个上下文管理器工具,用于确保在退出上下文调用对象的 close方法,通常,它用于处理那些没有上下文管理协议的对象 但是有 clonse方法的情况
 
-async def main():
-    """main"""
-    await asyncio.gather(
-        check("https://realpython.com"),
-        check("https://pycoders.com"),
-    )
+# class Test(object):
+#     # 定义了close 方法可以使用 closing 装饰器
+#     def close(self):
+#         print("closed")
+#
+#     # with 执行行结束后 自动执行 close 方法
+#
+#
+# with closing(Test()):
+#     print("do something with close")
+#
+# # 从执行结果可以看到, with 语句执行结束后, Test 实例的 close 方法被调用
 
+# contextlib.ExitStack
+# ExitStack 是一个上下文管理器, 允许动态管理一组上下文管理器 无论这组管理器的数量是多少， 可以用于替代多个嵌套的with
 
-asyncio.run(main())
+# def example_function(file_path, file1_path):
+#     with ExitStack() as stack:
+#         # 打开第一个文件:
+#         file1 = stack.enter_context(open(file_path))
+#
+#         # 打开第二个文件
+#         file2 = stack.enter_context(open(file1_path))
+#
+#         # 在此处进行文件处理，无需手动关闭文件
+#
+#
+# example_function('demo.txt', '')
