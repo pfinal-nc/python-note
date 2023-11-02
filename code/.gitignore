@@ -11,3 +11,4 @@ venv
 /python-pytorch/.ipynb_checkpoints/
 /Python-redis/.idea/
 /Python-redis/venv/
+!/Python-mysql/mysql_option.py
