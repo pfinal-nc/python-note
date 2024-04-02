@@ -114,7 +114,7 @@ def fortunetelling(cday):
 
 if __name__ == '__main__':
     action = input('请输入1 查询八字,2 小六壬:')
-    if action == 1:
+    if action == "1":
         date = input('请输入要查询的日期:')
         to = input('请输入农历或者阳历:')
         get_info(date, to)
